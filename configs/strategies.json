@@ -51,5 +51,10 @@
     "TTC_STRATEGY": "greedy",
     "TTC_CUT": "10",
     "TTC_ROUNDS": "4"
+  },
+  "sweep": {
+    "TTC_STRATEGY": "sweep",
+    "TTC_ROUNDS": "16",
+    "TTC_SEARCH_MS": "100"
   }
 }

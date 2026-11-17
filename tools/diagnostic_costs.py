@@ -2,8 +2,8 @@
 import os,subprocess,csv,json,statistics
 from pathlib import Path
 r=Path(__file__).resolve().parents[1]
-out=r/'results/A-20261117-cost-model';out.mkdir(parents=True,exist_ok=True)
-a=r/'artifacts/A-20261117-cost-model';a.mkdir(parents=True,exist_ok=True)
+out=r/'results/A-20261117-cost-model-calibrated';out.mkdir(parents=True,exist_ok=True)
+a=r/'artifacts/A-20261117-cost-model-calibrated';a.mkdir(parents=True,exist_ok=True)
 log=a/'costs.csv';front=a/'frontier.csv'
 records=[]
 for case in sorted((r/'data/local/stage1').glob('*.txt')):

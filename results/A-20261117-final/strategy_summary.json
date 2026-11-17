@@ -1,0 +1,26 @@
+[
+  {
+    "strategy": "baseline",
+    "cases": 25,
+    "all_pass_cases": 25,
+    "all_target_met_cases": 25,
+    "ad_frontier_cases": 16,
+    "adr_median_frontier_cases": 21,
+    "stable_metric_cases": 25,
+    "area_sum_descriptive": 728930.0,
+    "area_sum_stable_subset": 728930.0,
+    "runtime_case_median_ms": 15.986
+  },
+  {
+    "strategy": "final",
+    "cases": 25,
+    "all_pass_cases": 25,
+    "all_target_met_cases": 25,
+    "ad_frontier_cases": 25,
+    "adr_median_frontier_cases": 10,
+    "stable_metric_cases": 25,
+    "area_sum_descriptive": 728872.0,
+    "area_sum_stable_subset": 728872.0,
+    "runtime_case_median_ms": 25.616
+  }
+]

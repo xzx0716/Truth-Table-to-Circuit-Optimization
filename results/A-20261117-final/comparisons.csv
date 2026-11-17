@@ -1,0 +1,26 @@
+case,a,b,a_dominates_b_ad,b_dominates_a_ad,a_dominates_b_adr_median,b_dominates_a_adr_median,runtime_ranges_overlap,runtime_interpretation
+case_001.txt,baseline,final,False,False,True,False,True,difference unresolved
+case_002.txt,baseline,final,False,False,True,False,True,difference unresolved
+case_003.txt,baseline,final,False,True,False,False,False,observed ranges separated
+case_004.txt,baseline,final,False,False,True,False,False,observed ranges separated
+case_005.txt,baseline,final,False,False,True,False,True,difference unresolved
+case_006.txt,baseline,final,False,False,True,False,True,difference unresolved
+case_007.txt,baseline,final,False,False,True,False,False,observed ranges separated
+case_008.txt,baseline,final,False,False,True,False,False,observed ranges separated
+case_009.txt,baseline,final,False,False,True,False,False,observed ranges separated
+case_010.txt,baseline,final,False,True,False,False,True,difference unresolved
+case_011.txt,baseline,final,False,False,False,True,True,difference unresolved
+case_012.txt,baseline,final,False,False,True,False,True,difference unresolved
+case_013.txt,baseline,final,False,False,True,False,True,difference unresolved
+case_014.txt,baseline,final,False,True,False,True,True,difference unresolved
+case_015.txt,baseline,final,False,True,False,False,False,observed ranges separated
+case_016.txt,baseline,final,False,False,True,False,True,difference unresolved
+case_017.txt,baseline,final,False,False,True,False,True,difference unresolved
+case_018.txt,baseline,final,False,True,False,False,True,difference unresolved
+case_019.txt,baseline,final,False,False,True,False,True,difference unresolved
+case_020.txt,baseline,final,False,True,False,True,True,difference unresolved
+case_021.txt,baseline,final,False,True,False,False,False,observed ranges separated
+case_022.txt,baseline,final,False,True,False,False,True,difference unresolved
+case_023.txt,baseline,final,False,True,False,True,True,difference unresolved
+case_024.txt,baseline,final,False,False,True,False,False,observed ranges separated
+case_025.txt,baseline,final,False,False,True,False,False,observed ranges separated

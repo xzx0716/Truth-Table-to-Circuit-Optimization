@@ -1,0 +1,146 @@
+{
+  "runs": [
+    {
+      "case": "case_001.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_002.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_003.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_004.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_005.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_006.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_007.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_008.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_009.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_010.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_011.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_012.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_013.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_014.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_015.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_016.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_017.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_018.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_019.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_020.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_021.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_022.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_023.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_024.txt",
+      "returncode": 0
+    },
+    {
+      "case": "case_025.txt",
+      "returncode": 0
+    }
+  ],
+  "model": [
+    {
+      "operation": "algebraic-sweep",
+      "observations": 28,
+      "underestimated": 25,
+      "median_actual_over_predicted": 10.149366742043018,
+      "max_actual_over_predicted": 17.274435196195007,
+      "mean_absolute_error_ms": 4.001480107142857
+    },
+    {
+      "operation": "base",
+      "observations": 0,
+      "underestimated": 0,
+      "median_actual_over_predicted": null,
+      "max_actual_over_predicted": null,
+      "mean_absolute_error_ms": null
+    },
+    {
+      "operation": "candidate-rebuild",
+      "observations": 19584,
+      "underestimated": 1281,
+      "median_actual_over_predicted": 0.5507831381916029,
+      "max_actual_over_predicted": 10.07890499194847,
+      "mean_absolute_error_ms": 0.07501953651450163
+    },
+    {
+      "operation": "cut-region",
+      "observations": 3719,
+      "underestimated": 93,
+      "median_actual_over_predicted": 0.6442774710448752,
+      "max_actual_over_predicted": 19.87535,
+      "mean_absolute_error_ms": 0.07189948803441785
+    },
+    {
+      "operation": "rewrite-region",
+      "observations": 3282,
+      "underestimated": 215,
+      "median_actual_over_predicted": 0.5599173079941637,
+      "max_actual_over_predicted": 25.330823094200024,
+      "mean_absolute_error_ms": 0.4419947239183425
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "started_utc": "2026-11-17T12:22:15.475590+00:00",
+  "command": [
+    "tools/run_experiments.py",
+    "--solver",
+    "final=build/solver",
+    "--profile",
+    "final=sweep",
+    "--solver",
+    "research=build/solver",
+    "--profile",
+    "research=portfolio",
+    "--env",
+    "research:TTC_SEARCH_MS=100",
+    "--cases",
+    "artifacts/heldout-cases",
+    "--out",
+    "results/A-20261117-heldout-fixed",
+    "--rounds",
+    "1",
+    "--warmup",
+    "0",
+    "--save-outputs",
+    "--rss-probe",
+    "--build-command",
+    "make"
+  ],
+  "machine": {
+    "system": "Linux",
+    "node": "Initial",
+    "release": "6.6.87.2-microsoft-standard-WSL2",
+    "version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+    "machine": "x86_64",
+    "processor": "x86_64"
+  },
+  "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+  "compiler": {
+    "returncode": 0,
+    "stdout": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "stderr": ""
+  },
+  "build_command": "make",
+  "source_start": {
+    "files": {
+      "configs/formal.json": "75f90dca952d3b91afd8662994f14add36f939cb4d64934543514dea7bbbba7c",
+      "configs/heldout-inputs.json": "a50ef8777e8f58d836812a1d8cbdb1fa9c665da013579f07f174a459168348b4",
+      "configs/research-inputs.json": "d49b0e3d7fd69d69bd81526aef1406d414679cd691512d0288fe8a5be1ec34bb",
+      "configs/scale.json": "937cd6aa8520a0268e9c5c4ceb20f0c09ba97d59a94d87212e1fcfa4064fe3ae",
+      "configs/strategies.json": "3af614eb0c2374abde785f2727dc0fcbaa6fd678b39380e56a0ec74800640c0e",
+      "include/ttc/core.hpp": "de264c7f254dd3fb3ff8ed68a3a854c3209d63fd81e55a6a82f11c47b6d1d521",
+      "include/ttc/generated_templates.hpp": "f6a577432bcc3a3f83d9e6164388c77f7150014ec7dc0c276f8a14d4d8ac2f5c",
+      "include/ttc/optimization_api.hpp": "672d54588469874b74cb2b1a4e56b9f0f7dc5bed0efe109ea18c8afaf26717a7",
+      "src/main.cpp": "9648c9edeaf85450e2e8a21f4a1a3bb20b535d550ddec7c2b1cfd935f09e7e5b",
+      "src/optimization/budget.cpp": "c00ec0eed9a3d9c2688e513b25f09d2d7cb2792b2ea4d571997ffead558eade6",
+      "src/optimization/local_rewrite.cpp": "6cc51d8e7e4141387f33e1c5ee63728be9cabb961f26b9d0c4010700609eb049"
+    },
+    "tree_sha256": "e76c2d29ad33a0f02e44b8c1badef918feaa2b682e7b3793a8064b2f4db8f5df",
+    "commit": {
+      "returncode": 0,
+      "stdout": "8c2ebe1f48dcf0de8bda4ffd5116706d5b9ea64c\n",
+      "stderr": ""
+    },
+    "status": {
+      "returncode": 0,
+      "stdout": " M Makefile\n M configs/strategies.json\n M src/optimization/budget.cpp\n M tools/check_profiles.py\n M tools/diagnostic_costs.py\n?? configs/heldout-inputs.json\n?? docs/runtime-model.md\n?? results/A-20261117-correctness-final/\n?? results/A-20261117-cost-model/\n?? results/A-20261117-final/\n?? results/A-20261117-heldout/\n?? tools/verify_generated.py\n",
+      "stderr": ""
+    }
+  },
+  "solvers": {
+    "final": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/build/solver",
+      "sha256": "0abd38c3c7c7fdb698010a79b5e9509cee267d23503e0bf4d8844f48be4d2568",
+      "environment": {
+        "TTC_STRATEGY": "sweep"
+      }
+    },
+    "research": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/build/solver",
+      "sha256": "0abd38c3c7c7fdb698010a79b5e9509cee267d23503e0bf4d8844f48be4d2568",
+      "environment": {
+        "TTC_STRATEGY": "portfolio",
+        "TTC_SEARCH_MS": "100"
+      }
+    }
+  },
+  "evaluator": {
+    "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/data/local/evaluator",
+    "sha256": "142361d7ce18bc47dea6a07538db79a588b3afbf446526c1d1246f4968b3d0ca"
+  },
+  "inputs": {
+    "case_001.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/heldout-cases/case_001.txt",
+      "sha256": "963d0f46574e13da58baf0c82966c764371da60cf3a7fe252dab04e0653e4954",
+      "n": 12,
+      "m": 4,
+      "target_delay": 96,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 262144
+    },
+    "case_002.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/heldout-cases/case_002.txt",
+      "sha256": "9b0c8cdf7580e99467a05a7fed1e1895e25068a9054227691b0633c8d5445ab4",
+      "n": 16,
+      "m": 4,
+      "target_delay": 128,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 262144
+    },
+    "case_003.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/heldout-cases/case_003.txt",
+      "sha256": "caa03de9cc8ce6ea6f5d1231b3d8f4e5c890d70fc3f5655e1494f868936af24e",
+      "n": 20,
+      "m": 4,
+      "target_delay": 160,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 262144
+    },
+    "case_004.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/heldout-cases/case_004.txt",
+      "sha256": "2f35ca76a6d26ffd18245382c5ceef11f9076e7f7aa62f87a792f2eab56cdb9d",
+      "n": 12,
+      "m": 4,
+      "target_delay": 96,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 262144
+    },
+    "case_005.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/heldout-cases/case_005.txt",
+      "sha256": "755aabdcecf4d0fc64f1682b990af5c16d71cd4b8c914d83566f00685a4d7b76",
+      "n": 16,
+      "m": 4,
+      "target_delay": 128,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 262144
+    },
+    "case_006.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/heldout-cases/case_006.txt",
+      "sha256": "963e25de312a97b3c8140c175089320261bfdf1453ab662145c0b45acbd0e095",
+      "n": 20,
+      "m": 4,
+      "target_delay": 160,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 262144
+    },
+    "case_007.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/heldout-cases/case_007.txt",
+      "sha256": "15f4d310b04bf7a5debe2ba4e8d66a16d97611aeddfa69204d1658bb6af4a384",
+      "n": 12,
+      "m": 4,
+      "target_delay": 96,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 262144
+    },
+    "case_008.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/heldout-cases/case_008.txt",
+      "sha256": "9300546239b743772b6f67c9da93000178eed31be1f468ac4dd355fa4931d9f8",
+      "n": 16,
+      "m": 4,
+      "target_delay": 128,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 262144
+    },
+    "case_009.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/heldout-cases/case_009.txt",
+      "sha256": "e0e6bb67cdfcd9e9ad6bfbc87188f3153158eb2b5f77b8e5ff153c2df52f1ed9",
+      "n": 20,
+      "m": 4,
+      "target_delay": 160,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 262144
+    }
+  },
+  "rounds": 1,
+  "warmup_rounds": 0,
+  "artifact_directory": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-heldout-fixed",
+  "runtime_definition": "official evaluator solver wall-clock runtime_ms; not evaluator elapsed time",
+  "rss_note": "optional separate solver-only /usr/bin/time probe, never evaluator peak RSS",
+  "runs": [
+    {
+      "id": "measured-01-final",
+      "phase": "measured",
+      "round": 1,
+      "strategy": "final",
+      "command": [
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/data/local/evaluator",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/build/solver",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/heldout-cases",
+        "--report",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-heldout-fixed/measured-01-final.csv",
+        "--save-outputs",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-heldout-fixed/measured-01-final-circuits"
+      ],
+      "returncode": 0,
+      "error": null,
+      "evaluator_elapsed_seconds": 4.246395066999867,
+      "report": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-heldout-fixed/measured-01-final.csv",
+      "stdout": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-heldout-fixed/measured-01-final.stdout.log",
+      "stderr": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-heldout-fixed/measured-01-final.stderr.log"
+    },
+    {
+      "id": "measured-01-research",
+      "phase": "measured",
+      "round": 1,
+      "strategy": "research",
+      "command": [
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/data/local/evaluator",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/build/solver",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/heldout-cases",
+        "--report",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-heldout-fixed/measured-01-research.csv",
+        "--save-outputs",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-heldout-fixed/measured-01-research-circuits"
+      ],
+      "returncode": 0,
+      "error": null,
+      "evaluator_elapsed_seconds": 4.951602990999845,
+      "report": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-heldout-fixed/measured-01-research.csv",
+      "stdout": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-heldout-fixed/measured-01-research.stdout.log",
+      "stderr": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-heldout-fixed/measured-01-research.stderr.log"
+    }
+  ],
+  "rss_probe_note": "Separate solver-only runs; not used as official correctness or timing results.",
+  "source_end": {
+    "files": {
+      "configs/formal.json": "75f90dca952d3b91afd8662994f14add36f939cb4d64934543514dea7bbbba7c",
+      "configs/heldout-inputs.json": "a50ef8777e8f58d836812a1d8cbdb1fa9c665da013579f07f174a459168348b4",
+      "configs/research-inputs.json": "d49b0e3d7fd69d69bd81526aef1406d414679cd691512d0288fe8a5be1ec34bb",
+      "configs/scale.json": "937cd6aa8520a0268e9c5c4ceb20f0c09ba97d59a94d87212e1fcfa4064fe3ae",
+      "configs/strategies.json": "3af614eb0c2374abde785f2727dc0fcbaa6fd678b39380e56a0ec74800640c0e",
+      "include/ttc/core.hpp": "de264c7f254dd3fb3ff8ed68a3a854c3209d63fd81e55a6a82f11c47b6d1d521",
+      "include/ttc/generated_templates.hpp": "f6a577432bcc3a3f83d9e6164388c77f7150014ec7dc0c276f8a14d4d8ac2f5c",
+      "include/ttc/optimization_api.hpp": "672d54588469874b74cb2b1a4e56b9f0f7dc5bed0efe109ea18c8afaf26717a7",
+      "src/main.cpp": "9648c9edeaf85450e2e8a21f4a1a3bb20b535d550ddec7c2b1cfd935f09e7e5b",
+      "src/optimization/budget.cpp": "c00ec0eed9a3d9c2688e513b25f09d2d7cb2792b2ea4d571997ffead558eade6",
+      "src/optimization/local_rewrite.cpp": "6cc51d8e7e4141387f33e1c5ee63728be9cabb961f26b9d0c4010700609eb049"
+    },
+    "tree_sha256": "e76c2d29ad33a0f02e44b8c1badef918feaa2b682e7b3793a8064b2f4db8f5df",
+    "commit": {
+      "returncode": 0,
+      "stdout": "8c2ebe1f48dcf0de8bda4ffd5116706d5b9ea64c\n",
+      "stderr": ""
+    },
+    "status": {
+      "returncode": 0,
+      "stdout": " M Makefile\n M configs/strategies.json\n M src/optimization/budget.cpp\n M tools/check_profiles.py\n M tools/diagnostic_costs.py\n?? configs/heldout-inputs.json\n?? docs/runtime-model.md\n?? results/A-20261117-correctness-final/\n?? results/A-20261117-cost-model/\n?? results/A-20261117-final/\n?? results/A-20261117-heldout-fixed/\n?? results/A-20261117-heldout/\n?? tools/verify_generated.py\n",
+      "stderr": ""
+    }
+  },
+  "source_changed_during_run": false,
+  "binary_end_sha256": {
+    "final": "0abd38c3c7c7fdb698010a79b5e9509cee267d23503e0bf4d8844f48be4d2568",
+    "research": "0abd38c3c7c7fdb698010a79b5e9509cee267d23503e0bf4d8844f48be4d2568"
+  },
+  "binary_changed_during_run": false,
+  "finished_utc": "2026-11-17T12:22:30.087340+00:00"
+}

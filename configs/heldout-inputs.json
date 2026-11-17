@@ -1,0 +1,38 @@
+[
+  {
+    "case": "case_001.txt",
+    "generated_name": "permuted_n12.txt"
+  },
+  {
+    "case": "case_002.txt",
+    "generated_name": "permuted_n16.txt"
+  },
+  {
+    "case": "case_003.txt",
+    "generated_name": "permuted_n20.txt"
+  },
+  {
+    "case": "case_004.txt",
+    "generated_name": "random_n12.txt"
+  },
+  {
+    "case": "case_005.txt",
+    "generated_name": "random_n16.txt"
+  },
+  {
+    "case": "case_006.txt",
+    "generated_name": "random_n20.txt"
+  },
+  {
+    "case": "case_007.txt",
+    "generated_name": "structured_n12.txt"
+  },
+  {
+    "case": "case_008.txt",
+    "generated_name": "structured_n16.txt"
+  },
+  {
+    "case": "case_009.txt",
+    "generated_name": "structured_n20.txt"
+  }
+]

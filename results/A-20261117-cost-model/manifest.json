@@ -1,0 +1,7 @@
+{
+  "source_commit": "8c2ebe1",
+  "budget_source_sha256": "0cadfb2458a6ce63d3a86f64e472e7833cb7a7a0b046332f1cadd06c8806dcfe",
+  "binary_sha256": "see results/A-20261117-final/manifest.json (pre-calibration binary)",
+  "note": "Cold sweep prior differs: first experiment 2e-5, calibrated4e-4. Earlier source commit in git history. Both diagnostics use public tuning inputs; not heldout generalization.",
+  "commands": "python3 tools/diagnostic_costs.py; earlier folder preserved from initial run"
+}

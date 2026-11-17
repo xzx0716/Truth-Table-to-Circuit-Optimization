@@ -7,7 +7,7 @@ subprocess.run(['python3','tools/export_submission.py','--output','dist/solver.c
 files={'solver.cpp':dist/'solver.cpp','README.md':r/'README.md',
  'REPORT.md':r/'docs/stage1-report.md','Stage1-Handoff.md':r/'docs/Stage1-Handoff.md',
  'solver.manifest.json':dist/'solver.manifest.json'}
-for folder in ['A-20261117-final','A-20261117-formal']:
+for folder in ['A-20261117-final-calibrated','A-20261117-final','A-20261117-formal']:
  for name in ['runs.csv','summary.csv','manifest.json','strategy_summary.json']:
   p=r/'results'/folder/name
   if p.exists():files['results/'+folder+'/'+name]=p

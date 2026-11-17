@@ -22,7 +22,10 @@ double RuntimeBudget::predict(const std::string& operation,double units) const {
     auto it=rates_.find(operation);
     // Uncalibrated estimates only admit a small probe. Actual records calibrate
     // later calls; this is a conservative scheduler, not a deadline proof.
-    const double rate=it==rates_.end()?0.00002:it->second;
+    // Sweep prior calibrated from the retained first diagnostic experiment:
+    // a whole-graph pass includes rule checks and normalization, unlike a rebuild.
+    const double cold_rate=operation=="algebraic-sweep" || operation=="sweep"?0.0004:0.00002;
+    const double rate=it==rates_.end()?cold_rate:it->second;
     return std::max(0.02,rate*std::max(1.0,units)*1.5);
 }
 bool RuntimeBudget::can_start(const std::string& operation,double units) const {

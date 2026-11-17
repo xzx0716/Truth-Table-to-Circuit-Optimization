@@ -2,9 +2,9 @@
 import subprocess,os,json
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
-out=root/'results'/'A-20261117-correctness';out.mkdir(parents=True,exist_ok=True)
+out=root/'results'/'A-20261117-correctness-final';out.mkdir(parents=True,exist_ok=True)
 records=[]
-for strategy in ['baseline','greedy','beam','anneal','multistart']:
+for strategy in ['baseline','sweep','greedy','beam','anneal','multistart']:
  env=dict(os.environ,TTC_STRATEGY=strategy,TTC_REGIONS='16',TTC_SEARCH_MS='20')
  p=subprocess.run(['python3','tests/verify_solver.py','build/solver','--no-stats'],cwd=root,env=env,capture_output=True,text=True)
  (out/(strategy+'.log')).write_text(p.stdout+p.stderr)
