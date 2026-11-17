@@ -309,6 +309,16 @@ void neighbours(const Problem& p,const State& state,RuntimeBudget& budget,const 
 }
 }
 
+Netlist try_seed_sweep(const Problem& p, const Netlist& seed, RuntimeBudget& budget) {
+    if (!memory_allowed(budget) || !budget.can_start("algebraic-sweep", seed.gates.size() + 1))
+        return {};
+    auto result = algebraic_sweep(p, seed, budget);
+    // A deadline reached inside a local equivalence check can also suppress an
+    // individual proposal, so reject the pass even if it produced a netlist.
+    if (budget.should_stop()) return {};
+    return result;
+}
+
 void run_local_rewrite(const Problem& p,const Netlist& seed,RuntimeBudget& budget,const CandidateSink& sink,const SearchOptions& options) {
     if(seed.outputs.empty()||budget.should_stop()||options.rounds<=0||!memory_allowed(budget))return;
     State initial{normalize(p,seed),{},0};initial.metrics=measure(p,initial.net);initial.hash=fingerprint(initial.net);

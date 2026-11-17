@@ -1,4 +1,5 @@
 #include "ttc/optimization_api.hpp"
+#include "ttc/seed_pipeline.hpp"
 #include <cstdlib>
 #include <sstream>
 using namespace ttc;
@@ -8,6 +9,13 @@ using namespace ttc;
 namespace {
 std::string envs(const char* key,const std::string& def){const char* v=std::getenv(key);return v?v:def;}
 int envi(const char* key,int def){const char* v=std::getenv(key);return v?std::stoi(v):def;}
+void write_result(const char* path, int input_count, const Netlist& result) {
+    std::ofstream out(path);
+    if (!out) throw std::runtime_error("cannot open output");
+    write_netlist(out, input_count, result);
+    out.close();
+    if (!out) throw std::runtime_error("write failed");
+}
 // Research archive keeps over-target points too. Selection remains the published
 // handoff policy: feasible first, then normalized minimax A/D loss.
 struct Archive {
@@ -36,6 +44,21 @@ int main(int argc,char** argv){
         std::ifstream input(argv[1]);if(!input)throw std::runtime_error("cannot open input");
         Problem p=read_problem(input);
         budget.configure(p.runtime_ms,p.ram_kb,envi("TTC_RESEARCH_MS",0));
+        const std::string seed_profile = envs("TTC_INITIAL_SEED", "");
+        if (!seed_profile.empty()) {
+            auto trial = run_seed_trial(p, seed_profile, budget);
+            Metrics final;
+            if (trial.post_complete) {
+                final = measure(p, trial.selected);
+                write_result(argv[2], p.n, trial.selected);
+            }
+            std::cerr << "seed=" << seed_profile
+                      << " seed_area=" << trial.initial.area << " seed_delay=" << trial.initial.delay
+                      << " area=" << final.area << " delay=" << final.delay
+                      << " post_complete=" << int(trial.post_complete)
+                      << " seed_complete=" << int(trial.seed_complete) << '\n';
+            return trial.post_complete ? 0 : 3;
+        }
         const std::string strategy=envs("TTC_STRATEGY",TTC_DEFAULT_STRATEGY);
         const double before=budget.elapsed_ms();
         Archive archive{p,{}};
@@ -61,8 +84,7 @@ int main(int argc,char** argv){
             }
             result=archive.choose();
         }
-        std::ofstream output(argv[2]);if(!output)throw std::runtime_error("cannot open output");
-        write_netlist(output,p.n,result);output.close();if(!output)throw std::runtime_error("write failed");
+        write_result(argv[2], p.n, result);
         const auto m=measure(p,result);
         std::cerr<<"area="<<m.area<<" delay="<<m.delay<<" elapsed_ms="<<budget.elapsed_ms()
                  <<" strategy="<<strategy<<" frontier="<<archive.points.size()<<'\n';
