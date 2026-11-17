@@ -1,5 +1,14 @@
 {
   "solver_sha256": "0abd38c3c7c7fdb698010a79b5e9509cee267d23503e0bf4d8844f48be4d2568",
   "source_commit": "4413d4dbfb0a4796f582ec9c214e74bf0b6deec7",
-  "heldout_independent_returncode": 0
+  "heldout_independent_returncode": 0,
+  "clean_clone_tag": "person-a-stage1-v1",
+  "clean_clone_commit": "fc095b1d5df3f722aa1b007fc55cb3be0abcb13e",
+  "clean_clone_build": "PASS",
+  "clean_clone_modular_400": "PASS",
+  "clean_clone_export_400": "PASS",
+  "single_source_sha256": "b12b552d607402a82289b20f84053e6e5c9b913d2c3382a2a0291ef6c7d50a18",
+  "export_official_cases": 25,
+  "export_official_pass": 25,
+  "export_official_target_met": 25
 }
