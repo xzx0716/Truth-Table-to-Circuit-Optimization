@@ -1,0 +1,155 @@
+{
+  "evaluator": "142361d7ce18bc47dea6a07538db79a588b3afbf446526c1d1246f4968b3d0ca",
+  "inputs": {
+    "case_001.txt": {
+      "sha256": "1aadc116ff81dc09af83734c2a2ff83ed7d670a8ad57c3cf3050ab765c0be74d",
+      "target_delay": 77,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_002.txt": {
+      "sha256": "e73e69c68dfd9900286152348bb08a0f92e85d7d4913ba2f4096d94127bb6f97",
+      "target_delay": 61,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_003.txt": {
+      "sha256": "77476ae0fe99e9a83d78e97703a3a52e506c447baf97a61d7f1a9354299b76e9",
+      "target_delay": 64,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_004.txt": {
+      "sha256": "2b2661acda4d793355c250364908acc50885dbc59cef154b1c4c653b87d16583",
+      "target_delay": 57,
+      "runtime_limit_ms": 1000,
+      "ram_limit_kb": 0
+    },
+    "case_005.txt": {
+      "sha256": "179d5f49622a07a45f6279e789c995c294bb06573e5a1c9488d900a2cd80a432",
+      "target_delay": 36,
+      "runtime_limit_ms": 100,
+      "ram_limit_kb": 0
+    },
+    "case_006.txt": {
+      "sha256": "fc09474583211576593d981aef2ad0f420872a45c6313df00409948f0fad8fa7",
+      "target_delay": 60,
+      "runtime_limit_ms": 1000,
+      "ram_limit_kb": 0
+    },
+    "case_007.txt": {
+      "sha256": "e51100ade28a206ee2dfc4c7c8e61a830eb5ed478b21ae86c69243520623a29b",
+      "target_delay": 89,
+      "runtime_limit_ms": 100000,
+      "ram_limit_kb": 0
+    },
+    "case_008.txt": {
+      "sha256": "5f496302361701782a2f5f6f370a0f948cfa5a38903f4449d6d951383a4f0021",
+      "target_delay": 62,
+      "runtime_limit_ms": 1000,
+      "ram_limit_kb": 0
+    },
+    "case_009.txt": {
+      "sha256": "54b3892fa0afdb1ee37c5819c45e08e4d616b9c385e88d25215e66e55873e6cb",
+      "target_delay": 59,
+      "runtime_limit_ms": 1000,
+      "ram_limit_kb": 0
+    },
+    "case_010.txt": {
+      "sha256": "f6597a1d1d165e7557768b12a22700f30a71f4e7ddb27521434920c3721d0370",
+      "target_delay": 61,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_011.txt": {
+      "sha256": "353178c34ba754acb42e7614e5ecbbf70e9b58cc16732b50ad9d6825b4a899ea",
+      "target_delay": 40,
+      "runtime_limit_ms": 100,
+      "ram_limit_kb": 0
+    },
+    "case_012.txt": {
+      "sha256": "628d76e7c886d42e920fabd3fe68882224b167860aeaf18b31d8e2f8a6c108ab",
+      "target_delay": 40,
+      "runtime_limit_ms": 1000,
+      "ram_limit_kb": 0
+    },
+    "case_013.txt": {
+      "sha256": "98028e8655b27bf9a28df810efd9ead16b36bb4f86f998cfda3c9861f77ff7b8",
+      "target_delay": 70,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_014.txt": {
+      "sha256": "e1deff347bfc30e44e9e42f79c99defaaa0b3c9e0990bcd1c5f1f589dd454604",
+      "target_delay": 72,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_015.txt": {
+      "sha256": "6905531025bcbea8ae752bcf736ff1374882e40d8ab35dbf5c803f6ca76f4d0d",
+      "target_delay": 81,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_016.txt": {
+      "sha256": "9bbd0106e315f818d030a8ef7bee217fe1370caacef4d74c86094dfbe1cb382e",
+      "target_delay": 47,
+      "runtime_limit_ms": 1000,
+      "ram_limit_kb": 0
+    },
+    "case_017.txt": {
+      "sha256": "c2c9deecef28ab3dff5aac9e05d623ec0c225673a6165ef084b34de8fdd0dbdd",
+      "target_delay": 25,
+      "runtime_limit_ms": 100,
+      "ram_limit_kb": 0
+    },
+    "case_018.txt": {
+      "sha256": "e7eb3124a1a8c32c7e69a4b39592c0c70db877e37342676e36d8c96d789d6675",
+      "target_delay": 32,
+      "runtime_limit_ms": 100,
+      "ram_limit_kb": 0
+    },
+    "case_019.txt": {
+      "sha256": "66ee83e01ca48cf50436b2c6437d68c1e272957eeaf0074dc8944ac0fd498283",
+      "target_delay": 73,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_020.txt": {
+      "sha256": "9bb203575fd285409f75e0084b8d4d3f6f172cc9fb1f07726ad6e9bcfcd5f12c",
+      "target_delay": 35,
+      "runtime_limit_ms": 100,
+      "ram_limit_kb": 0
+    },
+    "case_021.txt": {
+      "sha256": "1f505fb55fb7183dfdbfe6bbebcfe8a3436bd9fc8d7c1fc7cc124975415b3ebd",
+      "target_delay": 72,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_022.txt": {
+      "sha256": "e6903a682be0f0a6177594bd93cfc3a62ab61dd1a846931a9531c12a0510fbd9",
+      "target_delay": 34,
+      "runtime_limit_ms": 100,
+      "ram_limit_kb": 0
+    },
+    "case_023.txt": {
+      "sha256": "080d58afbbc71073093a0f72865edf7c815ed10872bc905b250887093c5aff73",
+      "target_delay": 24,
+      "runtime_limit_ms": 100,
+      "ram_limit_kb": 0
+    },
+    "case_024.txt": {
+      "sha256": "9bb33e0a59449ee75bc6418bc3512fc09035553c9338312f5ecb5f933b7d5392",
+      "target_delay": 83,
+      "runtime_limit_ms": 100000,
+      "ram_limit_kb": 0
+    },
+    "case_025.txt": {
+      "sha256": "49e6ef5f9eddcd640d584c06b62f11a94d641b019ef177d0328f7090284bd34c",
+      "target_delay": 76,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    }
+  }
+}

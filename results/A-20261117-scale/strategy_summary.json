@@ -6,7 +6,9 @@
     "all_target_met_cases": 12,
     "ad_frontier_cases": 12,
     "adr_median_frontier_cases": 0,
-    "area_sum_descriptive": 681871.0,
+    "stable_metric_cases": 12,
+    "area_sum_descriptive": null,
+    "area_sum_stable_subset": 681871.0,
     "runtime_case_median_ms": 1650.5230000000001
   },
   {
@@ -16,7 +18,9 @@
     "all_target_met_cases": 19,
     "ad_frontier_cases": 12,
     "adr_median_frontier_cases": 19,
-    "area_sum_descriptive": 721642.0,
+    "stable_metric_cases": 19,
+    "area_sum_descriptive": null,
+    "area_sum_stable_subset": 721642.0,
     "runtime_case_median_ms": 127.975
   },
   {
@@ -26,7 +30,9 @@
     "all_target_met_cases": 18,
     "ad_frontier_cases": 12,
     "adr_median_frontier_cases": 1,
-    "area_sum_descriptive": 721371.0,
+    "stable_metric_cases": 18,
+    "area_sum_descriptive": null,
+    "area_sum_stable_subset": 721371.0,
     "runtime_case_median_ms": 227.72250000000003
   },
   {
@@ -36,7 +42,9 @@
     "all_target_met_cases": 18,
     "ad_frontier_cases": 13,
     "adr_median_frontier_cases": 1,
-    "area_sum_descriptive": 721369.0,
+    "stable_metric_cases": 18,
+    "area_sum_descriptive": null,
+    "area_sum_stable_subset": 721369.0,
     "runtime_case_median_ms": 428.8885
   },
   {
@@ -46,7 +54,9 @@
     "all_target_met_cases": 18,
     "ad_frontier_cases": 18,
     "adr_median_frontier_cases": 5,
-    "area_sum_descriptive": 721360.0,
+    "stable_metric_cases": 18,
+    "area_sum_descriptive": null,
+    "area_sum_stable_subset": 721360.0,
     "runtime_case_median_ms": 830.6605
   },
   {
@@ -56,7 +66,9 @@
     "all_target_met_cases": 12,
     "ad_frontier_cases": 10,
     "adr_median_frontier_cases": 0,
-    "area_sum_descriptive": 681875.0,
+    "stable_metric_cases": 12,
+    "area_sum_descriptive": null,
+    "area_sum_stable_subset": 681875.0,
     "runtime_case_median_ms": 2054.2165
   }
 ]

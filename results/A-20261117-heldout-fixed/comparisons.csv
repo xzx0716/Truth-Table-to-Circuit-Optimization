@@ -1,0 +1,10 @@
+case,a,b,a_dominates_b_ad,b_dominates_a_ad,a_dominates_b_adr_median,b_dominates_a_adr_median,runtime_ranges_overlap,runtime_interpretation
+case_001.txt,final,research,False,True,False,False,False,observed ranges separated
+case_002.txt,final,research,False,False,False,False,False,observed ranges separated
+case_003.txt,final,research,False,True,False,False,False,observed ranges separated
+case_004.txt,final,research,False,True,False,False,False,observed ranges separated
+case_005.txt,final,research,False,True,False,False,False,observed ranges separated
+case_006.txt,final,research,False,True,False,False,False,observed ranges separated
+case_007.txt,final,research,False,True,False,False,False,observed ranges separated
+case_008.txt,final,research,False,False,False,False,False,observed ranges separated
+case_009.txt,final,research,False,False,False,False,False,observed ranges separated

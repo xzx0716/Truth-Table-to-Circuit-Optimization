@@ -36,7 +36,7 @@ python3 tools/analyze_results.py results/MY-RUN/runs.csv
 ## Research profiles
 
 The public command line remains exactly two paths. Optional environment settings:
-`TTC_STRATEGY=baseline|greedy|beam|anneal|multistart|portfolio`,
+`TTC_STRATEGY=baseline|sweep|greedy|beam|anneal|multistart|portfolio`,
 `TTC_CUT`, `TTC_ROUNDS`, `TTC_BEAM`, `TTC_RESTARTS`, `TTC_REGIONS`,
 `TTC_SEED`, `TTC_SEARCH_MS`. Profile parameters are recorded under `configs/`.
 `TTC_RESEARCH_MS` overrides the course input time limit for offline research only;
@@ -52,4 +52,15 @@ g++ -O2 -std=c++17 dist/solver.cpp -o dist/solver
 ```
 
 Do not edit generated `dist/solver.cpp`; edit `src/` and `include/`.
-Reports and final default strategy will be finalized after the recorded experiments.
+The default is `sweep`: baseline synthesis plus convergent batched algebraic rewriting.
+Final calibrated validation: all25 cases pass in all5 measured rounds (125/125),
+all meet target delay, area/delay stable. Compared with the supplied Pareto baseline,
+9 cases have smaller area and every case keeps the same delay; area sum drops
+728930 to728872 (0.00796%, descriptive only). Runtime increases.
+
+See [Stage1 report](docs/stage1-report.md), [handoff](docs/Stage1-Handoff.md),
+[local method](docs/local-search.md), [runtime model](docs/runtime-model.md),
+and [experiment register](docs/experiment-register.md).
+The full research includes greedy, beam, annealing, multistart, growing cuts and
+real bounded SAT/MILP; costly/failed runs are preserved. Person B's new algorithms
+remain separate work. No global-optimal or hidden-case score claim is made.
