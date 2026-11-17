@@ -2,6 +2,12 @@
 #include "ttc/optimization_api.hpp"
 
 namespace ttc {
+// The portfolio catches deadline exhaustion only. Other construction errors
+// must propagate rather than silently dropping a candidate.
+class SeedBudgetExpired : public std::runtime_error {
+public:
+    using std::runtime_error::runtime_error;
+};
 namespace historical_order {
 
 // The GitHub BDD has a three-input cache on its forward path. For a reverse
@@ -15,7 +21,7 @@ public:
 
     Id build(int output, int level, std::size_t row) {
         if ((++calls & 1023u)==0 && budget.should_stop())
-            throw std::runtime_error("historical seed exceeded budget");
+            throw SeedBudgetExpired("historical seed exceeded budget");
         if (p.n - level < 3) return graph.build(output,level,row);
         const auto stride=std::size_t{1}<<level;
         if (p.n - level == 3) {
@@ -49,7 +55,7 @@ inline std::size_t consider_order(const Problem& p, Frontier& frontier, RuntimeB
     BDD bdd(p, reverse);
     ReverseBuilder reversed(p,bdd,budget);
     auto check=[&] {
-        if (budget.should_stop()) throw std::runtime_error("historical seed exceeded budget");
+        if (budget.should_stop()) throw SeedBudgetExpired("historical seed exceeded budget");
     };
     std::vector<Id> roots;
     for (int j = 0; j < p.m; ++j) {
@@ -126,7 +132,7 @@ inline Netlist construct(const Problem& p, RuntimeBudget& budget) {
                                              : std::numeric_limits<std::size_t>::max();
         consider_order(p,frontier,budget,true,limit);
     }
-    if (budget.should_stop()) throw std::runtime_error("historical seed exceeded budget");
+    if (budget.should_stop()) throw SeedBudgetExpired("historical seed exceeded budget");
     Candidate fastest=frontier.fastest();
     remap_area(p,frontier.smallest().netlist,frontier,p.target);
     if (frontier.feasible() && frontier.smallest().delay>fastest.delay) {
@@ -134,7 +140,7 @@ inline Netlist construct(const Problem& p, RuntimeBudget& budget) {
         remap_area(p,fastest.netlist,frontier,fastest.delay);
         if (middle>fastest.delay) remap_area(p,fastest.netlist,frontier,middle);
     }
-    if (budget.should_stop()) throw std::runtime_error("historical seed exceeded budget");
+    if (budget.should_stop()) throw SeedBudgetExpired("historical seed exceeded budget");
     return frontier.take_compromise();
 }
 } // namespace historical_order

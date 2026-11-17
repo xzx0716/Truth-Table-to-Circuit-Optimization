@@ -17,7 +17,7 @@ class Poll {
 public:
     explicit Poll(RuntimeBudget& budget) : budget_(budget) { check(); }
     void tick() { if ((++steps_ & 1023u) == 0) check(); }
-    void check() const { if (budget_.should_stop()) throw std::runtime_error("seed construction exceeded budget"); }
+    void check() const { if (budget_.should_stop()) throw SeedBudgetExpired("seed construction exceeded budget"); }
 private:
     RuntimeBudget& budget_;
     unsigned steps_ = 0;
@@ -227,6 +227,30 @@ inline std::vector<int> influence_order(const Problem& p, std::vector<int> order
     return order;
 }
 
+enum class Order { forward, reverse, influence };
+struct Descriptor {
+    const char* name;
+    Order order;
+    Grouping group;
+    bool pos;
+    bool remap;
+};
+inline constexpr Descriptor seeds[] = {
+    {"forward-sop",       Order::forward,   Grouping::single,    false, false},
+    {"reverse-sop",       Order::reverse,   Grouping::single,    false, false},
+    {"influence-sop",     Order::influence, Grouping::single,    false, false},
+    {"forward-pos",       Order::forward,   Grouping::single,    true,  false},
+    {"forward-demorgan",  Order::forward,   Grouping::single,    false, true},
+    {"forward-top3",      Order::forward,   Grouping::top,       false, false},
+    {"reverse-top3",      Order::reverse,   Grouping::top,       false, false},
+    {"forward-rec3",      Order::forward,   Grouping::recursive, false, false},
+    {"forward-adaptive3", Order::forward,   Grouping::adaptive,  false, false},
+};
+
+inline const Descriptor* find_seed(const std::string& profile) {
+    return std::find_if(std::begin(seeds),std::end(seeds),
+                        [&](const Descriptor& s){return s.name==profile;});
+}
 } // namespace seed_detail
 
 // Each named constructor returns one owned, reachable seed. The four atomic
@@ -234,27 +258,7 @@ inline std::vector<int> influence_order(const Problem& p, std::vector<int> order
 inline Netlist construct_seed(const Problem& p, const std::string& profile, RuntimeBudget& budget) {
     if (profile=="historical-adaptive") return historical_order::construct(p,budget);
     using namespace seed_detail;
-    enum class Order { forward, reverse, influence };
-    struct Descriptor {
-        const char* name;
-        Order order;
-        Grouping group;
-        bool pos;
-        bool remap;
-    };
-    static constexpr Descriptor seeds[] = {
-        {"forward-sop",       Order::forward,   Grouping::single,    false, false},
-        {"reverse-sop",       Order::reverse,   Grouping::single,    false, false},
-        {"influence-sop",     Order::influence, Grouping::single,    false, false},
-        {"forward-pos",       Order::forward,   Grouping::single,    true,  false},
-        {"forward-demorgan",  Order::forward,   Grouping::single,    false, true},
-        {"forward-top3",      Order::forward,   Grouping::top,       false, false},
-        {"reverse-top3",      Order::reverse,   Grouping::top,       false, false},
-        {"forward-rec3",      Order::forward,   Grouping::recursive, false, false},
-        {"forward-adaptive3", Order::forward,   Grouping::adaptive,  false, false},
-    };
-    const auto chosen=std::find_if(std::begin(seeds),std::end(seeds),
-                                   [&](const Descriptor& s){ return s.name==profile; });
+    const auto* chosen=find_seed(profile);
     if (chosen==std::end(seeds)) throw std::invalid_argument("unknown seed profile: "+profile);
     Poll clock(budget);
     std::vector<int> permutation(p.n);

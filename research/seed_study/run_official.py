@@ -29,7 +29,13 @@ def evaluate(args):
     out.mkdir(exist_ok=True, parents=True)
     if any(out.iterdir()):
         raise ValueError("choose an empty result directory")
-    profiles = list(dict.fromkeys([*PROFILES, 'historical-adaptive', 'deployed']))
+    retained = None
+    profiles = [*PROFILES, 'deployed']
+    if args.portfolio:
+        retained = json.loads(args.portfolio.read_text())
+        if not retained or len(set(retained)) != len(retained) or not set(retained) <= set(PROFILES):
+            raise ValueError('invalid list of retained seed profiles')
+        profiles = ['retained-portfolio', 'deployed']
     source_paths = [root / 'Makefile', *sorted((root / 'include').rglob('*.hpp')),
                     *sorted((root / 'src').rglob('*.cpp')), Path(__file__), Path(__file__).with_name('run.py')]
     source_hashes = {str(p.relative_to(root)): sha(p) for p in source_paths}
@@ -58,6 +64,7 @@ def evaluate(args):
                         build=command, solver_sha256=sha(binary), sources=source_hashes,
                         inputs={p.name:sha(p) for p in inputs}, evaluator_sha256=sha(evaluator),
                         rounds=args.rounds, warmup=1, shuffle_seed=2106, profiles=profiles,
+                        retained_in_order=retained,
                         measured_metric='Official evaluator runtime_ms from solver startup to exit',
                         controlled_post='normalize + one complete existing algebraic sweep + common selection',
                         production_reference='deployed uses all original default settings',
@@ -75,7 +82,9 @@ def evaluate(args):
                 for sequence, profile in enumerate(order,1):
                     report = out/'raw'/f'{iteration}-{profile}.csv'
                     env = {k:v for k,v in os.environ.items() if not k.startswith('TTC_')}
-                    if profile!='deployed':
+                    if profile=='retained-portfolio':
+                        env['TTC_INITIAL_SEEDS'] = ','.join(retained)
+                    elif profile!='deployed':
                         env['TTC_INITIAL_SEED'] = profile
                     with tempfile.TemporaryDirectory(dir=work) as buf:
                         saved=Path(buf)/'circuits'
@@ -113,4 +122,5 @@ if __name__ == '__main__':
     p.add_argument('--base',required=True)
     p.add_argument('--machine',default=platform.platform())
     p.add_argument('--rounds',type=int,default=5)
+    p.add_argument('--portfolio',type=Path,help='time the retained portfolio in one process against the deployed default')
     evaluate(p.parse_args())

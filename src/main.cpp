@@ -22,7 +22,10 @@ struct Archive {
     struct Point {Metrics m;Netlist net;std::string source;};
     const Problem& p;std::vector<Point> points;
     bool accept(Netlist net,const std::string& source){
-        net=normalize(p,net);auto m=measure(p,net);
+        return accept_measured(normalize(p,net),source);
+    }
+    bool accept_measured(Netlist net,const std::string& source){
+        auto m=measure(p,net);
         for(const auto& q:points)if(q.m.area<=m.area && q.m.delay<=m.delay &&
             (q.m.area<m.area || q.m.delay<m.delay || q.m.gates<=m.gates))return false;
         points.erase(std::remove_if(points.begin(),points.end(),[&](const Point& q){
@@ -35,6 +38,13 @@ struct Archive {
         for(const auto& q:points)if(auto n=f.accept(q.m.area,q.m.delay,q.net.gates.size()))*n=q.net;
         return f.take_compromise();
     }
+    void log_frontier(const char* input, const std::string& strategy) const {
+        const std::string path=envs("TTC_FRONTIER_LOG","");
+        if (path.empty()) return;
+        std::ofstream log(path,std::ios::app);
+        for (const auto& q:points) log<<input<<','<<strategy<<','<<q.source<<','
+            <<q.m.area<<','<<q.m.delay<<','<<(q.m.delay<=p.target)<<'\n';
+    }
 };
 }
 int main(int argc,char** argv){
@@ -45,6 +55,23 @@ int main(int argc,char** argv){
         Problem p=read_problem(input);
         budget.configure(p.runtime_ms,p.ram_kb,envi("TTC_RESEARCH_MS",0));
         const std::string seed_profile = envs("TTC_INITIAL_SEED", "");
+        const std::string seed_profiles=envs("TTC_INITIAL_SEEDS","");
+        if (!seed_profiles.empty()) {
+            if (!seed_profile.empty())
+                throw std::invalid_argument("specify either TTC_INITIAL_SEEDS or TTC_INITIAL_SEED");
+            const auto profiles=portfolio_profiles(seed_profiles);
+            Archive archive{p,{}};
+            const auto completed=run_seed_portfolio(p,profiles,budget,[&](Netlist n,const std::string& label){
+                archive.accept_measured(std::move(n),label);
+            });
+            auto result=archive.choose();
+            write_result(argv[2],p.n,result);
+            const auto metrics=measure(p,result);
+            std::cerr<<"strategy=seed-portfolio completed="<<completed<<'/'<<profiles.size()
+                     <<" frontier="<<archive.points.size()<<" area="<<metrics.area<<" delay="<<metrics.delay<<'\n';
+            archive.log_frontier(argv[1],"seed-portfolio");
+            return 0;
+        }
         if (!seed_profile.empty()) {
             auto trial = run_seed_trial(p, seed_profile, budget);
             Metrics final;
@@ -95,12 +122,7 @@ int main(int argc,char** argv){
                 log<<argv[1]<<','<<strategy<<','<<op.first<<','<<r.units<<','<<r.predicted_ms
                    <<','<<r.actual_ms<<','<<r.underestimated<<'\n';
         }
-        const std::string frontier=envs("TTC_FRONTIER_LOG","");
-        if(!frontier.empty()){
-            std::ofstream log(frontier,std::ios::app);
-            for(const auto& q:archive.points)log<<argv[1]<<','<<strategy<<','<<q.source<<','
-                <<q.m.area<<','<<q.m.delay<<','<<(q.m.delay<=p.target)<<'\n';
-        }
+        archive.log_frontier(argv[1],strategy);
     }catch(const std::exception& e){std::cerr<<"solver: "<<e.what()<<'\n';return 1;}
     return 0;
 }
