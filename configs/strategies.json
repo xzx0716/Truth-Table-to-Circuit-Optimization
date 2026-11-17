@@ -1,0 +1,55 @@
+{
+  "baseline": {},
+  "algebraic": {
+    "TTC_STRATEGY": "greedy",
+    "TTC_CUT": "0",
+    "TTC_ROUNDS": "2"
+  },
+  "greedy": {
+    "TTC_STRATEGY": "greedy",
+    "TTC_CUT": "4",
+    "TTC_ROUNDS": "2"
+  },
+  "beam": {
+    "TTC_STRATEGY": "beam",
+    "TTC_CUT": "4",
+    "TTC_BEAM": "4",
+    "TTC_ROUNDS": "3"
+  },
+  "anneal": {
+    "TTC_STRATEGY": "anneal",
+    "TTC_CUT": "4",
+    "TTC_ROUNDS": "4"
+  },
+  "multistart": {
+    "TTC_STRATEGY": "multistart",
+    "TTC_CUT": "4",
+    "TTC_RESTARTS": "3",
+    "TTC_ROUNDS": "3"
+  },
+  "portfolio": {
+    "TTC_STRATEGY": "portfolio",
+    "TTC_CUT": "4",
+    "TTC_ROUNDS": "3"
+  },
+  "cut2": {
+    "TTC_STRATEGY": "greedy",
+    "TTC_CUT": "2",
+    "TTC_ROUNDS": "2"
+  },
+  "cut6": {
+    "TTC_STRATEGY": "greedy",
+    "TTC_CUT": "6",
+    "TTC_ROUNDS": "3"
+  },
+  "cut8": {
+    "TTC_STRATEGY": "greedy",
+    "TTC_CUT": "8",
+    "TTC_ROUNDS": "4"
+  },
+  "cut10": {
+    "TTC_STRATEGY": "greedy",
+    "TTC_CUT": "10",
+    "TTC_ROUNDS": "4"
+  }
+}

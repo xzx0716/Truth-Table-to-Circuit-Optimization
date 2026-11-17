@@ -17,8 +17,9 @@ public:
         reserve_=limit_>0?std::max(5.0,limit_*0.10):0;
     }
     double elapsed_ms() const {return std::chrono::duration<double,std::milli>(Clock::now()-start_).count();}
-    double remaining_ms() const {return limit_>0?std::max(0.0,limit_-reserve_-elapsed_ms()):1e100;}
-    bool should_stop() const {return remaining_ms()<=0;}
+    double remaining_ms() const {double r=limit_>0?limit_-reserve_-elapsed_ms():1e100; if(work_deadline_>0)r=std::min(r,work_deadline_-elapsed_ms());return std::max(0.0,r);}
+    bool should_stop() const;
+    void cap_work(double ms) {if(ms>0) work_deadline_=elapsed_ms()+ms;}
     bool can_start(const std::string& operation,double units) const;
     double predict(const std::string& operation,double units) const;
     void observe(const std::string& operation,double units,double predicted,double actual);
@@ -26,7 +27,7 @@ public:
     void reserve_for_output(double ms) {reserve_=std::max(reserve_,ms);}
     long long ram_kb() const {return ram_kb_;}
 private:
-    Clock::time_point start_; double limit_=0,reserve_=0; long long ram_kb_=0;
+    Clock::time_point start_; double limit_=0,reserve_=0,work_deadline_=0; long long ram_kb_=0;
     std::map<std::string,double> rates_;
     std::map<std::string,std::vector<CostRecord>> records_;
 };

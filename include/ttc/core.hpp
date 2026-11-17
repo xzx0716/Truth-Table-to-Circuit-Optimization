@@ -30,6 +30,7 @@ struct Problem {
     std::string table;
     std::array<int, 3> area, delay;
     int target;
+    long long runtime_ms=0, ram_kb=0;
 };
 
 inline Problem read_problem(std::istream& in) {
@@ -62,6 +63,7 @@ inline Problem read_problem(std::istream& in) {
         long long limit;
         if (!(in >> limit) || limit < 0)
             throw std::runtime_error("invalid runtime or RAM limit");
+        (i == 0 ? p.runtime_ms : p.ram_kb) = limit;
     }
     in >> std::ws;
     if (!in.eof()) throw std::runtime_error("extra input after limits");
@@ -540,21 +542,25 @@ inline void remap_area(const Problem& p, const Netlist& best, Frontier& frontier
     circuit.consider(outputs, frontier);
 }
 
-inline Netlist synthesize(const Problem& p) {
+inline Netlist synthesize(const Problem& p, const std::function<bool()>& stop = {}) {
     Frontier frontier(p.target);
     BDD bdd(p, false);
     std::vector<Id> roots;
     for (int j = 0; j < p.m; ++j) roots.push_back(bdd.build(j, 0, 0));
 
+    bool has_seed=false;
     auto consider_widths = [&](Mapping mapping, const std::vector<int>& widths) {
         Circuit circuit(p, mapping);
         std::vector<Id> memo(bdd.nodes.size(), -1);
         // Every output in this circuit can reuse identical selection conditions.
         std::unordered_map<unsigned, Id> selector_cache;
         for (int width : widths) {
+            if (has_seed && stop && stop()) break;
             std::vector<Id> outputs;
             for (Id root : roots) outputs.push_back(bdd.map_top_block(root, circuit, memo, width, selector_cache));
             circuit.consider(outputs, frontier);
+            has_seed=true;
+            if (stop && stop()) break;
             Circuit balanced(p, Direct);
             auto balanced_outputs = circuit.balance(balanced, outputs);
             balanced.consider(balanced_outputs, frontier);
@@ -565,6 +571,7 @@ inline Netlist synthesize(const Problem& p) {
     bool replace_or_first = p.delay[AND2] + 2LL * p.delay[NOT] < p.delay[OR2];
     Mapping first = replace_or_first ? ReplaceOr : Direct;
     consider_widths(first, {4});
+    if (stop && stop()) return frontier.take_compromise();
     if (!frontier.feasible()) consider_widths(replace_or_first ? Direct : ReplaceOr, {4});
 
     // De Morgan replacement is a promising area candidate when its individual
@@ -583,14 +590,15 @@ inline Netlist synthesize(const Problem& p) {
     // Small circuits can often share more gates with just two selector inputs.
     if (wide > 2 && frontier.smallest().netlist.gates.size() < 1000) widths.push_back(2);
     consider_widths(area_mapping, widths);
+    if (stop && stop()) return frontier.take_compromise();
     // Keep the fastest seed alive as new entries can replace it in the frontier.
     Candidate fast_seed = frontier.fastest();
     remap_area(p, frontier.smallest().netlist, frontier, p.target);
-    if (frontier.feasible() && frontier.smallest().delay > fast_seed.delay) {
+    if ((!stop || !stop()) && frontier.feasible() && frontier.smallest().delay > fast_seed.delay) {
         // Try recovering area at the current speed and halfway to the area endpoint.
         const Score midpoint = fast_seed.delay + (frontier.smallest().delay - fast_seed.delay) / 2;
         remap_area(p, fast_seed.netlist, frontier, fast_seed.delay);
-        if (midpoint > fast_seed.delay) remap_area(p, fast_seed.netlist, frontier, midpoint);
+        if ((!stop || !stop()) && midpoint > fast_seed.delay) remap_area(p, fast_seed.netlist, frontier, midpoint);
     }
     return frontier.take_compromise();
 }
