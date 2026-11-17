@@ -1,0 +1,62 @@
+[
+  {
+    "strategy": "cut10",
+    "cases": 25,
+    "all_pass_cases": 12,
+    "all_target_met_cases": 12,
+    "ad_frontier_cases": 12,
+    "adr_median_frontier_cases": 0,
+    "area_sum_descriptive": 681871.0,
+    "runtime_case_median_ms": 1650.5230000000001
+  },
+  {
+    "strategy": "cut2",
+    "cases": 25,
+    "all_pass_cases": 19,
+    "all_target_met_cases": 19,
+    "ad_frontier_cases": 12,
+    "adr_median_frontier_cases": 19,
+    "area_sum_descriptive": 721642.0,
+    "runtime_case_median_ms": 127.975
+  },
+  {
+    "strategy": "cut4",
+    "cases": 25,
+    "all_pass_cases": 18,
+    "all_target_met_cases": 18,
+    "ad_frontier_cases": 12,
+    "adr_median_frontier_cases": 1,
+    "area_sum_descriptive": 721371.0,
+    "runtime_case_median_ms": 227.72250000000003
+  },
+  {
+    "strategy": "cut6",
+    "cases": 25,
+    "all_pass_cases": 18,
+    "all_target_met_cases": 18,
+    "ad_frontier_cases": 13,
+    "adr_median_frontier_cases": 1,
+    "area_sum_descriptive": 721369.0,
+    "runtime_case_median_ms": 428.8885
+  },
+  {
+    "strategy": "cut8",
+    "cases": 25,
+    "all_pass_cases": 18,
+    "all_target_met_cases": 18,
+    "ad_frontier_cases": 18,
+    "adr_median_frontier_cases": 5,
+    "area_sum_descriptive": 721360.0,
+    "runtime_case_median_ms": 830.6605
+  },
+  {
+    "strategy": "portfolio",
+    "cases": 25,
+    "all_pass_cases": 12,
+    "all_target_met_cases": 12,
+    "ad_frontier_cases": 10,
+    "adr_median_frontier_cases": 0,
+    "area_sum_descriptive": 681875.0,
+    "runtime_case_median_ms": 2054.2165
+  }
+]

@@ -3,7 +3,7 @@
 #include <sstream>
 using namespace ttc;
 #ifndef TTC_DEFAULT_STRATEGY
-#define TTC_DEFAULT_STRATEGY "baseline"
+#define TTC_DEFAULT_STRATEGY "sweep"
 #endif
 namespace {
 std::string envs(const char* key,const std::string& def){const char* v=std::getenv(key);return v?v:def;}
@@ -47,7 +47,7 @@ int main(int argc,char** argv){
         budget.cap_work(envi("TTC_SEARCH_MS",100));
         if(strategy!="baseline" && !budget.should_stop()){
             SearchOptions opt;opt.strategy=strategy;
-            opt.max_cut=envi("TTC_CUT",4);opt.rounds=envi("TTC_ROUNDS",2);
+            opt.max_cut=envi("TTC_CUT",4);opt.rounds=envi("TTC_ROUNDS",strategy=="sweep"?16:2);
             opt.beam_width=envi("TTC_BEAM",4);opt.restarts=envi("TTC_RESTARTS",3);
             opt.max_regions=std::max(0,envi("TTC_REGIONS",0));
             opt.random_seed=static_cast<unsigned>(envi("TTC_SEED",2106));

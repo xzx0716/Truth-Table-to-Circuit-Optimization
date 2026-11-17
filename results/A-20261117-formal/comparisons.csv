@@ -1,0 +1,66 @@
+case,a,b,a_dominates_b_ad,b_dominates_a_ad,a_dominates_b_adr_median,b_dominates_a_adr_median,runtime_ranges_overlap,runtime_interpretation
+case_001.txt,adaptive,algebraic,False,False,False,True,False,observed ranges separated
+case_001.txt,adaptive,baseline,False,False,False,True,False,observed ranges separated
+case_001.txt,algebraic,baseline,False,False,False,True,False,observed ranges separated
+case_002.txt,adaptive,algebraic,False,False,False,True,False,observed ranges separated
+case_002.txt,adaptive,baseline,False,False,False,True,False,observed ranges separated
+case_002.txt,algebraic,baseline,False,False,False,True,False,observed ranges separated
+case_003.txt,adaptive,algebraic,False,False,False,True,True,difference unresolved
+case_003.txt,adaptive,baseline,True,False,False,False,False,observed ranges separated
+case_003.txt,algebraic,baseline,True,False,False,False,False,observed ranges separated
+case_004.txt,adaptive,algebraic,False,False,False,True,False,observed ranges separated
+case_004.txt,adaptive,baseline,False,False,False,True,False,observed ranges separated
+case_004.txt,algebraic,baseline,False,False,False,True,False,observed ranges separated
+case_005.txt,adaptive,algebraic,False,False,False,True,False,observed ranges separated
+case_005.txt,adaptive,baseline,False,False,False,False,False,observed ranges separated
+case_005.txt,algebraic,baseline,False,False,False,False,False,observed ranges separated
+case_006.txt,adaptive,algebraic,False,False,False,True,False,observed ranges separated
+case_006.txt,adaptive,baseline,False,False,False,True,False,observed ranges separated
+case_006.txt,algebraic,baseline,False,False,False,True,False,observed ranges separated
+case_007.txt,adaptive,algebraic,False,False,True,False,True,difference unresolved
+case_007.txt,adaptive,baseline,False,False,False,True,True,difference unresolved
+case_007.txt,algebraic,baseline,False,False,False,True,True,difference unresolved
+case_008.txt,adaptive,algebraic,False,False,False,True,False,observed ranges separated
+case_008.txt,adaptive,baseline,False,False,False,True,False,observed ranges separated
+case_008.txt,algebraic,baseline,False,False,False,True,False,observed ranges separated
+case_009.txt,adaptive,algebraic,False,False,False,True,False,observed ranges separated
+case_009.txt,adaptive,baseline,False,False,False,True,False,observed ranges separated
+case_009.txt,algebraic,baseline,False,False,False,True,False,observed ranges separated
+case_010.txt,adaptive,algebraic,False,False,False,True,False,observed ranges separated
+case_010.txt,adaptive,baseline,True,False,False,False,False,observed ranges separated
+case_010.txt,algebraic,baseline,True,False,False,False,True,difference unresolved
+case_011.txt,adaptive,algebraic,False,False,False,True,False,observed ranges separated
+case_011.txt,adaptive,baseline,True,False,False,False,False,observed ranges separated
+case_011.txt,algebraic,baseline,True,False,False,False,False,observed ranges separated
+case_012.txt,adaptive,algebraic,False,False,False,True,False,observed ranges separated
+case_012.txt,adaptive,baseline,False,False,False,True,False,observed ranges separated
+case_012.txt,algebraic,baseline,False,False,False,True,False,observed ranges separated
+case_013.txt,adaptive,algebraic,False,False,False,True,True,difference unresolved
+case_013.txt,adaptive,baseline,False,False,False,True,False,observed ranges separated
+case_013.txt,algebraic,baseline,False,False,False,True,False,observed ranges separated
+case_014.txt,adaptive,algebraic,False,False,False,True,False,observed ranges separated
+case_014.txt,adaptive,baseline,True,False,False,False,False,observed ranges separated
+case_014.txt,algebraic,baseline,True,False,False,False,True,difference unresolved
+case_015.txt,adaptive,algebraic,False,False,False,True,True,difference unresolved
+case_015.txt,adaptive,baseline,True,False,False,False,False,observed ranges separated
+case_015.txt,algebraic,baseline,True,False,False,False,False,observed ranges separated
+case_016.txt,adaptive,algebraic,False,False,False,True,False,observed ranges separated
+case_016.txt,adaptive,baseline,False,False,False,True,False,observed ranges separated
+case_016.txt,algebraic,baseline,False,False,False,True,False,observed ranges separated
+case_017.txt,algebraic,baseline,False,False,False,True,False,observed ranges separated
+case_018.txt,algebraic,baseline,True,False,False,False,False,observed ranges separated
+case_019.txt,adaptive,algebraic,False,False,False,True,False,observed ranges separated
+case_019.txt,adaptive,baseline,False,False,False,True,False,observed ranges separated
+case_019.txt,algebraic,baseline,False,False,False,True,True,difference unresolved
+case_020.txt,adaptive,baseline,True,False,False,False,False,observed ranges separated
+case_021.txt,adaptive,baseline,True,False,False,False,False,observed ranges separated
+case_022.txt,adaptive,algebraic,False,False,False,True,False,observed ranges separated
+case_022.txt,adaptive,baseline,True,False,False,False,False,observed ranges separated
+case_022.txt,algebraic,baseline,True,False,False,False,False,observed ranges separated
+case_023.txt,algebraic,baseline,True,False,False,False,False,observed ranges separated
+case_024.txt,adaptive,algebraic,False,False,True,False,True,difference unresolved
+case_024.txt,adaptive,baseline,False,False,False,True,False,observed ranges separated
+case_024.txt,algebraic,baseline,False,False,False,True,False,observed ranges separated
+case_025.txt,adaptive,algebraic,False,False,False,True,True,difference unresolved
+case_025.txt,adaptive,baseline,False,False,False,True,False,observed ranges separated
+case_025.txt,algebraic,baseline,False,False,False,True,False,observed ranges separated

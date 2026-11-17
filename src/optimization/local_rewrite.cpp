@@ -312,6 +312,27 @@ void neighbours(const Problem& p,const State& state,RuntimeBudget& budget,const 
 void run_local_rewrite(const Problem& p,const Netlist& seed,RuntimeBudget& budget,const CandidateSink& sink,const SearchOptions& options) {
     if(seed.outputs.empty()||budget.should_stop()||options.rounds<=0||!memory_allowed(budget))return;
     State initial{normalize(p,seed),{},0};initial.metrics=measure(p,initial.net);initial.hash=fingerprint(initial.net);
+    if(options.strategy=="sweep"){
+        // Deterministic production path: a complete verified algebraic pass,
+        // repeated to convergence or the explicit iteration/time budget.
+        State current=std::move(initial);
+        for(int round=0;round<options.rounds&&!budget.should_stop();++round){
+            double units=current.net.gates.size()+1;
+            if(!budget.can_start("algebraic-sweep",units))break;
+            auto start=RuntimeBudget::Clock::now();double predicted=budget.predict("algebraic-sweep",units);
+            auto next=algebraic_sweep(p,current.net,budget);
+            double actual=std::chrono::duration<double,std::milli>(RuntimeBudget::Clock::now()-start).count();
+            budget.observe("algebraic-sweep",units,predicted,actual);
+            if(next.outputs.empty())break;
+            auto hash=fingerprint(next);if(hash==current.hash)break;
+            auto metrics=measure(p,next);sink(Netlist(next),"sweep:algebraic-sweep");
+            // The full metrics guard keeps this production walk monotone even
+            // when local removal estimates encounter cross-region sharing.
+            if(metrics.area>current.metrics.area||metrics.delay>current.metrics.delay)break;
+            current={std::move(next),metrics,hash};
+        }
+        return;
+    }
     std::mt19937 rng(options.random_seed);std::unordered_set<std::uint64_t> emitted;TemplateCache cache;
     const bool anneal=options.strategy=="anneal",beam=options.strategy=="beam",multi=options.strategy=="multistart";
     int restarts=multi?std::max(1,options.restarts):1;

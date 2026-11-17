@@ -84,7 +84,9 @@ def analyze(path, out):
             "all_target_met_cases": sum(r["all_target_met"] and r["all_pass"] for r in rows),
             "ad_frontier_cases": sum(r["ad_nondominated"] for r in rows),
             "adr_median_frontier_cases": sum(r["adr_median_nondominated"] for r in rows),
-            "area_sum_descriptive": sum(r["area"] for r in good),
+            "stable_metric_cases": len(good),
+            "area_sum_descriptive": sum(r["area"] for r in good) if len(good)==len(rows) else None,
+            "area_sum_stable_subset": sum(r["area"] for r in good),
             "runtime_case_median_ms": statistics.median(r["runtime_median_ms"] for r in good) if good else None})
     (out / "strategy_summary.json").write_text(json.dumps(strategy_summary, indent=2) + "\n")
     notes = ["# Repeated-run analysis", "",

@@ -1,0 +1,32 @@
+[
+  {
+    "strategy": "adaptive",
+    "cases": 25,
+    "all_pass_cases": 25,
+    "all_target_met_cases": 25,
+    "ad_frontier_cases": 22,
+    "adr_median_frontier_cases": 2,
+    "area_sum_descriptive": 724871.0,
+    "runtime_case_median_ms": 52.2885
+  },
+  {
+    "strategy": "algebraic",
+    "cases": 25,
+    "all_pass_cases": 25,
+    "all_target_met_cases": 25,
+    "ad_frontier_cases": 23,
+    "adr_median_frontier_cases": 9,
+    "area_sum_descriptive": 665539.0,
+    "runtime_case_median_ms": 29.179
+  },
+  {
+    "strategy": "baseline",
+    "cases": 25,
+    "all_pass_cases": 25,
+    "all_target_met_cases": 25,
+    "ad_frontier_cases": 15,
+    "adr_median_frontier_cases": 25,
+    "area_sum_descriptive": 728930.0,
+    "runtime_case_median_ms": 14.688
+  }
+]

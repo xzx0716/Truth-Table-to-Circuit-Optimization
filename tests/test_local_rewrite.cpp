@@ -48,6 +48,16 @@ int main(){
         verify(p,batch,out);++checked;
         if(tag.find("algebraic-sweep")!=std::string::npos){assert(measure(p,out).area<=4);swept=true;}
     },bo);assert(swept);
+    RuntimeBudget sb;sb.configure(1000);SearchOptions so;so.strategy="sweep";so.rounds=10;
+    Score sweeparea=measure(p,batch).area;int sweeps=0;
+    run_local_rewrite(p,batch,sb,[&](Netlist out,const std::string& tag){
+        assert(tag=="sweep:algebraic-sweep");verify(p,batch,out);
+        sweeparea=std::min(sweeparea,measure(p,out).area);++sweeps;++checked;
+    },so);assert(sweeparea<=4&&sweeps>0);
+    RuntimeBudget stable;stable.configure(1000);int duplicate=0;
+    Netlist stable_seed{{{OR2,1,2,1},{AND2,5,3,2}}, {5,6}};
+    run_local_rewrite(p,stable_seed,stable,[&](Netlist,const std::string&){++duplicate;},so);
+    assert(duplicate==0&&stable.records().at("algebraic-sweep").size()==1);
     // Generic exact library is active, independently of Shannon candidate generation.
     RuntimeBudget tb;tb.configure(1000);SearchOptions to;to.max_cut=2;to.rounds=1;
     bool templated=false;

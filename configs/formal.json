@@ -1,0 +1,17 @@
+{
+  "baseline": {
+    "TTC_STRATEGY": "baseline"
+  },
+  "algebraic": {
+    "TTC_STRATEGY": "greedy",
+    "TTC_CUT": "0",
+    "TTC_SEARCH_MS": "15",
+    "TTC_ROUNDS": "2"
+  },
+  "adaptive": {
+    "TTC_STRATEGY": "portfolio",
+    "TTC_CUT": "4",
+    "TTC_SEARCH_MS": "30",
+    "TTC_ROUNDS": "3"
+  }
+}

@@ -1,0 +1,451 @@
+{
+  "started_utc": "2026-11-17T12:10:21.770230+00:00",
+  "command": [
+    "tools/run_experiments.py",
+    "--solver",
+    "baseline=build/solver",
+    "--profile",
+    "baseline=baseline",
+    "--solver",
+    "algebraic=build/solver",
+    "--profile",
+    "algebraic=greedy",
+    "--env",
+    "algebraic:TTC_CUT=0",
+    "--env",
+    "algebraic:TTC_SEARCH_MS=20",
+    "--env",
+    "algebraic:TTC_ROUNDS=3",
+    "--solver",
+    "deep=build/solver",
+    "--profile",
+    "deep=portfolio",
+    "--env",
+    "deep:TTC_CUT=10",
+    "--env",
+    "deep:TTC_SEARCH_MS=3000",
+    "--env",
+    "deep:TTC_RESEARCH_MS=8000",
+    "--env",
+    "deep:TTC_ROUNDS=16",
+    "--env",
+    "deep:TTC_BEAM=16",
+    "--env",
+    "deep:TTC_RESTARTS=16",
+    "--cases",
+    "artifacts/research-cases",
+    "--out",
+    "results/A-20261117-research-deep",
+    "--rounds",
+    "1",
+    "--warmup",
+    "0",
+    "--save-outputs",
+    "--build-command",
+    "make"
+  ],
+  "machine": {
+    "system": "Linux",
+    "node": "Initial",
+    "release": "6.6.87.2-microsoft-standard-WSL2",
+    "version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+    "machine": "x86_64",
+    "processor": "x86_64"
+  },
+  "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+  "compiler": {
+    "returncode": 0,
+    "stdout": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "stderr": ""
+  },
+  "build_command": "make",
+  "source_start": {
+    "files": {
+      "configs/research-inputs.json": "d49b0e3d7fd69d69bd81526aef1406d414679cd691512d0288fe8a5be1ec34bb",
+      "configs/scale.json": "937cd6aa8520a0268e9c5c4ceb20f0c09ba97d59a94d87212e1fcfa4064fe3ae",
+      "configs/strategies.json": "2e0a01c927cbd86d60adc3d797d17a7c70599c5c5387c2b18a9c49cc1ad50473",
+      "include/ttc/core.hpp": "de264c7f254dd3fb3ff8ed68a3a854c3209d63fd81e55a6a82f11c47b6d1d521",
+      "include/ttc/generated_templates.hpp": "f6a577432bcc3a3f83d9e6164388c77f7150014ec7dc0c276f8a14d4d8ac2f5c",
+      "include/ttc/optimization_api.hpp": "672d54588469874b74cb2b1a4e56b9f0f7dc5bed0efe109ea18c8afaf26717a7",
+      "src/main.cpp": "a02d588ed8fdd18717f2534ba2669aa8aa33916910dd735dec907678a1b9b212",
+      "src/optimization/budget.cpp": "0cadfb2458a6ce63d3a86f64e472e7833cb7a7a0b046332f1cadd06c8806dcfe",
+      "src/optimization/local_rewrite.cpp": "1078f17d5025c4b28a1eccabb8b8d492fccec2fdb69dc458622fc68a338d6c9d"
+    },
+    "tree_sha256": "1b7ab2d4a3773f6fd5c3b8f293be1745704519da287e7294a9d7916b5133ea62",
+    "commit": {
+      "returncode": 0,
+      "stdout": "e86119fd451955481bdc243655f73bf37b038330\n",
+      "stderr": ""
+    },
+    "status": {
+      "returncode": 0,
+      "stdout": "?? configs/research-inputs.json\n?? configs/scale.json\n?? docs/local-search.md\n?? results/A-20261117-scale/\n",
+      "stderr": ""
+    }
+  },
+  "solvers": {
+    "baseline": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/build/solver",
+      "sha256": "f7ac06b3ed2362a574a2c5d15dd15fc0c1a9a83bfcc56be53ddcb59f01dad035",
+      "environment": {
+        "TTC_STRATEGY": "baseline"
+      }
+    },
+    "algebraic": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/build/solver",
+      "sha256": "f7ac06b3ed2362a574a2c5d15dd15fc0c1a9a83bfcc56be53ddcb59f01dad035",
+      "environment": {
+        "TTC_STRATEGY": "greedy",
+        "TTC_CUT": "0",
+        "TTC_SEARCH_MS": "20",
+        "TTC_ROUNDS": "3"
+      }
+    },
+    "deep": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/build/solver",
+      "sha256": "f7ac06b3ed2362a574a2c5d15dd15fc0c1a9a83bfcc56be53ddcb59f01dad035",
+      "environment": {
+        "TTC_STRATEGY": "portfolio",
+        "TTC_CUT": "10",
+        "TTC_SEARCH_MS": "3000",
+        "TTC_RESEARCH_MS": "8000",
+        "TTC_ROUNDS": "16",
+        "TTC_BEAM": "16",
+        "TTC_RESTARTS": "16"
+      }
+    }
+  },
+  "evaluator": {
+    "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/data/local/evaluator",
+    "sha256": "142361d7ce18bc47dea6a07538db79a588b3afbf446526c1d1246f4968b3d0ca"
+  },
+  "inputs": {
+    "case_001.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_001.txt",
+      "sha256": "9250f7c856b1d623ab3d105dad29b6033749bfddcae6a88a4688dfe5683fd236",
+      "n": 15,
+      "m": 14,
+      "target_delay": 77,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_002.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_002.txt",
+      "sha256": "5069d8d3d430472066dc24903da084a8c3b0addfb041b6229e20f37eb85354f0",
+      "n": 14,
+      "m": 14,
+      "target_delay": 61,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_003.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_003.txt",
+      "sha256": "1892f8621309a2ccc2f1e94045bc0b145364fa621fa839961db24869f3fc69a2",
+      "n": 14,
+      "m": 14,
+      "target_delay": 64,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_004.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_004.txt",
+      "sha256": "e641a738ca65712830cbc2ec4b70881bb1140500fec8c3a1edeab9fe8205d4ea",
+      "n": 13,
+      "m": 10,
+      "target_delay": 57,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_005.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_005.txt",
+      "sha256": "394723ed974477f1a76493fa242e0a58babca6f8e97c5e982b4964375a32778b",
+      "n": 8,
+      "m": 5,
+      "target_delay": 36,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_006.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_006.txt",
+      "sha256": "d4d096dbce2d4f79c6313c0008eca9d237366cc6cf6e134c16aac820ac9da60e",
+      "n": 12,
+      "m": 12,
+      "target_delay": 60,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_007.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_007.txt",
+      "sha256": "f554184ec1cde03243aa47efe6e99caf74977626aeb35fb5dd4aa55513656ecb",
+      "n": 20,
+      "m": 15,
+      "target_delay": 89,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_008.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_008.txt",
+      "sha256": "131060e9408854c28deb3354167da3d8c61a2c86a173e7964f819bf372225279",
+      "n": 12,
+      "m": 12,
+      "target_delay": 62,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_009.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_009.txt",
+      "sha256": "63e97bd70e5babb7dec32873c1bbbdaedccda5d84095c60686047973c80da55f",
+      "n": 12,
+      "m": 6,
+      "target_delay": 59,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_010.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_010.txt",
+      "sha256": "0ba03c156d8a06cdf40d71c1086609d2681bed1109e0cd36a729e0fe54289f25",
+      "n": 19,
+      "m": 8,
+      "target_delay": 61,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_011.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_011.txt",
+      "sha256": "503c9569f044b6490d28acb657a3856892cd1865ba27d98dc8b4eb06ab01768a",
+      "n": 10,
+      "m": 5,
+      "target_delay": 40,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_012.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_012.txt",
+      "sha256": "f3aefb41ce56462260eebb2172b4b6de07a66e0b0faf8a6820d0b956e3dedc9a",
+      "n": 10,
+      "m": 10,
+      "target_delay": 40,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_013.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_013.txt",
+      "sha256": "296c57ed28e09c591c1f5db08e469c3032bf578b01f75536d7620e27310044a3",
+      "n": 14,
+      "m": 14,
+      "target_delay": 70,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_014.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_014.txt",
+      "sha256": "fe8e851986d700d5f5b1b7ecfde976d5097cc44896eb82233a83e6e4d6c1907b",
+      "n": 20,
+      "m": 8,
+      "target_delay": 72,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_015.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_015.txt",
+      "sha256": "910ca3625692228fd2bb7242d97f176ca78f00af35368791b0d104950f02ce63",
+      "n": 16,
+      "m": 16,
+      "target_delay": 81,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_016.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_016.txt",
+      "sha256": "2c421e70a342894f1f5e6a2a52bebd39457dd8d97fb15bb6dc29e9476020c1cd",
+      "n": 10,
+      "m": 5,
+      "target_delay": 47,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_017.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_017.txt",
+      "sha256": "3f0ed468fbd2baa945b2916952baf321179ebccddd3bdd3c98b453f899178dec",
+      "n": 13,
+      "m": 12,
+      "target_delay": 25,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_018.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_018.txt",
+      "sha256": "c71799b2715b81de594f7bfc446fb55418c65fa782e8c6ce4829ddf5fbc01824",
+      "n": 12,
+      "m": 12,
+      "target_delay": 32,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_019.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_019.txt",
+      "sha256": "7ba8a6e8bbb678aee14ed833843b68016e651797311a8e7807df9678b9cded77",
+      "n": 18,
+      "m": 8,
+      "target_delay": 73,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_020.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_020.txt",
+      "sha256": "1aa0e8676af81f3d8031338590c749ac717cffd93b8ade7085ca557a48dae69a",
+      "n": 8,
+      "m": 8,
+      "target_delay": 35,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_021.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_021.txt",
+      "sha256": "2da16d5c169a4390c7fa5ec103bf6e0cc8d7834f47f10faf752a0814f329fd4e",
+      "n": 15,
+      "m": 14,
+      "target_delay": 72,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_022.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_022.txt",
+      "sha256": "68e71891eb37b93429fcaf240373c6dc65da0f30753e0a5f9452fcbf5ae6cbd8",
+      "n": 8,
+      "m": 16,
+      "target_delay": 34,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_023.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_023.txt",
+      "sha256": "0d90757ee971795fff83a7732741f2b8d27206f7814e18cb02f6fd7c62967e14",
+      "n": 8,
+      "m": 4,
+      "target_delay": 24,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_024.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_024.txt",
+      "sha256": "de0843ff12670ce6de4943bfcc4b65adcc2ba0d884a870077ab1fe03c0f3aeb7",
+      "n": 18,
+      "m": 8,
+      "target_delay": 83,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    },
+    "case_025.txt": {
+      "path": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases/case_025.txt",
+      "sha256": "fd48a5758d6cfdfbefec223df0c46e71c1f672e6fedeab513e9f87a8c2c15029",
+      "n": 15,
+      "m": 15,
+      "target_delay": 76,
+      "runtime_limit_ms": 10000,
+      "ram_limit_kb": 0
+    }
+  },
+  "rounds": 1,
+  "warmup_rounds": 0,
+  "artifact_directory": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep",
+  "runtime_definition": "official evaluator solver wall-clock runtime_ms; not evaluator elapsed time",
+  "rss_note": "optional separate solver-only /usr/bin/time probe, never evaluator peak RSS",
+  "runs": [
+    {
+      "id": "measured-01-baseline",
+      "phase": "measured",
+      "round": 1,
+      "strategy": "baseline",
+      "command": [
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/data/local/evaluator",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/build/solver",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases",
+        "--report",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-baseline.csv",
+        "--save-outputs",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-baseline-circuits"
+      ],
+      "returncode": 0,
+      "error": null,
+      "evaluator_elapsed_seconds": 10.309991545999992,
+      "report": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-baseline.csv",
+      "stdout": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-baseline.stdout.log",
+      "stderr": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-baseline.stderr.log"
+    },
+    {
+      "id": "measured-01-algebraic",
+      "phase": "measured",
+      "round": 1,
+      "strategy": "algebraic",
+      "command": [
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/data/local/evaluator",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/build/solver",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases",
+        "--report",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-algebraic.csv",
+        "--save-outputs",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-algebraic-circuits"
+      ],
+      "returncode": 0,
+      "error": null,
+      "evaluator_elapsed_seconds": 10.312051580000002,
+      "report": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-algebraic.csv",
+      "stdout": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-algebraic.stdout.log",
+      "stderr": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-algebraic.stderr.log"
+    },
+    {
+      "id": "measured-01-deep",
+      "phase": "measured",
+      "round": 1,
+      "strategy": "deep",
+      "command": [
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/data/local/evaluator",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/build/solver",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/research-cases",
+        "--report",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-deep.csv",
+        "--save-outputs",
+        "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-deep-circuits"
+      ],
+      "returncode": 0,
+      "error": null,
+      "evaluator_elapsed_seconds": 85.670790237,
+      "report": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-deep.csv",
+      "stdout": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-deep.stdout.log",
+      "stderr": "/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/artifacts/A-20261117-research-deep/measured-01-deep.stderr.log"
+    }
+  ],
+  "source_end": {
+    "files": {
+      "configs/research-inputs.json": "d49b0e3d7fd69d69bd81526aef1406d414679cd691512d0288fe8a5be1ec34bb",
+      "configs/scale.json": "937cd6aa8520a0268e9c5c4ceb20f0c09ba97d59a94d87212e1fcfa4064fe3ae",
+      "configs/strategies.json": "2e0a01c927cbd86d60adc3d797d17a7c70599c5c5387c2b18a9c49cc1ad50473",
+      "include/ttc/core.hpp": "de264c7f254dd3fb3ff8ed68a3a854c3209d63fd81e55a6a82f11c47b6d1d521",
+      "include/ttc/generated_templates.hpp": "f6a577432bcc3a3f83d9e6164388c77f7150014ec7dc0c276f8a14d4d8ac2f5c",
+      "include/ttc/optimization_api.hpp": "672d54588469874b74cb2b1a4e56b9f0f7dc5bed0efe109ea18c8afaf26717a7",
+      "src/main.cpp": "a02d588ed8fdd18717f2534ba2669aa8aa33916910dd735dec907678a1b9b212",
+      "src/optimization/budget.cpp": "0cadfb2458a6ce63d3a86f64e472e7833cb7a7a0b046332f1cadd06c8806dcfe",
+      "src/optimization/local_rewrite.cpp": "1078f17d5025c4b28a1eccabb8b8d492fccec2fdb69dc458622fc68a338d6c9d"
+    },
+    "tree_sha256": "1b7ab2d4a3773f6fd5c3b8f293be1745704519da287e7294a9d7916b5133ea62",
+    "commit": {
+      "returncode": 0,
+      "stdout": "e86119fd451955481bdc243655f73bf37b038330\n",
+      "stderr": ""
+    },
+    "status": {
+      "returncode": 0,
+      "stdout": "?? configs/research-inputs.json\n?? configs/scale.json\n?? docs/local-search.md\n?? results/A-20261117-research-deep/\n?? results/A-20261117-scale/\n?? tools/package_submission.py\n",
+      "stderr": ""
+    }
+  },
+  "source_changed_during_run": false,
+  "binary_end_sha256": {
+    "baseline": "f7ac06b3ed2362a574a2c5d15dd15fc0c1a9a83bfcc56be53ddcb59f01dad035",
+    "algebraic": "f7ac06b3ed2362a574a2c5d15dd15fc0c1a9a83bfcc56be53ddcb59f01dad035",
+    "deep": "f7ac06b3ed2362a574a2c5d15dd15fc0c1a9a83bfcc56be53ddcb59f01dad035"
+  },
+  "binary_changed_during_run": false,
+  "finished_utc": "2026-11-17T12:12:10.756794+00:00"
+}

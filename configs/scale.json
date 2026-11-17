@@ -1,0 +1,48 @@
+{
+  "cut2": {
+    "TTC_STRATEGY": "greedy",
+    "TTC_CUT": "2",
+    "TTC_SEARCH_MS": "100",
+    "TTC_ROUNDS": "2",
+    "TTC_RESEARCH_MS": "5000"
+  },
+  "cut4": {
+    "TTC_STRATEGY": "greedy",
+    "TTC_CUT": "4",
+    "TTC_SEARCH_MS": "200",
+    "TTC_ROUNDS": "4",
+    "TTC_RESEARCH_MS": "5000"
+  },
+  "cut6": {
+    "TTC_STRATEGY": "beam",
+    "TTC_CUT": "6",
+    "TTC_SEARCH_MS": "400",
+    "TTC_ROUNDS": "8",
+    "TTC_BEAM": "8",
+    "TTC_RESEARCH_MS": "5000"
+  },
+  "cut8": {
+    "TTC_STRATEGY": "multistart",
+    "TTC_CUT": "8",
+    "TTC_SEARCH_MS": "800",
+    "TTC_ROUNDS": "8",
+    "TTC_RESTARTS": "8",
+    "TTC_RESEARCH_MS": "5000"
+  },
+  "cut10": {
+    "TTC_STRATEGY": "anneal",
+    "TTC_CUT": "10",
+    "TTC_SEARCH_MS": "1600",
+    "TTC_ROUNDS": "16",
+    "TTC_RESEARCH_MS": "5000"
+  },
+  "portfolio": {
+    "TTC_STRATEGY": "portfolio",
+    "TTC_CUT": "6",
+    "TTC_SEARCH_MS": "2000",
+    "TTC_ROUNDS": "8",
+    "TTC_BEAM": "8",
+    "TTC_RESTARTS": "8",
+    "TTC_RESEARCH_MS": "5000"
+  }
+}
