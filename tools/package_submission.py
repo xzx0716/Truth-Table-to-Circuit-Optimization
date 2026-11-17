@@ -4,7 +4,9 @@ from pathlib import Path
 ap=argparse.ArgumentParser();ap.add_argument('--name',default='stage1-person-a');args=ap.parse_args()
 r=Path(__file__).resolve().parents[1];dist=r/'dist';dist.mkdir(exist_ok=True)
 subprocess.run(['python3','tools/export_submission.py','--output','dist/solver.cpp'],cwd=r,check=True)
-files={'solver.cpp':dist/'solver.cpp','README.md':r/'README.md',
+standalone=dist/'README.md'
+standalone.write_text("""# Stage 1: compile and run\n\nUbuntu 22.04 / WSL, GCC with C++17. No external runtime dependencies.\n\n```sh\ng++ -O2 -std=c++17 solver.cpp -o solver\n./solver INPUT_PATH OUTPUT_PATH\n```\n\nREPORT.md contains Method and all25 official case results.\nStage1-Handoff.md explains implementation, experiments and limitations.\nVERSION.json and solver.manifest.json bind the source and package files.\nDEVELOPMENT.md documents the full GitHub checkout; its Makefile/tools commands\napply to the repository checkout, not this standalone package.\n\nDefault sweep preserves all25 delays and reduces area in9 cases.\nFive measured rounds:125/125 PASS; no hidden-case/global optimum claim.\n""",encoding='utf-8')
+files={'solver.cpp':dist/'solver.cpp','README.md':standalone,'DEVELOPMENT.md':r/'README.md',
  'REPORT.md':r/'docs/stage1-report.md','Stage1-Handoff.md':r/'docs/Stage1-Handoff.md',
  'solver.manifest.json':dist/'solver.manifest.json'}
 for folder in ['A-20261117-final-calibrated','A-20261117-final','A-20261117-formal']:
