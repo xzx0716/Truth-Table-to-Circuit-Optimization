@@ -68,3 +68,5 @@ remain separate work. No global-optimal or hidden-case score claim is made.
 ## Download the complete delivery
 
 [Person A Stage 1 release](https://github.com/xzx0716/Truth-Table-to-Circuit-Optimization/releases/tag/person-a-stage1-v2) contains the standalone source, compile README, report, handoff and checksums. Full research evidence is attached to the v1 release linked there. Both releases contain identical algorithm source. This does not submit to the course platform.
+
+[乙的多种子实验、逐例结果与组合启用方法](docs/seed-study.md)

@@ -1,0 +1,10 @@
+[
+  "github",
+  "influence-sop",
+  "forward-pos",
+  "forward-demorgan",
+  "forward-top3",
+  "reverse-top3",
+  "forward-rec3",
+  "forward-adaptive3"
+]

@@ -1,0 +1,11 @@
+profile,eligible,target_met,ad_cases,median_adt_cases,new_ad_cases,robust_time_cases,retained
+github,25,25,20,22,0,0,True
+forward-sop,25,13,0,4,0,0,False
+reverse-sop,25,10,0,7,0,0,False
+influence-sop,25,15,9,18,9,9,True
+forward-pos,25,13,0,6,0,1,True
+forward-demorgan,25,16,0,10,0,9,True
+forward-top3,25,19,1,18,1,10,True
+reverse-top3,25,17,4,12,4,5,True
+forward-rec3,25,22,16,24,16,7,True
+forward-adaptive3,25,14,1,3,1,0,True
