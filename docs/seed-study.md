@@ -25,6 +25,10 @@
 | 递归三变量分组 | 149346 | 63 | 150.427 |
 | 历史条件逆序 | 142588 | 69 | 205.306 |
 
+![case_024 在不同单构造耗时上限下的最小达标面积](seed-quality-cost.svg)
+
+横轴是挑选单个构造时允许的五轮耗时中位数。按本例的课程延迟上限 83，逆序顶层三变量分组在 87.326 ms 达到面积 142318、延迟 79，此后放宽耗时上限也没有更小的达标电路。若要求延迟不超过 GitHub 对照的 69，最小面积在 150.197、150.427、205.306 ms 依次降至 178001、149346、142588。曲线来自 11 个构造的独立实测；组合运行的实际耗时见下一节。安装 Matplotlib 后，在仓库根目录运行 `python3 research/seed_study/plot_quality_cost.py` 可从逐例数据重新绘图。
+
 [各构造及版本来源](../research/seed_study/provenance.md) · [逐例数据](../results/seed-study-linux-20261117/comparison.csv) · [保留清单](../results/seed-study-linux-20261117/retained.json)
 
 ## 一次启动，同时尝试保留下来的构造
