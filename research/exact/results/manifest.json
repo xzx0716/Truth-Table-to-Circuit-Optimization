@@ -1,0 +1,18 @@
+{
+  "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "versions": {
+    "python-sat": "1.8.dev19",
+    "scipy": "1.15.3",
+    "numpy": "2.2.6"
+  },
+  "source_sha256": "a9692dde5cf6516d2108809c14b3d2a7b5e86b718f787c376b106d6e7ced054b",
+  "run_study_sha256": "9cf2a73e8a5272217982dce393d56dd6182d034b46b05a1a8e3310100039752b",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 research/exact/run_study.py --seconds 1.0",
+  "record_count": 74,
+  "test_source_sha256": "2c630dbca10673983b02af8104f1a50af48316856aef97dd7cf322653a9cc312",
+  "test_log_sha256": "87573680dc05ba843bd07a0faa711a03fffb227f3c2edf69b75bdb4c233b7e18",
+  "source_hash_verified": true,
+  "header_generator_sha256": "4a26552127f5f278adea4a6a38255652af1952863b10f270f83492da726d68d8",
+  "generated_header_sha256": "f6a577432bcc3a3f83d9e6164388c77f7150014ec7dc0c276f8a14d4d8ac2f5c"
+}

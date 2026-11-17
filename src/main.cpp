@@ -38,10 +38,12 @@ int main(int argc,char** argv){
         budget.configure(p.runtime_ms,p.ram_kb,envi("TTC_RESEARCH_MS",0));
         const std::string strategy=envs("TTC_STRATEGY",TTC_DEFAULT_STRATEGY);
         const double before=budget.elapsed_ms();
-        Netlist result=synthesize(p,[&](){return budget.should_stop();});
-        budget.observe("base",p.table.size(),0,budget.elapsed_ms()-before);
-        Archive archive{p,{}};archive.accept(result,"base");
+        Archive archive{p,{}};
         CandidateSink sink=[&](Netlist n,const std::string& label){archive.accept(std::move(n),label);};
+        Netlist result=synthesize(p,[&](){return budget.should_stop();},
+            strategy=="baseline"?CandidateSink{}:sink);
+        budget.observe("base",p.table.size(),0,budget.elapsed_ms()-before);
+        archive.accept(result,"base");
         budget.cap_work(envi("TTC_SEARCH_MS",100));
         if(strategy!="baseline" && !budget.should_stop()){
             SearchOptions opt;opt.strategy=strategy;

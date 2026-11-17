@@ -1,0 +1,27 @@
+[
+  {
+    "strategy": "baseline",
+    "returncode": 0,
+    "output": "PASS: 400 generated cases; exhaustive logic, format, area and delay checks\n"
+  },
+  {
+    "strategy": "greedy",
+    "returncode": 0,
+    "output": "PASS: 400 generated cases; exhaustive logic, format, area and delay checks\n"
+  },
+  {
+    "strategy": "beam",
+    "returncode": 0,
+    "output": "PASS: 400 generated cases; exhaustive logic, format, area and delay checks\n"
+  },
+  {
+    "strategy": "anneal",
+    "returncode": 0,
+    "output": "PASS: 400 generated cases; exhaustive logic, format, area and delay checks\n"
+  },
+  {
+    "strategy": "multistart",
+    "returncode": 0,
+    "output": "PASS: 400 generated cases; exhaustive logic, format, area and delay checks\n"
+  }
+]

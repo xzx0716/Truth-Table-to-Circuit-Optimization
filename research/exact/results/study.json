@@ -1,0 +1,5061 @@
+[
+  {
+    "backend": "sat",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": 30,
+    "elapsed_ms": 42.80977799999164,
+    "complete": true,
+    "status": "BOUNDED_UNSAT",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": 30,
+        "variables": 109,
+        "clauses": 125,
+        "solve_ms": 0.3068729999995412
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 1,
+        "delay_bound": 30,
+        "variables": 164,
+        "clauses": 1253,
+        "solve_ms": 0.374746999909803
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": 30,
+        "variables": 228,
+        "clauses": 3185,
+        "solve_ms": 0.7361859999264198
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity2",
+    "gate_limit": 2
+  },
+  {
+    "backend": "milp",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": 30,
+    "elapsed_ms": 577.3385310000094,
+    "complete": true,
+    "status": "BOUNDED_UNSAT",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 18,
+        "constraints": 31,
+        "solve_ms": 15.387448999945263,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 42,
+        "constraints": 358,
+        "solve_ms": 1.1264640000945292,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 75,
+        "constraints": 987,
+        "solve_ms": 3.0843650000633716,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity2",
+    "gate_limit": 2
+  },
+  {
+    "backend": "sat",
+    "n": 2,
+    "max_gates": 4,
+    "delay_bound": 30,
+    "elapsed_ms": 15.174128000012388,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 4,
+      "delay": 3,
+      "gates": 4
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": 30,
+        "variables": 109,
+        "clauses": 125,
+        "solve_ms": 0.5298209999864412
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 1,
+        "delay_bound": 30,
+        "variables": 164,
+        "clauses": 1253,
+        "solve_ms": 0.3718670000125712
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": 30,
+        "variables": 228,
+        "clauses": 3185,
+        "solve_ms": 1.623524999899928
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 3,
+        "delay_bound": 30,
+        "variables": 303,
+        "clauses": 6217,
+        "solve_ms": 1.3723189999836904
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 4,
+        "area_bound": 4,
+        "delay_bound": 30,
+        "variables": 391,
+        "clauses": 10711,
+        "solve_ms": 2.348852000068291
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 4,
+        "area_bound": 3,
+        "delay_bound": 30,
+        "variables": 390,
+        "clauses": 10711,
+        "solve_ms": 1.9542110001111723
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity2",
+    "gate_limit": 4
+  },
+  {
+    "backend": "milp",
+    "n": 2,
+    "max_gates": 4,
+    "delay_bound": 30,
+    "elapsed_ms": 1007.2646040000564,
+    "complete": false,
+    "status": "TIMEOUT_UNKNOWN",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 18,
+        "constraints": 31,
+        "solve_ms": 0.6850590000340162,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 42,
+        "constraints": 358,
+        "solve_ms": 0.7266740000204663,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 75,
+        "constraints": 987,
+        "solve_ms": 1.8406090000553377,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 119,
+        "constraints": 2096,
+        "solve_ms": 327.6514340000176,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "TIMEOUT",
+        "gates_bound": 4,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 176,
+        "constraints": 3929,
+        "solve_ms": 667.0560180000393,
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "mip_gap": null
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity2",
+    "gate_limit": 4
+  },
+  {
+    "backend": "sat",
+    "n": 2,
+    "max_gates": 6,
+    "delay_bound": 30,
+    "elapsed_ms": 34.29106999999476,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 4,
+      "delay": 3,
+      "gates": 4
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": 30,
+        "variables": 109,
+        "clauses": 125,
+        "solve_ms": 0.3257529999700637
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 1,
+        "delay_bound": 30,
+        "variables": 164,
+        "clauses": 1253,
+        "solve_ms": 0.4412700000102632
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": 30,
+        "variables": 228,
+        "clauses": 3185,
+        "solve_ms": 0.6601349999755257
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 3,
+        "delay_bound": 30,
+        "variables": 303,
+        "clauses": 6217,
+        "solve_ms": 1.3166789999559114
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 4,
+        "area_bound": 4,
+        "delay_bound": 30,
+        "variables": 391,
+        "clauses": 10711,
+        "solve_ms": 2.227888999982497
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 4,
+        "area_bound": 3,
+        "delay_bound": 30,
+        "variables": 390,
+        "clauses": 10711,
+        "solve_ms": 1.8488520000801145
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 5,
+        "area_bound": 3,
+        "delay_bound": 30,
+        "variables": 492,
+        "clauses": 17104,
+        "solve_ms": 2.889728000013747
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 6,
+        "area_bound": 3,
+        "delay_bound": 30,
+        "variables": 611,
+        "clauses": 25929,
+        "solve_ms": 4.296418999956586
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity2",
+    "gate_limit": 6
+  },
+  {
+    "backend": "milp",
+    "n": 2,
+    "max_gates": 6,
+    "delay_bound": 30,
+    "elapsed_ms": 1009.1100570000435,
+    "complete": false,
+    "status": "FEASIBLE_NOT_PROVEN",
+    "metrics": {
+      "area": 4,
+      "delay": 3,
+      "gates": 4
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 18,
+        "constraints": 31,
+        "solve_ms": 0.6480810000084603,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 42,
+        "constraints": 358,
+        "solve_ms": 0.6399269999519674,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 75,
+        "constraints": 987,
+        "solve_ms": 1.7387720000670015,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 119,
+        "constraints": 2096,
+        "solve_ms": 293.8522629999625,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 4,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 176,
+        "constraints": 3929,
+        "solve_ms": 624.9160989999609,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      },
+      {
+        "status": "TIMEOUT",
+        "gates_bound": 5,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 248,
+        "constraints": 6808,
+        "solve_ms": 72.72160399998029,
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "mip_gap": null
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity2",
+    "gate_limit": 6
+  },
+  {
+    "backend": "sat",
+    "n": 3,
+    "max_gates": 2,
+    "delay_bound": 30,
+    "elapsed_ms": 3.1729359999417284,
+    "complete": true,
+    "status": "BOUNDED_UNSAT",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": 30,
+        "variables": 161,
+        "clauses": 200,
+        "solve_ms": 0.2808020000202305
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 1,
+        "delay_bound": 30,
+        "variables": 229,
+        "clauses": 2408,
+        "solve_ms": 0.5348570000478503
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": 30,
+        "variables": 308,
+        "clauses": 5844,
+        "solve_ms": 1.0797420000017155
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity3",
+    "gate_limit": 2
+  },
+  {
+    "backend": "milp",
+    "n": 3,
+    "max_gates": 2,
+    "delay_bound": 30,
+    "elapsed_ms": 9.567597000000205,
+    "complete": true,
+    "status": "BOUNDED_UNSAT",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 40,
+        "constraints": 75,
+        "solve_ms": 0.9350740000400037,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 77,
+        "constraints": 980,
+        "solve_ms": 1.1439260000543072,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 125,
+        "constraints": 2493,
+        "solve_ms": 3.3790510000244467,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity3",
+    "gate_limit": 2
+  },
+  {
+    "backend": "sat",
+    "n": 3,
+    "max_gates": 4,
+    "delay_bound": 30,
+    "elapsed_ms": 12.999182999919867,
+    "complete": true,
+    "status": "BOUNDED_UNSAT",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": 30,
+        "variables": 161,
+        "clauses": 200,
+        "solve_ms": 0.3403829999797381
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 1,
+        "delay_bound": 30,
+        "variables": 229,
+        "clauses": 2408,
+        "solve_ms": 0.6006329999763693
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": 30,
+        "variables": 308,
+        "clauses": 5844,
+        "solve_ms": 1.0635830000182978
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 3,
+        "delay_bound": 30,
+        "variables": 400,
+        "clauses": 10894,
+        "solve_ms": 1.8773900000041976
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 4,
+        "area_bound": 4,
+        "delay_bound": 30,
+        "variables": 507,
+        "clauses": 18022,
+        "solve_ms": 3.8550579999991896
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity3",
+    "gate_limit": 4
+  },
+  {
+    "backend": "milp",
+    "n": 3,
+    "max_gates": 4,
+    "delay_bound": 30,
+    "elapsed_ms": 1017.8651740000078,
+    "complete": false,
+    "status": "TIMEOUT_UNKNOWN",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 40,
+        "constraints": 75,
+        "solve_ms": 0.6503340000563185,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 77,
+        "constraints": 980,
+        "solve_ms": 0.9080199999971228,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 125,
+        "constraints": 2493,
+        "solve_ms": 3.3275680000315333,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 186,
+        "constraints": 4882,
+        "solve_ms": 543.3852070000285,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "TIMEOUT",
+        "gates_bound": 4,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 262,
+        "constraints": 8493,
+        "solve_ms": 447.5174849999348,
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "mip_gap": null
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity3",
+    "gate_limit": 4
+  },
+  {
+    "backend": "sat",
+    "n": 3,
+    "max_gates": 6,
+    "delay_bound": 30,
+    "elapsed_ms": 141.9981880000023,
+    "complete": true,
+    "status": "BOUNDED_UNSAT",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": 30,
+        "variables": 161,
+        "clauses": 200,
+        "solve_ms": 0.31082200007404026
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 1,
+        "delay_bound": 30,
+        "variables": 229,
+        "clauses": 2408,
+        "solve_ms": 0.9640230000513839
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": 30,
+        "variables": 308,
+        "clauses": 5844,
+        "solve_ms": 1.0773579999749927
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 3,
+        "delay_bound": 30,
+        "variables": 400,
+        "clauses": 10894,
+        "solve_ms": 1.9482609999386113
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 4,
+        "area_bound": 4,
+        "delay_bound": 30,
+        "variables": 507,
+        "clauses": 18022,
+        "solve_ms": 5.04942400004893
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 5,
+        "area_bound": 5,
+        "delay_bound": 30,
+        "variables": 631,
+        "clauses": 27782,
+        "solve_ms": 14.397775000020374
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 6,
+        "area_bound": 6,
+        "delay_bound": 30,
+        "variables": 774,
+        "clauses": 40830,
+        "solve_ms": 90.60749000002488
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity3",
+    "gate_limit": 6
+  },
+  {
+    "backend": "milp",
+    "n": 3,
+    "max_gates": 6,
+    "delay_bound": 30,
+    "elapsed_ms": 1016.7701990000069,
+    "complete": false,
+    "status": "TIMEOUT_UNKNOWN",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 40,
+        "constraints": 75,
+        "solve_ms": 1.5556529999685154,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 77,
+        "constraints": 980,
+        "solve_ms": 0.9674149999909787,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 125,
+        "constraints": 2493,
+        "solve_ms": 3.4737769999537704,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 186,
+        "constraints": 4882,
+        "solve_ms": 548.0491839999786,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "TIMEOUT",
+        "gates_bound": 4,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 262,
+        "constraints": 8493,
+        "solve_ms": 446.4371959999198,
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "mip_gap": null
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity3",
+    "gate_limit": 6
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 2,
+    "delay_bound": 30,
+    "elapsed_ms": 5.074185000012221,
+    "complete": true,
+    "status": "BOUNDED_UNSAT",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": 30,
+        "variables": 241,
+        "clauses": 332,
+        "solve_ms": 0.35794699999769364
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 1,
+        "delay_bound": 30,
+        "variables": 328,
+        "clauses": 4576,
+        "solve_ms": 0.7867510000778566
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": 30,
+        "variables": 428,
+        "clauses": 10738,
+        "solve_ms": 1.6482499999028732
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity4",
+    "gate_limit": 2
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 2,
+    "delay_bound": 30,
+    "elapsed_ms": 20.240268000065953,
+    "complete": true,
+    "status": "BOUNDED_UNSAT",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 176,
+        "solve_ms": 1.013409000051979,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2497,
+        "solve_ms": 1.7855419999932565,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5998,
+        "solve_ms": 8.83460499994726,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity4",
+    "gate_limit": 2
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 4,
+    "delay_bound": 30,
+    "elapsed_ms": 32.200582999962535,
+    "complete": true,
+    "status": "BOUNDED_UNSAT",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": 30,
+        "variables": 241,
+        "clauses": 332,
+        "solve_ms": 0.9509870000101728
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 1,
+        "delay_bound": 30,
+        "variables": 328,
+        "clauses": 4576,
+        "solve_ms": 0.90008699999089
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": 30,
+        "variables": 428,
+        "clauses": 10738,
+        "solve_ms": 1.6873869999471935
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 3,
+        "delay_bound": 30,
+        "variables": 543,
+        "clauses": 19330,
+        "solve_ms": 3.082280999933573
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 4,
+        "area_bound": 4,
+        "delay_bound": 30,
+        "variables": 675,
+        "clauses": 30954,
+        "solve_ms": 6.353840999963722
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity4",
+    "gate_limit": 4
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 4,
+    "delay_bound": 30,
+    "elapsed_ms": 1015.6088820000377,
+    "complete": false,
+    "status": "TIMEOUT_UNKNOWN",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 176,
+        "solve_ms": 1.2806040000441499,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2497,
+        "solve_ms": 1.6437489999816535,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5998,
+        "solve_ms": 7.5404049999860945,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "TIMEOUT",
+        "gates_bound": 3,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11073,
+        "solve_ms": 985.9766140000374,
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "mip_gap": null
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity4",
+    "gate_limit": 4
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 6,
+    "delay_bound": 30,
+    "elapsed_ms": 217.3569149999821,
+    "complete": true,
+    "status": "BOUNDED_UNSAT",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": 30,
+        "variables": 241,
+        "clauses": 332,
+        "solve_ms": 0.44457199999214936
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 1,
+        "delay_bound": 30,
+        "variables": 328,
+        "clauses": 4576,
+        "solve_ms": 0.8845170000313374
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": 30,
+        "variables": 428,
+        "clauses": 10738,
+        "solve_ms": 1.927958999999646
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 3,
+        "delay_bound": 30,
+        "variables": 543,
+        "clauses": 19330,
+        "solve_ms": 4.429375999961849
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 4,
+        "area_bound": 4,
+        "delay_bound": 30,
+        "variables": 675,
+        "clauses": 30954,
+        "solve_ms": 7.406906000028357
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 5,
+        "area_bound": 5,
+        "delay_bound": 30,
+        "variables": 826,
+        "clauses": 46314,
+        "solve_ms": 24.449995999930252
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 6,
+        "area_bound": 6,
+        "delay_bound": 30,
+        "variables": 998,
+        "clauses": 66228,
+        "solve_ms": 87.2914500000661
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity4",
+    "gate_limit": 6
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 6,
+    "delay_bound": 30,
+    "elapsed_ms": 1021.1676819999411,
+    "complete": false,
+    "status": "TIMEOUT_UNKNOWN",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 176,
+        "solve_ms": 1.0578190000387622,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2497,
+        "solve_ms": 2.196411999989323,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5998,
+        "solve_ms": 9.423378000064986,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "TIMEOUT",
+        "gates_bound": 3,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11073,
+        "solve_ms": 984.6680269999979,
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "mip_gap": null
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity4",
+    "gate_limit": 6
+  },
+  {
+    "backend": "sat",
+    "n": 5,
+    "max_gates": 2,
+    "delay_bound": 30,
+    "elapsed_ms": 10.481324000011227,
+    "complete": true,
+    "status": "BOUNDED_UNSAT",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": 30,
+        "variables": 385,
+        "clauses": 593,
+        "solve_ms": 0.6116270000120494
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 1,
+        "delay_bound": 30,
+        "variables": 501,
+        "clauses": 8979,
+        "solve_ms": 1.6128270000308476
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": 30,
+        "variables": 632,
+        "clauses": 20499,
+        "solve_ms": 3.119323999953849
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity5",
+    "gate_limit": 2
+  },
+  {
+    "backend": "milp",
+    "n": 5,
+    "max_gates": 2,
+    "delay_bound": 30,
+    "elapsed_ms": 76.05801099998644,
+    "complete": true,
+    "status": "BOUNDED_UNSAT",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 204,
+        "constraints": 406,
+        "solve_ms": 1.0206379999999626,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 289,
+        "constraints": 6131,
+        "solve_ms": 4.18423000007806,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 389,
+        "constraints": 14134,
+        "solve_ms": 28.923735000034867,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity5",
+    "gate_limit": 2
+  },
+  {
+    "backend": "sat",
+    "n": 5,
+    "max_gates": 4,
+    "delay_bound": 30,
+    "elapsed_ms": 73.23419199997261,
+    "complete": true,
+    "status": "BOUNDED_UNSAT",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": 30,
+        "variables": 385,
+        "clauses": 593,
+        "solve_ms": 0.596847999986494
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 1,
+        "delay_bound": 30,
+        "variables": 501,
+        "clauses": 8979,
+        "solve_ms": 2.111802999934298
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": 30,
+        "variables": 632,
+        "clauses": 20499,
+        "solve_ms": 5.315788000075372
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 3,
+        "delay_bound": 30,
+        "variables": 780,
+        "clauses": 35851,
+        "solve_ms": 8.57516200005648
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 4,
+        "area_bound": 4,
+        "delay_bound": 30,
+        "variables": 947,
+        "clauses": 55835,
+        "solve_ms": 17.444624000063413
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity5",
+    "gate_limit": 4
+  },
+  {
+    "backend": "milp",
+    "n": 5,
+    "max_gates": 4,
+    "delay_bound": 30,
+    "elapsed_ms": 1042.1145099999194,
+    "complete": false,
+    "status": "TIMEOUT_UNKNOWN",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 204,
+        "constraints": 406,
+        "solve_ms": 1.2371429999120664,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 289,
+        "constraints": 6131,
+        "solve_ms": 6.732708999948045,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 389,
+        "constraints": 14134,
+        "solve_ms": 25.040450000005876,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "TIMEOUT",
+        "gates_bound": 3,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 506,
+        "constraints": 24995,
+        "solve_ms": 944.8163539999541,
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "mip_gap": null
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity5",
+    "gate_limit": 4
+  },
+  {
+    "backend": "sat",
+    "n": 5,
+    "max_gates": 6,
+    "delay_bound": 30,
+    "elapsed_ms": 390.93890599997394,
+    "complete": true,
+    "status": "BOUNDED_UNSAT",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": 30,
+        "variables": 385,
+        "clauses": 593,
+        "solve_ms": 0.589276000027894
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 1,
+        "delay_bound": 30,
+        "variables": 501,
+        "clauses": 8979,
+        "solve_ms": 1.678392999906464
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": 30,
+        "variables": 632,
+        "clauses": 20499,
+        "solve_ms": 4.135251999969114
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 3,
+        "delay_bound": 30,
+        "variables": 780,
+        "clauses": 35851,
+        "solve_ms": 6.343861000004836
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 4,
+        "area_bound": 4,
+        "delay_bound": 30,
+        "variables": 947,
+        "clauses": 55835,
+        "solve_ms": 14.980014000002484
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 5,
+        "area_bound": 5,
+        "delay_bound": 30,
+        "variables": 1135,
+        "clauses": 81365,
+        "solve_ms": 49.04738300001554
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 6,
+        "area_bound": 6,
+        "delay_bound": 30,
+        "variables": 1346,
+        "clauses": 113481,
+        "solve_ms": 194.74508099995091
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity5",
+    "gate_limit": 6
+  },
+  {
+    "backend": "milp",
+    "n": 5,
+    "max_gates": 6,
+    "delay_bound": 30,
+    "elapsed_ms": 1052.0760219999374,
+    "complete": false,
+    "status": "TIMEOUT_UNKNOWN",
+    "metrics": null,
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 204,
+        "constraints": 406,
+        "solve_ms": 0.9014600000227802,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 289,
+        "constraints": 6131,
+        "solve_ms": 3.9116840000588127,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 389,
+        "constraints": 14134,
+        "solve_ms": 18.676730000038333,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "TIMEOUT",
+        "gates_bound": 3,
+        "delay_bound": 30,
+        "area_bound": null,
+        "variables": 506,
+        "constraints": 24995,
+        "solve_ms": 982.919647000017,
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "mip_gap": null
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "parity-scale",
+    "function": "parity5",
+    "gate_limit": 6
+  },
+  {
+    "backend": "sat",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 1.9957350000368024,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 3,
+      "delay": 3,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 16,
+        "clauses": 29,
+        "solve_ms": 0.4428019999522803
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 42,
+        "clauses": 331,
+        "solve_ms": 0.27848899992477527
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 2,
+        "area_bound": 16,
+        "delay_bound": null,
+        "variables": 80,
+        "clauses": 924,
+        "solve_ms": 0.352996000060557
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": null,
+        "variables": 74,
+        "clauses": 921,
+        "solve_ms": 0.34209399996143475
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_001.txt",
+    "cut": {
+      "source_output": 49074,
+      "boundary_signals": [
+        49071,
+        49072
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "1aadc116ff81dc09af83734c2a2ff83ed7d670a8ad57c3cf3050ab765c0be74d",
+    "source_netlist_sha256": "91552f44c4ebd6cf03115a32a0ca523061c0f2161294e54b124ee1bf01830669"
+  },
+  {
+    "backend": "milp",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 5.782281999927363,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 3,
+      "delay": 3,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 18,
+        "constraints": 28,
+        "solve_ms": 0.8806219999542009,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 42,
+        "constraints": 354,
+        "solve_ms": 0.7011949999196077,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 75,
+        "constraints": 982,
+        "solve_ms": 2.153836000047704,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_001.txt",
+    "cut": {
+      "source_output": 49074,
+      "boundary_signals": [
+        49071,
+        49072
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "1aadc116ff81dc09af83734c2a2ff83ed7d670a8ad57c3cf3050ab765c0be74d",
+    "source_netlist_sha256": "91552f44c4ebd6cf03115a32a0ca523061c0f2161294e54b124ee1bf01830669"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 49.23648599992703,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 3,
+      "delay": 12,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.6021830000690898
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 3,
+        "delay_bound": null,
+        "variables": 143,
+        "clauses": 2430,
+        "solve_ms": 0.8953090000431985
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 6,
+        "delay_bound": null,
+        "variables": 214,
+        "clauses": 5846,
+        "solve_ms": 1.8657399999710833
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 9,
+        "delay_bound": null,
+        "variables": 301,
+        "clauses": 10810,
+        "solve_ms": 3.4842339999840988
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 2,
+        "delay_bound": null,
+        "variables": 294,
+        "clauses": 10801,
+        "solve_ms": 2.915315000109331
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_002.txt",
+    "cut": {
+      "source_output": 8722,
+      "boundary_signals": [
+        8716,
+        8717,
+        8718,
+        8719
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "e73e69c68dfd9900286152348bb08a0f92e85d7d4913ba2f4096d94127bb6f97",
+    "source_netlist_sha256": "c9e17b4295d52ab06c7be5f0cebe042309b431715294af666026ae3e655474c0"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 733.3289839999679,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 3,
+      "delay": 12,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 1.1987789999921006,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 3.280700000004799,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 16.923421000001326,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 676.6211999999996,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 2.8125649957169668e-14
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_002.txt",
+    "cut": {
+      "source_output": 8722,
+      "boundary_signals": [
+        8716,
+        8717,
+        8718,
+        8719
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "e73e69c68dfd9900286152348bb08a0f92e85d7d4913ba2f4096d94127bb6f97",
+    "source_netlist_sha256": "c9e17b4295d52ab06c7be5f0cebe042309b431715294af666026ae3e655474c0"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 11.88571700004104,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 6,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.5064119999360628
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 2,
+        "delay_bound": null,
+        "variables": 143,
+        "clauses": 2430,
+        "solve_ms": 0.5827039999530825
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 4,
+        "delay_bound": null,
+        "variables": 214,
+        "clauses": 5846,
+        "solve_ms": 1.2457670000003418
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 6,
+        "delay_bound": null,
+        "variables": 301,
+        "clauses": 10810,
+        "solve_ms": 2.5337840000929646
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 5,
+        "delay_bound": null,
+        "variables": 300,
+        "clauses": 10810,
+        "solve_ms": 2.31591599992953
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_003.txt",
+    "cut": {
+      "source_output": 12628,
+      "boundary_signals": [
+        12622,
+        12623,
+        12624,
+        12625
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "77476ae0fe99e9a83d78e97703a3a52e506c447baf97a61d7f1a9354299b76e9",
+    "source_netlist_sha256": "2cd9ba7c63e1780757b88ac0cd39e31b26fc25b027cdef71dc57b8a370d4da0b"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 1019.1673560000254,
+    "complete": false,
+    "status": "FEASIBLE_NOT_PROVEN",
+    "metrics": {
+      "area": 6,
+      "delay": 9,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 1.1722719999625042,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 2.043481999976393,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 9.922287000108554,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "TIMEOUT",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 969.039931999987,
+        "message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+        "mip_gap": 0.49999999999999983
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_003.txt",
+    "cut": {
+      "source_output": 12628,
+      "boundary_signals": [
+        12622,
+        12623,
+        12624,
+        12625
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "77476ae0fe99e9a83d78e97703a3a52e506c447baf97a61d7f1a9354299b76e9",
+    "source_netlist_sha256": "2cd9ba7c63e1780757b88ac0cd39e31b26fc25b027cdef71dc57b8a370d4da0b"
+  },
+  {
+    "backend": "sat",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 3.1848969999828114,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 3,
+      "delay": 3,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 16,
+        "clauses": 29,
+        "solve_ms": 1.1237260000598326
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 42,
+        "clauses": 331,
+        "solve_ms": 0.34360799998012226
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 2,
+        "area_bound": 16,
+        "delay_bound": null,
+        "variables": 80,
+        "clauses": 924,
+        "solve_ms": 0.5087260000209426
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": null,
+        "variables": 74,
+        "clauses": 921,
+        "solve_ms": 0.4671419999340287
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_004.txt",
+    "cut": {
+      "source_output": 2215,
+      "boundary_signals": [
+        2212,
+        2213
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "2b2661acda4d793355c250364908acc50885dbc59cef154b1c4c653b87d16583",
+    "source_netlist_sha256": "3eb7720aecf9ef5cef360af41289029b961f36cf4ec605ebb80d7887dc403e46"
+  },
+  {
+    "backend": "milp",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 6.241697999939788,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 3,
+      "delay": 3,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 18,
+        "constraints": 28,
+        "solve_ms": 1.1172900000246955,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 42,
+        "constraints": 354,
+        "solve_ms": 0.7505669999545717,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 75,
+        "constraints": 982,
+        "solve_ms": 2.038351999999577,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_004.txt",
+    "cut": {
+      "source_output": 2215,
+      "boundary_signals": [
+        2212,
+        2213
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "2b2661acda4d793355c250364908acc50885dbc59cef154b1c4c653b87d16583",
+    "source_netlist_sha256": "3eb7720aecf9ef5cef360af41289029b961f36cf4ec605ebb80d7887dc403e46"
+  },
+  {
+    "backend": "sat",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 2.4999280000201907,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 3,
+      "delay": 3,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 16,
+        "clauses": 29,
+        "solve_ms": 0.2750080000168964
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 42,
+        "clauses": 331,
+        "solve_ms": 0.2550680000013017
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 2,
+        "area_bound": 16,
+        "delay_bound": null,
+        "variables": 80,
+        "clauses": 924,
+        "solve_ms": 0.7323170000290702
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": null,
+        "variables": 74,
+        "clauses": 921,
+        "solve_ms": 0.4900689999658425
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_005.txt",
+    "cut": {
+      "source_output": 513,
+      "boundary_signals": [
+        307,
+        511
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "179d5f49622a07a45f6279e789c995c294bb06573e5a1c9488d900a2cd80a432",
+    "source_netlist_sha256": "114abceda141c0df82327de5e0da591a70cda31d1fe03040b222f9ef50fd5987"
+  },
+  {
+    "backend": "milp",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 6.126948999963133,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 3,
+      "delay": 3,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 18,
+        "constraints": 28,
+        "solve_ms": 1.296521999961442,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 42,
+        "constraints": 354,
+        "solve_ms": 0.647769000011067,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 75,
+        "constraints": 982,
+        "solve_ms": 2.1393609999904584,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_005.txt",
+    "cut": {
+      "source_output": 513,
+      "boundary_signals": [
+        307,
+        511
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "179d5f49622a07a45f6279e789c995c294bb06573e5a1c9488d900a2cd80a432",
+    "source_netlist_sha256": "114abceda141c0df82327de5e0da591a70cda31d1fe03040b222f9ef50fd5987"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 12.222711999925195,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 4,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.3931410000177493
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 144,
+        "clauses": 2430,
+        "solve_ms": 0.6961379999665951
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 16,
+        "delay_bound": null,
+        "variables": 218,
+        "clauses": 5849,
+        "solve_ms": 1.3777620000610113
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 24,
+        "delay_bound": null,
+        "variables": 311,
+        "clauses": 10822,
+        "solve_ms": 2.178626999921107
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 5,
+        "delay_bound": null,
+        "variables": 300,
+        "clauses": 10810,
+        "solve_ms": 2.576701999942088
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_006.txt",
+    "cut": {
+      "source_output": 4792,
+      "boundary_signals": [
+        4786,
+        4787,
+        4788,
+        4789
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "fc09474583211576593d981aef2ad0f420872a45c6313df00409948f0fad8fa7",
+    "source_netlist_sha256": "1cfb32b293c83231ba90af6d41975e8e51b60af4221ebe1794c081ad2f99e178"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 990.5881339999496,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 6,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 0.8063039999797184,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 1.8592239999861704,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 9.65805199996339,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 956.9509030000063,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_006.txt",
+    "cut": {
+      "source_output": 4792,
+      "boundary_signals": [
+        4786,
+        4787,
+        4788,
+        4789
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "fc09474583211576593d981aef2ad0f420872a45c6313df00409948f0fad8fa7",
+    "source_netlist_sha256": "1cfb32b293c83231ba90af6d41975e8e51b60af4221ebe1794c081ad2f99e178"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 12.56466300003467,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 4,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.44592800009013445
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 144,
+        "clauses": 2430,
+        "solve_ms": 0.6344380000200545
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 16,
+        "delay_bound": null,
+        "variables": 218,
+        "clauses": 5849,
+        "solve_ms": 1.361001000077522
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 24,
+        "delay_bound": null,
+        "variables": 311,
+        "clauses": 10822,
+        "solve_ms": 2.3130680000349457
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 5,
+        "delay_bound": null,
+        "variables": 300,
+        "clauses": 10810,
+        "solve_ms": 2.66378399999212
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_007.txt",
+    "cut": {
+      "source_output": 73567,
+      "boundary_signals": [
+        73561,
+        73562,
+        73563,
+        73564
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "e51100ade28a206ee2dfc4c7c8e61a830eb5ed478b21ae86c69243520623a29b",
+    "source_netlist_sha256": "4382e93b41dae478f66527660f6390871a338021bca553cd549d0736aa842eb0"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 1016.30073299998,
+    "complete": false,
+    "status": "FEASIBLE_NOT_PROVEN",
+    "metrics": {
+      "area": 6,
+      "delay": 6,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 0.8754639999324354,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 2.3374460000695763,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 10.331938000035734,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "TIMEOUT",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 982.0280039999716,
+        "message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+        "mip_gap": 0.33333333333332754
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_007.txt",
+    "cut": {
+      "source_output": 73567,
+      "boundary_signals": [
+        73561,
+        73562,
+        73563,
+        73564
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "e51100ade28a206ee2dfc4c7c8e61a830eb5ed478b21ae86c69243520623a29b",
+    "source_netlist_sha256": "4382e93b41dae478f66527660f6390871a338021bca553cd549d0736aa842eb0"
+  },
+  {
+    "backend": "sat",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 1.9824419999849852,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 3,
+      "delay": 3,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 16,
+        "clauses": 29,
+        "solve_ms": 0.36880600009681075
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 42,
+        "clauses": 331,
+        "solve_ms": 0.30622099995980534
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 2,
+        "area_bound": 16,
+        "delay_bound": null,
+        "variables": 80,
+        "clauses": 924,
+        "solve_ms": 0.43816200002311234
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": null,
+        "variables": 74,
+        "clauses": 921,
+        "solve_ms": 0.32264000003578985
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_008.txt",
+    "cut": {
+      "source_output": 4883,
+      "boundary_signals": [
+        4880,
+        4881
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "5f496302361701782a2f5f6f370a0f948cfa5a38903f4449d6d951383a4f0021",
+    "source_netlist_sha256": "739adf6b3fe9d328eacf0aa79f5c3c82dbf28006701c8e05db580ee5eb9559ef"
+  },
+  {
+    "backend": "milp",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 5.150184000058289,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 3,
+      "delay": 3,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 18,
+        "constraints": 28,
+        "solve_ms": 0.7613830000536836,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 42,
+        "constraints": 354,
+        "solve_ms": 0.6359189999329828,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 75,
+        "constraints": 982,
+        "solve_ms": 2.003175000027113,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_008.txt",
+    "cut": {
+      "source_output": 4883,
+      "boundary_signals": [
+        4880,
+        4881
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "5f496302361701782a2f5f6f370a0f948cfa5a38903f4449d6d951383a4f0021",
+    "source_netlist_sha256": "739adf6b3fe9d328eacf0aa79f5c3c82dbf28006701c8e05db580ee5eb9559ef"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 12.690399000007346,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 4,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.7127189999209804
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 144,
+        "clauses": 2430,
+        "solve_ms": 0.6451699999843186
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 16,
+        "delay_bound": null,
+        "variables": 218,
+        "clauses": 5849,
+        "solve_ms": 1.4122810000571917
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 24,
+        "delay_bound": null,
+        "variables": 311,
+        "clauses": 10822,
+        "solve_ms": 2.357689000064056
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 5,
+        "delay_bound": null,
+        "variables": 300,
+        "clauses": 10810,
+        "solve_ms": 2.690307999955621
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_009.txt",
+    "cut": {
+      "source_output": 7904,
+      "boundary_signals": [
+        7898,
+        7899,
+        7900,
+        7901
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "54b3892fa0afdb1ee37c5819c45e08e4d616b9c385e88d25215e66e55873e6cb",
+    "source_netlist_sha256": "155020bfcbfd6ffd0f4b65186e1c6cc13616479df685f536ddcf7dc11e077b3a"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 964.2829550000442,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 6,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 0.8258699999714736,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 1.9502779999811537,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 10.98160900005496,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 928.0129320000015,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_009.txt",
+    "cut": {
+      "source_output": 7904,
+      "boundary_signals": [
+        7898,
+        7899,
+        7900,
+        7901
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "54b3892fa0afdb1ee37c5819c45e08e4d616b9c385e88d25215e66e55873e6cb",
+    "source_netlist_sha256": "155020bfcbfd6ffd0f4b65186e1c6cc13616479df685f536ddcf7dc11e077b3a"
+  },
+  {
+    "backend": "sat",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 2.3306749999392196,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 2,
+      "delay": 5,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 16,
+        "clauses": 29,
+        "solve_ms": 0.466174000052888
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 3,
+        "delay_bound": null,
+        "variables": 41,
+        "clauses": 331,
+        "solve_ms": 0.3327829999761889
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 2,
+        "area_bound": 6,
+        "delay_bound": null,
+        "variables": 76,
+        "clauses": 921,
+        "solve_ms": 0.5303929999627144
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 1,
+        "delay_bound": null,
+        "variables": 72,
+        "clauses": 918,
+        "solve_ms": 0.4009499999710897
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_010.txt",
+    "cut": {
+      "source_output": 3886,
+      "boundary_signals": [
+        10,
+        43
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "f6597a1d1d165e7557768b12a22700f30a71f4e7ddb27521434920c3721d0370",
+    "source_netlist_sha256": "858c05f7ffb579a18e2614ebb0715516f3589047a8f7ab6aca85ff8c523aaae9"
+  },
+  {
+    "backend": "milp",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 5.4240489999983765,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 2,
+      "delay": 5,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 18,
+        "constraints": 28,
+        "solve_ms": 0.8429750000686909,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 42,
+        "constraints": 354,
+        "solve_ms": 0.6339860000252884,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 75,
+        "constraints": 982,
+        "solve_ms": 2.0788230000334806,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_010.txt",
+    "cut": {
+      "source_output": 3886,
+      "boundary_signals": [
+        10,
+        43
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "f6597a1d1d165e7557768b12a22700f30a71f4e7ddb27521434920c3721d0370",
+    "source_netlist_sha256": "858c05f7ffb579a18e2614ebb0715516f3589047a8f7ab6aca85ff8c523aaae9"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 30.088245000001734,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 6,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.4141779999145001
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 4,
+        "delay_bound": null,
+        "variables": 143,
+        "clauses": 2430,
+        "solve_ms": 0.5814830000190341
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 214,
+        "clauses": 5846,
+        "solve_ms": 1.293341999939912
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 12,
+        "delay_bound": null,
+        "variables": 301,
+        "clauses": 10810,
+        "solve_ms": 2.233434999993733
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 5,
+        "delay_bound": null,
+        "variables": 295,
+        "clauses": 10804,
+        "solve_ms": 1.7875160000357937
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_011.txt",
+    "cut": {
+      "source_output": 328,
+      "boundary_signals": [
+        322,
+        323,
+        324,
+        325
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "353178c34ba754acb42e7614e5ecbbf70e9b58cc16732b50ad9d6825b4a899ea",
+    "source_netlist_sha256": "7fe8d4660a2316c84fe0bd09d61d744a5190940ca24396bf858d095e2042b283"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 492.3103749999882,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 9,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 1.0121789999857356,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 1.6994009999962145,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 9.746021999944787,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 457.84319400002005,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_011.txt",
+    "cut": {
+      "source_output": 328,
+      "boundary_signals": [
+        322,
+        323,
+        324,
+        325
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "353178c34ba754acb42e7614e5ecbbf70e9b58cc16732b50ad9d6825b4a899ea",
+    "source_netlist_sha256": "7fe8d4660a2316c84fe0bd09d61d744a5190940ca24396bf858d095e2042b283"
+  },
+  {
+    "backend": "sat",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 2.940996000006635,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 4,
+      "delay": 2,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 16,
+        "clauses": 29,
+        "solve_ms": 0.4180580000365808
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 3,
+        "delay_bound": null,
+        "variables": 41,
+        "clauses": 331,
+        "solve_ms": 0.3630429999930129
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 2,
+        "area_bound": 6,
+        "delay_bound": null,
+        "variables": 76,
+        "clauses": 921,
+        "solve_ms": 0.5401019999453638
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 3,
+        "delay_bound": null,
+        "variables": 74,
+        "clauses": 921,
+        "solve_ms": 0.4071749999638996
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_012.txt",
+    "cut": {
+      "source_output": 2397,
+      "boundary_signals": [
+        2298,
+        2395
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "628d76e7c886d42e920fabd3fe68882224b167860aeaf18b31d8e2f8a6c108ab",
+    "source_netlist_sha256": "34c8454f362a453561748cf1285ffa394a4d881620148198a3afe1bc16fb1824"
+  },
+  {
+    "backend": "milp",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 4.993528999989394,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 4,
+      "delay": 2,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 18,
+        "constraints": 28,
+        "solve_ms": 0.7240059999276127,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 42,
+        "constraints": 354,
+        "solve_ms": 0.6175040000471199,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 75,
+        "constraints": 982,
+        "solve_ms": 1.9306640000422703,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_012.txt",
+    "cut": {
+      "source_output": 2397,
+      "boundary_signals": [
+        2298,
+        2395
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "628d76e7c886d42e920fabd3fe68882224b167860aeaf18b31d8e2f8a6c108ab",
+    "source_netlist_sha256": "34c8454f362a453561748cf1285ffa394a4d881620148198a3afe1bc16fb1824"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 11.44894200001545,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 6,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.35255300008429913
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 4,
+        "delay_bound": null,
+        "variables": 143,
+        "clauses": 2430,
+        "solve_ms": 0.582498000085252
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 214,
+        "clauses": 5846,
+        "solve_ms": 1.2616029999890088
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 12,
+        "delay_bound": null,
+        "variables": 301,
+        "clauses": 10810,
+        "solve_ms": 2.297224000017195
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 5,
+        "delay_bound": null,
+        "variables": 295,
+        "clauses": 10804,
+        "solve_ms": 1.7588130000376623
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_013.txt",
+    "cut": {
+      "source_output": 6634,
+      "boundary_signals": [
+        6628,
+        6629,
+        6630,
+        6631
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "98028e8655b27bf9a28df810efd9ead16b36bb4f86f998cfda3c9861f77ff7b8",
+    "source_netlist_sha256": "16f8ce333fad817c529004ccd28c95f1aaba4a935d44908b5ebc8575130e6011"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 481.42127099993104,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 9,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 1.0288209999771425,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 1.9471089999569813,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 8.799882999937836,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 440.1592149999942,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_013.txt",
+    "cut": {
+      "source_output": 6634,
+      "boundary_signals": [
+        6628,
+        6629,
+        6630,
+        6631
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "98028e8655b27bf9a28df810efd9ead16b36bb4f86f998cfda3c9861f77ff7b8",
+    "source_netlist_sha256": "16f8ce333fad817c529004ccd28c95f1aaba4a935d44908b5ebc8575130e6011"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 12.311054999941007,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 6,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.5211580000832328
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 4,
+        "delay_bound": null,
+        "variables": 143,
+        "clauses": 2430,
+        "solve_ms": 0.9767230000079508
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 214,
+        "clauses": 5846,
+        "solve_ms": 1.1930399999755537
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 12,
+        "delay_bound": null,
+        "variables": 301,
+        "clauses": 10810,
+        "solve_ms": 2.443120999942039
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 5,
+        "delay_bound": null,
+        "variables": 295,
+        "clauses": 10804,
+        "solve_ms": 1.8965799999932642
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_014.txt",
+    "cut": {
+      "source_output": 9726,
+      "boundary_signals": [
+        8310,
+        8634,
+        9153,
+        9724
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "e1deff347bfc30e44e9e42f79c99defaaa0b3c9e0990bcd1c5f1f589dd454604",
+    "source_netlist_sha256": "ff8adea2bd6fed8fcf66a43e871196c990d958ccb0abb2ab37ff94e7d6898fb9"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 515.7567520000157,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 9,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 1.2490810000826968,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 1.8221679999896878,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 9.77381300003799,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 482.4599380000336,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_014.txt",
+    "cut": {
+      "source_output": 9726,
+      "boundary_signals": [
+        8310,
+        8634,
+        9153,
+        9724
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "e1deff347bfc30e44e9e42f79c99defaaa0b3c9e0990bcd1c5f1f589dd454604",
+    "source_netlist_sha256": "ff8adea2bd6fed8fcf66a43e871196c990d958ccb0abb2ab37ff94e7d6898fb9"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 11.93638600000213,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 6,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.38647799999580457
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 2,
+        "delay_bound": null,
+        "variables": 143,
+        "clauses": 2430,
+        "solve_ms": 0.7816810000349506
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 4,
+        "delay_bound": null,
+        "variables": 214,
+        "clauses": 5846,
+        "solve_ms": 1.3472499999807042
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 6,
+        "delay_bound": null,
+        "variables": 301,
+        "clauses": 10810,
+        "solve_ms": 2.160645999992994
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 5,
+        "delay_bound": null,
+        "variables": 300,
+        "clauses": 10810,
+        "solve_ms": 2.3777879999897777
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_015.txt",
+    "cut": {
+      "source_output": 17539,
+      "boundary_signals": [
+        17533,
+        17534,
+        17535,
+        17536
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "6905531025bcbea8ae752bcf736ff1374882e40d8ab35dbf5c803f6ca76f4d0d",
+    "source_netlist_sha256": "e95e2c7ae0b41a4ad795b7c38c45cf21f4e7db18ba3c106765e52f037ab869fd"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 1017.9644360000566,
+    "complete": false,
+    "status": "FEASIBLE_NOT_PROVEN",
+    "metrics": {
+      "area": 6,
+      "delay": 9,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 0.8458629999950062,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 1.8070570000645603,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 9.022191999974893,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "TIMEOUT",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 985.9337000000323,
+        "message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+        "mip_gap": 0.49999999999999983
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_015.txt",
+    "cut": {
+      "source_output": 17539,
+      "boundary_signals": [
+        17533,
+        17534,
+        17535,
+        17536
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "6905531025bcbea8ae752bcf736ff1374882e40d8ab35dbf5c803f6ca76f4d0d",
+    "source_netlist_sha256": "e95e2c7ae0b41a4ad795b7c38c45cf21f4e7db18ba3c106765e52f037ab869fd"
+  },
+  {
+    "backend": "sat",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 2.114486999971632,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 3,
+      "delay": 3,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 16,
+        "clauses": 29,
+        "solve_ms": 0.35105500001009204
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 42,
+        "clauses": 331,
+        "solve_ms": 0.3326340000739947
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 2,
+        "area_bound": 16,
+        "delay_bound": null,
+        "variables": 80,
+        "clauses": 924,
+        "solve_ms": 0.47165199998744356
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 2,
+        "delay_bound": null,
+        "variables": 74,
+        "clauses": 921,
+        "solve_ms": 0.40823100005127344
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_016.txt",
+    "cut": {
+      "source_output": 1654,
+      "boundary_signals": [
+        1651,
+        1652
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "9bbd0106e315f818d030a8ef7bee217fe1370caacef4d74c86094dfbe1cb382e",
+    "source_netlist_sha256": "28839109f12c4a22f55861901c554da0730420a15c85ddc7d92df9c375a90e48"
+  },
+  {
+    "backend": "milp",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 5.3012350000472,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 3,
+      "delay": 3,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 18,
+        "constraints": 28,
+        "solve_ms": 0.7640989999799785,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 42,
+        "constraints": 354,
+        "solve_ms": 0.6905970000161687,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 75,
+        "constraints": 982,
+        "solve_ms": 2.041098999939095,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_016.txt",
+    "cut": {
+      "source_output": 1654,
+      "boundary_signals": [
+        1651,
+        1652
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "9bbd0106e315f818d030a8ef7bee217fe1370caacef4d74c86094dfbe1cb382e",
+    "source_netlist_sha256": "28839109f12c4a22f55861901c554da0730420a15c85ddc7d92df9c375a90e48"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 30.191462999937357,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 6,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.29574799998499657
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 2,
+        "delay_bound": null,
+        "variables": 143,
+        "clauses": 2430,
+        "solve_ms": 0.778461999971114
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 4,
+        "delay_bound": null,
+        "variables": 214,
+        "clauses": 5846,
+        "solve_ms": 1.1214980000886499
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 6,
+        "delay_bound": null,
+        "variables": 301,
+        "clauses": 10810,
+        "solve_ms": 1.9379780000008395
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 5,
+        "delay_bound": null,
+        "variables": 300,
+        "clauses": 10810,
+        "solve_ms": 2.5504959999125276
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_017.txt",
+    "cut": {
+      "source_output": 327,
+      "boundary_signals": [
+        321,
+        322,
+        323,
+        324
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "c2c9deecef28ab3dff5aac9e05d623ec0c225673a6165ef084b34de8fdd0dbdd",
+    "source_netlist_sha256": "f9087a938de3ac6b75c0351b538b9faabbfe4640fa393cf95de6c05bfb4d65f2"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 1017.2736040000245,
+    "complete": false,
+    "status": "FEASIBLE_NOT_PROVEN",
+    "metrics": {
+      "area": 6,
+      "delay": 9,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 1.108997999949679,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 1.9724769999811542,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 9.184485999981007,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "TIMEOUT",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 984.5609069999455,
+        "message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+        "mip_gap": 0.49999999999999983
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_017.txt",
+    "cut": {
+      "source_output": 327,
+      "boundary_signals": [
+        321,
+        322,
+        323,
+        324
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "c2c9deecef28ab3dff5aac9e05d623ec0c225673a6165ef084b34de8fdd0dbdd",
+    "source_netlist_sha256": "f9087a938de3ac6b75c0351b538b9faabbfe4640fa393cf95de6c05bfb4d65f2"
+  },
+  {
+    "backend": "sat",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 1.68862199996056,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 4,
+      "delay": 2,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 16,
+        "clauses": 29,
+        "solve_ms": 0.3928289999066692
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 3,
+        "delay_bound": null,
+        "variables": 41,
+        "clauses": 331,
+        "solve_ms": 0.21196700004111335
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 2,
+        "area_bound": 6,
+        "delay_bound": null,
+        "variables": 76,
+        "clauses": 921,
+        "solve_ms": 0.3014989999883255
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 3,
+        "delay_bound": null,
+        "variables": 74,
+        "clauses": 921,
+        "solve_ms": 0.27833899991946964
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_018.txt",
+    "cut": {
+      "source_output": 1690,
+      "boundary_signals": [
+        1634,
+        1688
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "e7eb3124a1a8c32c7e69a4b39592c0c70db877e37342676e36d8c96d789d6675",
+    "source_netlist_sha256": "6bcda8e60d6fa52a59799510cb5107c342745e23fe3781064ec5c649e08f0ca0"
+  },
+  {
+    "backend": "milp",
+    "n": 2,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 5.679425999915111,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 4,
+      "delay": 2,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 18,
+        "constraints": 28,
+        "solve_ms": 0.8102839999537537,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 42,
+        "constraints": 354,
+        "solve_ms": 0.8710399999927176,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 75,
+        "constraints": 982,
+        "solve_ms": 2.0732820000830543,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_018.txt",
+    "cut": {
+      "source_output": 1690,
+      "boundary_signals": [
+        1634,
+        1688
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "e7eb3124a1a8c32c7e69a4b39592c0c70db877e37342676e36d8c96d789d6675",
+    "source_netlist_sha256": "6bcda8e60d6fa52a59799510cb5107c342745e23fe3781064ec5c649e08f0ca0"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 15.139173000079609,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 4,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.624560999995083
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 144,
+        "clauses": 2430,
+        "solve_ms": 0.6403490000366219
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 16,
+        "delay_bound": null,
+        "variables": 218,
+        "clauses": 5849,
+        "solve_ms": 1.3710580000179107
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 24,
+        "delay_bound": null,
+        "variables": 311,
+        "clauses": 10822,
+        "solve_ms": 2.345802000036201
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 5,
+        "delay_bound": null,
+        "variables": 300,
+        "clauses": 10810,
+        "solve_ms": 3.6341280000442566
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_019.txt",
+    "cut": {
+      "source_output": 8524,
+      "boundary_signals": [
+        8518,
+        8519,
+        8520,
+        8521
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "66ee83e01ca48cf50436b2c6437d68c1e272957eeaf0074dc8944ac0fd498283",
+    "source_netlist_sha256": "e4ce9759627df0bc13eb98150138f562040540b2022cc9413a7a85faa4e1c698"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 993.2576579999477,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 6,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 0.8505389999982071,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 1.7091450000634723,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 10.145398000076966,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 949.0108410000175,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_019.txt",
+    "cut": {
+      "source_output": 8524,
+      "boundary_signals": [
+        8518,
+        8519,
+        8520,
+        8521
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "66ee83e01ca48cf50436b2c6437d68c1e272957eeaf0074dc8944ac0fd498283",
+    "source_netlist_sha256": "e4ce9759627df0bc13eb98150138f562040540b2022cc9413a7a85faa4e1c698"
+  },
+  {
+    "backend": "sat",
+    "n": 3,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 3.326130999994348,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 4,
+      "delay": 5,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 37,
+        "clauses": 72,
+        "solve_ms": 0.3787189999684415
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 2,
+        "delay_bound": null,
+        "variables": 75,
+        "clauses": 935,
+        "solve_ms": 0.3579930000796594
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 2,
+        "area_bound": 4,
+        "delay_bound": null,
+        "variables": 125,
+        "clauses": 2388,
+        "solve_ms": 0.7492319999755637
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 3,
+        "delay_bound": null,
+        "variables": 124,
+        "clauses": 2388,
+        "solve_ms": 0.6509899999400659
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_020.txt",
+    "cut": {
+      "source_output": 391,
+      "boundary_signals": [
+        3,
+        4,
+        9
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "9bb203575fd285409f75e0084b8d4d3f6f172cc9fb1f07726ad6e9bcfcd5f12c",
+    "source_netlist_sha256": "ab4ce7aeafe6946066b1a2fba1697540f9bc8dfa91315fed806032114868c1ed"
+  },
+  {
+    "backend": "milp",
+    "n": 3,
+    "max_gates": 2,
+    "delay_bound": null,
+    "elapsed_ms": 13.04277600002024,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 4,
+      "delay": 5,
+      "gates": 2
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 40,
+        "constraints": 71,
+        "solve_ms": 0.9068800000022748,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 77,
+        "constraints": 975,
+        "solve_ms": 1.4180849999547718,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 125,
+        "constraints": 2487,
+        "solve_ms": 5.587568999999348,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_020.txt",
+    "cut": {
+      "source_output": 391,
+      "boundary_signals": [
+        3,
+        4,
+        9
+      ],
+      "interior_gates": 2
+    },
+    "input_sha256": "9bb203575fd285409f75e0084b8d4d3f6f172cc9fb1f07726ad6e9bcfcd5f12c",
+    "source_netlist_sha256": "ab4ce7aeafe6946066b1a2fba1697540f9bc8dfa91315fed806032114868c1ed"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 50.27151000001595,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 6,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.6654900000739872
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 4,
+        "delay_bound": null,
+        "variables": 143,
+        "clauses": 2430,
+        "solve_ms": 0.9123649999764893
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 214,
+        "clauses": 5846,
+        "solve_ms": 1.9335540000611218
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 12,
+        "delay_bound": null,
+        "variables": 301,
+        "clauses": 10810,
+        "solve_ms": 3.558095000016692
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 5,
+        "delay_bound": null,
+        "variables": 295,
+        "clauses": 10804,
+        "solve_ms": 6.7202410000390955
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_021.txt",
+    "cut": {
+      "source_output": 31295,
+      "boundary_signals": [
+        31289,
+        31290,
+        31291,
+        31292
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "1f505fb55fb7183dfdbfe6bbebcfe8a3436bd9fc8d7c1fc7cc124975415b3ebd",
+    "source_netlist_sha256": "853eb9c223a33d29359207c0b64f006f0e4fc169c0840200ce8d6173f5beae0c"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 515.0049149999631,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 9,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 1.1749559999998382,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 2.779742000029728,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 12.966352999910669,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 469.2210969999451,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_021.txt",
+    "cut": {
+      "source_output": 31295,
+      "boundary_signals": [
+        31289,
+        31290,
+        31291,
+        31292
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "1f505fb55fb7183dfdbfe6bbebcfe8a3436bd9fc8d7c1fc7cc124975415b3ebd",
+    "source_netlist_sha256": "853eb9c223a33d29359207c0b64f006f0e4fc169c0840200ce8d6173f5beae0c"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 11.622028000033424,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 6,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.4404750000048807
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 4,
+        "delay_bound": null,
+        "variables": 143,
+        "clauses": 2430,
+        "solve_ms": 0.9117260000266469
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 214,
+        "clauses": 5846,
+        "solve_ms": 1.15340100001049
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 12,
+        "delay_bound": null,
+        "variables": 301,
+        "clauses": 10810,
+        "solve_ms": 1.9048890000021856
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 5,
+        "delay_bound": null,
+        "variables": 295,
+        "clauses": 10804,
+        "solve_ms": 2.19688300001053
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_022.txt",
+    "cut": {
+      "source_output": 610,
+      "boundary_signals": [
+        604,
+        605,
+        606,
+        607
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "e6903a682be0f0a6177594bd93cfc3a62ab61dd1a846931a9531c12a0510fbd9",
+    "source_netlist_sha256": "4f8436fd895a4209d1465d2c403900a7731a0b6ae7dafe8bf763af728bbcba7d"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 468.1574860001092,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 9,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 1.1545190000106231,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 1.8693929999926695,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 9.235994999926334,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 434.55250099998466,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_022.txt",
+    "cut": {
+      "source_output": 610,
+      "boundary_signals": [
+        604,
+        605,
+        606,
+        607
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "e6903a682be0f0a6177594bd93cfc3a62ab61dd1a846931a9531c12a0510fbd9",
+    "source_netlist_sha256": "4f8436fd895a4209d1465d2c403900a7731a0b6ae7dafe8bf763af728bbcba7d"
+  },
+  {
+    "backend": "sat",
+    "n": 2,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 3.722916000015175,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 3,
+      "delay": 5,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 16,
+        "clauses": 29,
+        "solve_ms": 0.35981999997147796
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 3,
+        "delay_bound": null,
+        "variables": 41,
+        "clauses": 331,
+        "solve_ms": 0.27657500004352187
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 2,
+        "area_bound": 6,
+        "delay_bound": null,
+        "variables": 76,
+        "clauses": 921,
+        "solve_ms": 0.4105790000039633
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 3,
+        "delay_bound": null,
+        "variables": 74,
+        "clauses": 921,
+        "solve_ms": 0.4649539999945773
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 3,
+        "delay_bound": null,
+        "variables": 118,
+        "clauses": 1967,
+        "solve_ms": 0.5014140000412226
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 2,
+        "delay_bound": null,
+        "variables": 116,
+        "clauses": 1964,
+        "solve_ms": 0.4295700000511715
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_023.txt",
+    "cut": {
+      "source_output": 180,
+      "boundary_signals": [
+        176,
+        178
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "080d58afbbc71073093a0f72865edf7c815ed10872bc905b250887093c5aff73",
+    "source_netlist_sha256": "92f2ded954123a64ba8d39cd3cf320215c557709c87d565b1dcacb75233c32a1"
+  },
+  {
+    "backend": "milp",
+    "n": 2,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 143.50111999999626,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 3,
+      "delay": 5,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 18,
+        "constraints": 28,
+        "solve_ms": 0.862575000041943,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 42,
+        "constraints": 354,
+        "solve_ms": 0.7093870000289826,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 75,
+        "constraints": 982,
+        "solve_ms": 2.0895100000188904,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 119,
+        "constraints": 2090,
+        "solve_ms": 135.60481299998628,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_023.txt",
+    "cut": {
+      "source_output": 180,
+      "boundary_signals": [
+        176,
+        178
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "080d58afbbc71073093a0f72865edf7c815ed10872bc905b250887093c5aff73",
+    "source_netlist_sha256": "92f2ded954123a64ba8d39cd3cf320215c557709c87d565b1dcacb75233c32a1"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 61.24971999997797,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 6,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.4556679999723201
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 2,
+        "delay_bound": null,
+        "variables": 143,
+        "clauses": 2430,
+        "solve_ms": 0.7287789999281813
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 4,
+        "delay_bound": null,
+        "variables": 214,
+        "clauses": 5846,
+        "solve_ms": 1.3127269999131386
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 6,
+        "delay_bound": null,
+        "variables": 301,
+        "clauses": 10810,
+        "solve_ms": 2.323234999948909
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 5,
+        "delay_bound": null,
+        "variables": 300,
+        "clauses": 10810,
+        "solve_ms": 2.7371440000933944
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_024.txt",
+    "cut": {
+      "source_output": 89027,
+      "boundary_signals": [
+        78525,
+        82041,
+        85507,
+        89025
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "9bb33e0a59449ee75bc6418bc3512fc09035553c9338312f5ecb5f933b7d5392",
+    "source_netlist_sha256": "741ada61c7ed7b08bec58ce25bbe5b3273a4cada80187f425e9aceac74f563ca"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 1019.2640879999999,
+    "complete": false,
+    "status": "FEASIBLE_NOT_PROVEN",
+    "metrics": {
+      "area": 6,
+      "delay": 9,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 0.9104959999604034,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 1.9425960000489795,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 9.013800000047922,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "TIMEOUT",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 986.1885039999834,
+        "message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+        "mip_gap": 0.49999999999999983
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_024.txt",
+    "cut": {
+      "source_output": 89027,
+      "boundary_signals": [
+        78525,
+        82041,
+        85507,
+        89025
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "9bb33e0a59449ee75bc6418bc3512fc09035553c9338312f5ecb5f933b7d5392",
+    "source_netlist_sha256": "741ada61c7ed7b08bec58ce25bbe5b3273a4cada80187f425e9aceac74f563ca"
+  },
+  {
+    "backend": "sat",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 73.08243900001798,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 4,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "area_bound": 0,
+        "delay_bound": null,
+        "variables": 86,
+        "clauses": 172,
+        "solve_ms": 0.45984099995166616
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "area_bound": 8,
+        "delay_bound": null,
+        "variables": 144,
+        "clauses": 2430,
+        "solve_ms": 1.2137370000573355
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "area_bound": 16,
+        "delay_bound": null,
+        "variables": 218,
+        "clauses": 5849,
+        "solve_ms": 1.5428149999934249
+      },
+      {
+        "status": "SAT",
+        "gates_bound": 3,
+        "area_bound": 24,
+        "delay_bound": null,
+        "variables": 311,
+        "clauses": 10822,
+        "solve_ms": 2.5510159999839743
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 3,
+        "area_bound": 5,
+        "delay_bound": null,
+        "variables": 300,
+        "clauses": 10810,
+        "solve_ms": 2.9610230000116644
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_025.txt",
+    "cut": {
+      "source_output": 78509,
+      "boundary_signals": [
+        78503,
+        78504,
+        78505,
+        78506
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "49e6ef5f9eddcd640d584c06b62f11a94d641b019ef177d0328f7090284bd34c",
+    "source_netlist_sha256": "c436ca10c51c5a04968e32955898f834e9295a7db8ded53e2d0a4d6f9454e84d"
+  },
+  {
+    "backend": "milp",
+    "n": 4,
+    "max_gates": 3,
+    "delay_bound": null,
+    "elapsed_ms": 986.7156310000382,
+    "complete": true,
+    "status": "BOUNDED_OPTIMAL",
+    "metrics": {
+      "area": 6,
+      "delay": 6,
+      "gates": 3
+    },
+    "attempts": [
+      {
+        "status": "UNSAT",
+        "gates_bound": 0,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 90,
+        "constraints": 171,
+        "solve_ms": 1.1710290000337409,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 1,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 146,
+        "constraints": 2491,
+        "solve_ms": 1.9783210000241525,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "UNSAT",
+        "gates_bound": 2,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 215,
+        "constraints": 5991,
+        "solve_ms": 8.73457500006225,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_gap": null
+      },
+      {
+        "status": "OPTIMAL",
+        "gates_bound": 3,
+        "delay_bound": null,
+        "area_bound": null,
+        "variables": 299,
+        "constraints": 11065,
+        "solve_ms": 952.8629949999186,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_gap": 0.0
+      }
+    ],
+    "scope": "minimum area among circuits with at most max_gates slots and specified delay bound; no global claim beyond that space",
+    "experiment": "public-local-cut",
+    "case": "case_025.txt",
+    "cut": {
+      "source_output": 78509,
+      "boundary_signals": [
+        78503,
+        78504,
+        78505,
+        78506
+      ],
+      "interior_gates": 3
+    },
+    "input_sha256": "49e6ef5f9eddcd640d584c06b62f11a94d641b019ef177d0328f7090284bd34c",
+    "source_netlist_sha256": "c436ca10c51c5a04968e32955898f834e9295a7db8ded53e2d0a4d6f9454e84d"
+  }
+]

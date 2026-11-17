@@ -39,5 +39,14 @@ def check():
         assert an is not None and bn is not None,(pattern,a,b)
         assert a['status']==b['status']=='BOUNDED_OPTIMAL',(pattern,a,b)
         assert a['metrics']['area']==b['metrics']['area'],(pattern,a,b)
-    print('PASS: both encodings, known bounds, all 16 two-input functions')
+    # Dependency-free conversion re-simulates every generated candidate and checks
+    # the MSB truth-table -> LSB cut-signature conversion.
+    sys.path.insert(0,str(root/'tools'))
+    from generate_template_header import generate
+    import tempfile
+    with tempfile.TemporaryDirectory() as tmp:
+        templates=generate(root/'research/exact/generic_templates.json',Path(tmp)/'generated.hpp')
+        assert {x[0] for x in templates}==set(range(16))
+        assert len(templates)>=16
+    print('PASS: both encodings, known bounds, all 16 two-input functions, generated library')
 if __name__=='__main__':check()

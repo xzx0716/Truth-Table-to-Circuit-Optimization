@@ -1,0 +1,4013 @@
+{
+  "purpose": "generic two-input AND2/OR2/NOT replacement candidates, independent of public cases",
+  "costs": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "max_gates": 4,
+  "source_sha256": "a9692dde5cf6516d2108809c14b3d2a7b5e86b718f787c376b106d6e7ced054b",
+  "records": [
+    {
+      "pattern_lsb_row0": 0,
+      "truth": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 0,
+        "delay": 0,
+        "gates": 0
+      },
+      "attempts": [
+        {
+          "status": "SAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.5601730000535099
+        }
+      ],
+      "netlist": "0\n"
+    },
+    {
+      "pattern_lsb_row0": 0,
+      "truth": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 0,
+        "delay": 0,
+        "gates": 0
+      },
+      "attempts": [
+        {
+          "status": "SAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.25533699999868986
+        }
+      ],
+      "netlist": "0\n"
+    },
+    {
+      "pattern_lsb_row0": 0,
+      "truth": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 0,
+        "delay": 0,
+        "gates": 0
+      },
+      "attempts": [
+        {
+          "status": "SAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.20329300002686068
+        }
+      ],
+      "netlist": "0\n"
+    },
+    {
+      "pattern_lsb_row0": 0,
+      "truth": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 0,
+        "delay": 0,
+        "gates": 0
+      },
+      "attempts": [
+        {
+          "status": "SAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.21041000002242072
+        }
+      ],
+      "netlist": "0\n"
+    },
+    {
+      "pattern_lsb_row0": 1,
+      "truth": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_UNSAT",
+      "metrics": null,
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.19086500003595575
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 1,
+          "variables": 48,
+          "clauses": 383,
+          "solve_ms": 0.2898860000186687
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 1,
+          "variables": 83,
+          "clauses": 1039,
+          "solve_ms": 0.4603840000072523
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 3,
+          "delay_bound": 1,
+          "variables": 129,
+          "clauses": 2186,
+          "solve_ms": 0.8343200000808793
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 4,
+          "delay_bound": 1,
+          "variables": 188,
+          "clauses": 4070,
+          "solve_ms": 1.3998929999843313
+        }
+      ]
+    },
+    {
+      "pattern_lsb_row0": 1,
+      "truth": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.2364719999832232
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 52,
+          "clauses": 413,
+          "solve_ms": 0.2949409999928321
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 2,
+          "variables": 88,
+          "clauses": 1113,
+          "solve_ms": 0.45666300002267235
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 87,
+          "clauses": 1113,
+          "solve_ms": 0.6256420000454455
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 133,
+          "clauses": 2322,
+          "solve_ms": 0.713135999944825
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 192,
+          "clauses": 4293,
+          "solve_ms": 1.3023539999039713
+        }
+      ],
+      "netlist": "3 OR2 1 2\n4 NOT 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 1,
+      "truth": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.31216299998959585
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 56,
+          "clauses": 443,
+          "solve_ms": 0.4777410000542659
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 3,
+          "variables": 93,
+          "clauses": 1187,
+          "solve_ms": 0.47797000001992274
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 92,
+          "clauses": 1187,
+          "solve_ms": 0.5268200000045908
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 139,
+          "clauses": 2461,
+          "solve_ms": 0.7573240000056103
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 199,
+          "clauses": 4522,
+          "solve_ms": 1.13781499999277
+        }
+      ],
+      "netlist": "3 OR2 1 2\n4 NOT 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 1,
+      "truth": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.17791399989164347
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 60,
+          "clauses": 473,
+          "solve_ms": 0.3268039999966277
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 4,
+          "variables": 98,
+          "clauses": 1261,
+          "solve_ms": 0.5367819999264611
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 97,
+          "clauses": 1261,
+          "solve_ms": 0.4943789999742876
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 145,
+          "clauses": 2600,
+          "solve_ms": 0.7203259999641887
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 206,
+          "clauses": 4751,
+          "solve_ms": 1.2343979999513977
+        }
+      ],
+      "netlist": "3 OR2 1 2\n4 NOT 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 2,
+      "truth": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_UNSAT",
+      "metrics": null,
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.1987269999972341
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 1,
+          "variables": 48,
+          "clauses": 383,
+          "solve_ms": 0.25973100002829597
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 1,
+          "variables": 83,
+          "clauses": 1039,
+          "solve_ms": 0.47121500006142014
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 3,
+          "delay_bound": 1,
+          "variables": 129,
+          "clauses": 2186,
+          "solve_ms": 1.0868639999443985
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 4,
+          "delay_bound": 1,
+          "variables": 188,
+          "clauses": 4070,
+          "solve_ms": 1.265149999994719
+        }
+      ]
+    },
+    {
+      "pattern_lsb_row0": 2,
+      "truth": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.21057100002508378
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 52,
+          "clauses": 413,
+          "solve_ms": 0.265364000028967
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 2,
+          "variables": 88,
+          "clauses": 1113,
+          "solve_ms": 0.3994910000528762
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 87,
+          "clauses": 1113,
+          "solve_ms": 0.3868359999614768
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 133,
+          "clauses": 2322,
+          "solve_ms": 0.7593220000217116
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 192,
+          "clauses": 4293,
+          "solve_ms": 1.086354999983996
+        }
+      ],
+      "netlist": "3 NOT 1\n4 AND2 2 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 2,
+      "truth": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.22625000008247298
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 56,
+          "clauses": 443,
+          "solve_ms": 0.33601399991312064
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 3,
+          "variables": 93,
+          "clauses": 1187,
+          "solve_ms": 0.44837199993708055
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 92,
+          "clauses": 1187,
+          "solve_ms": 0.45487199997751304
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 139,
+          "clauses": 2461,
+          "solve_ms": 0.7297370000287628
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 199,
+          "clauses": 4522,
+          "solve_ms": 1.2301530000513594
+        }
+      ],
+      "netlist": "3 NOT 1\n4 AND2 2 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 2,
+      "truth": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.2202209999495608
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 60,
+          "clauses": 473,
+          "solve_ms": 0.2759620000460927
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 4,
+          "variables": 98,
+          "clauses": 1261,
+          "solve_ms": 0.5540520000977267
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 97,
+          "clauses": 1261,
+          "solve_ms": 0.4279999999425854
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 145,
+          "clauses": 2600,
+          "solve_ms": 0.6921969999211797
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 206,
+          "clauses": 4751,
+          "solve_ms": 1.2353669999356498
+        }
+      ],
+      "netlist": "3 NOT 1\n4 AND2 2 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 3,
+      "truth": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.18995800007814978
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 1,
+          "variables": 48,
+          "clauses": 383,
+          "solve_ms": 0.2821900000071764
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 47,
+          "clauses": 383,
+          "solve_ms": 0.2760319999879357
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 81,
+          "clauses": 1036,
+          "solve_ms": 0.43412499996975384
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 126,
+          "clauses": 2180,
+          "solve_ms": 0.6094340000117882
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 184,
+          "clauses": 4061,
+          "solve_ms": 1.0189089999812495
+        }
+      ],
+      "netlist": "3 NOT 1\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 3,
+      "truth": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.19447900001523521
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 52,
+          "clauses": 413,
+          "solve_ms": 0.28357100006815017
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 51,
+          "clauses": 413,
+          "solve_ms": 0.2552020000621269
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 86,
+          "clauses": 1110,
+          "solve_ms": 0.3872550000778574
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 132,
+          "clauses": 2319,
+          "solve_ms": 0.7988979999709045
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 191,
+          "clauses": 4290,
+          "solve_ms": 1.3459890000149244
+        }
+      ],
+      "netlist": "3 NOT 1\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 3,
+      "truth": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.1897059999009798
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 56,
+          "clauses": 443,
+          "solve_ms": 0.25094599993735756
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 55,
+          "clauses": 443,
+          "solve_ms": 0.23585700000694487
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 91,
+          "clauses": 1184,
+          "solve_ms": 0.42899300001408847
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 138,
+          "clauses": 2458,
+          "solve_ms": 0.6211189999021371
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 198,
+          "clauses": 4519,
+          "solve_ms": 1.0289549999242809
+        }
+      ],
+      "netlist": "3 NOT 1\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 3,
+      "truth": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.19492199999149307
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 60,
+          "clauses": 473,
+          "solve_ms": 0.279376999969827
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 59,
+          "clauses": 473,
+          "solve_ms": 0.2966040000274006
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 96,
+          "clauses": 1258,
+          "solve_ms": 0.47174200005883904
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 144,
+          "clauses": 2597,
+          "solve_ms": 0.6622370000286537
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 205,
+          "clauses": 4748,
+          "solve_ms": 1.0869799999682073
+        }
+      ],
+      "netlist": "3 NOT 1\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 4,
+      "truth": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_UNSAT",
+      "metrics": null,
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.17892699997901218
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 1,
+          "variables": 48,
+          "clauses": 383,
+          "solve_ms": 0.22354400005042407
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 1,
+          "variables": 83,
+          "clauses": 1039,
+          "solve_ms": 0.36765899994861684
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 3,
+          "delay_bound": 1,
+          "variables": 129,
+          "clauses": 2186,
+          "solve_ms": 0.9180270000115343
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 4,
+          "delay_bound": 1,
+          "variables": 188,
+          "clauses": 4070,
+          "solve_ms": 1.278812000009566
+        }
+      ]
+    },
+    {
+      "pattern_lsb_row0": 4,
+      "truth": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.19784200003414298
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 52,
+          "clauses": 413,
+          "solve_ms": 0.27551899995614804
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 2,
+          "variables": 88,
+          "clauses": 1113,
+          "solve_ms": 0.7476060000044527
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 87,
+          "clauses": 1113,
+          "solve_ms": 0.4402910000180782
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 133,
+          "clauses": 2322,
+          "solve_ms": 0.7233769999857032
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 192,
+          "clauses": 4293,
+          "solve_ms": 1.0354620000043724
+        }
+      ],
+      "netlist": "3 NOT 2\n4 AND2 1 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 4,
+      "truth": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.3884999999854699
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 56,
+          "clauses": 443,
+          "solve_ms": 0.47723800003041106
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 3,
+          "variables": 93,
+          "clauses": 1187,
+          "solve_ms": 0.4743009999401693
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 92,
+          "clauses": 1187,
+          "solve_ms": 0.4519280000749859
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 139,
+          "clauses": 2461,
+          "solve_ms": 0.6808389999832798
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 199,
+          "clauses": 4522,
+          "solve_ms": 1.0948830000643284
+        }
+      ],
+      "netlist": "3 NOT 2\n4 AND2 1 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 4,
+      "truth": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.19987700000001496
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 60,
+          "clauses": 473,
+          "solve_ms": 0.30276699999376433
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 4,
+          "variables": 98,
+          "clauses": 1261,
+          "solve_ms": 0.46556100005545886
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 97,
+          "clauses": 1261,
+          "solve_ms": 0.45768799998313625
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 145,
+          "clauses": 2600,
+          "solve_ms": 0.8818229999860705
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 206,
+          "clauses": 4751,
+          "solve_ms": 1.1783139999579362
+        }
+      ],
+      "netlist": "3 NOT 2\n4 AND2 1 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 5,
+      "truth": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.2144889999726729
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 1,
+          "variables": 48,
+          "clauses": 383,
+          "solve_ms": 0.2780749999828913
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 47,
+          "clauses": 383,
+          "solve_ms": 0.32757199994648545
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 81,
+          "clauses": 1036,
+          "solve_ms": 0.37350599995988887
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 126,
+          "clauses": 2180,
+          "solve_ms": 0.625785000011092
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 184,
+          "clauses": 4061,
+          "solve_ms": 0.9011469999222754
+        }
+      ],
+      "netlist": "3 NOT 2\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 5,
+      "truth": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.14821700005995808
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 52,
+          "clauses": 413,
+          "solve_ms": 0.2558400000225447
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 51,
+          "clauses": 413,
+          "solve_ms": 0.23394200002258003
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 86,
+          "clauses": 1110,
+          "solve_ms": 0.4142330000149741
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 132,
+          "clauses": 2319,
+          "solve_ms": 0.6937140000218278
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 191,
+          "clauses": 4290,
+          "solve_ms": 0.9952240000075108
+        }
+      ],
+      "netlist": "3 NOT 2\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 5,
+      "truth": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.17845399997895584
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 56,
+          "clauses": 443,
+          "solve_ms": 0.35513800003172946
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 55,
+          "clauses": 443,
+          "solve_ms": 0.28047500006778137
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 91,
+          "clauses": 1184,
+          "solve_ms": 0.3932729999860385
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 138,
+          "clauses": 2458,
+          "solve_ms": 0.7316539999919769
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 198,
+          "clauses": 4519,
+          "solve_ms": 1.0457009999527145
+        }
+      ],
+      "netlist": "3 NOT 2\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 5,
+      "truth": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.21239299996977934
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 60,
+          "clauses": 473,
+          "solve_ms": 0.47214799997163936
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 59,
+          "clauses": 473,
+          "solve_ms": 1.1894509999592628
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 96,
+          "clauses": 1258,
+          "solve_ms": 0.49130200000035984
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 144,
+          "clauses": 2597,
+          "solve_ms": 0.7432590000462369
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 205,
+          "clauses": 4748,
+          "solve_ms": 1.096457000016926
+        }
+      ],
+      "netlist": "3 NOT 2\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 6,
+      "truth": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_UNSAT",
+      "metrics": null,
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.21857100000488572
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 1,
+          "variables": 48,
+          "clauses": 383,
+          "solve_ms": 0.27338300003521
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 1,
+          "variables": 83,
+          "clauses": 1039,
+          "solve_ms": 0.505987999986246
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 3,
+          "delay_bound": 1,
+          "variables": 129,
+          "clauses": 2186,
+          "solve_ms": 0.7594950000111567
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 4,
+          "delay_bound": 1,
+          "variables": 188,
+          "clauses": 4070,
+          "solve_ms": 1.2631340000552882
+        }
+      ]
+    },
+    {
+      "pattern_lsb_row0": 6,
+      "truth": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_UNSAT",
+      "metrics": null,
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.19369800008917082
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 52,
+          "clauses": 413,
+          "solve_ms": 0.2690450000955025
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 2,
+          "variables": 88,
+          "clauses": 1113,
+          "solve_ms": 0.5800650000082896
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 3,
+          "delay_bound": 2,
+          "variables": 135,
+          "clauses": 2325,
+          "solve_ms": 0.8719879999716795
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 4,
+          "delay_bound": 2,
+          "variables": 195,
+          "clauses": 4299,
+          "solve_ms": 3.004632999932255
+        }
+      ]
+    },
+    {
+      "pattern_lsb_row0": 6,
+      "truth": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 4,
+        "delay": 3,
+        "gates": 4
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.2691590000267752
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 56,
+          "clauses": 443,
+          "solve_ms": 0.34205600002223946
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 3,
+          "variables": 93,
+          "clauses": 1187,
+          "solve_ms": 0.5632499999137508
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 3,
+          "delay_bound": 3,
+          "variables": 141,
+          "clauses": 2464,
+          "solve_ms": 1.0719130000325094
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 4,
+          "area_bound": 4,
+          "delay_bound": 3,
+          "variables": 202,
+          "clauses": 4528,
+          "solve_ms": 1.4920560000746264
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 3,
+          "delay_bound": 3,
+          "variables": 201,
+          "clauses": 4528,
+          "solve_ms": 1.2150379999411598
+        }
+      ],
+      "netlist": "3 AND2 1 2\n4 NOT 3\n5 OR2 1 2\n6 AND2 4 5\n6\n"
+    },
+    {
+      "pattern_lsb_row0": 6,
+      "truth": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 4,
+        "delay": 3,
+        "gates": 4
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.2586609999752909
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 60,
+          "clauses": 473,
+          "solve_ms": 0.31050400002641254
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 4,
+          "variables": 98,
+          "clauses": 1261,
+          "solve_ms": 0.49926099995900586
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 3,
+          "delay_bound": 4,
+          "variables": 147,
+          "clauses": 2603,
+          "solve_ms": 1.0293859999137567
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 4,
+          "area_bound": 4,
+          "delay_bound": 4,
+          "variables": 209,
+          "clauses": 4757,
+          "solve_ms": 1.7420870000250943
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 3,
+          "delay_bound": 4,
+          "variables": 208,
+          "clauses": 4757,
+          "solve_ms": 1.2336939998931484
+        }
+      ],
+      "netlist": "3 AND2 1 2\n4 OR2 1 2\n5 NOT 3\n6 AND2 4 5\n6\n"
+    },
+    {
+      "pattern_lsb_row0": 7,
+      "truth": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_UNSAT",
+      "metrics": null,
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.22462300000825053
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 1,
+          "variables": 48,
+          "clauses": 383,
+          "solve_ms": 0.33204499993644276
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 1,
+          "variables": 83,
+          "clauses": 1039,
+          "solve_ms": 0.4519059999665842
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 3,
+          "delay_bound": 1,
+          "variables": 129,
+          "clauses": 2186,
+          "solve_ms": 0.7431820000647349
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 4,
+          "delay_bound": 1,
+          "variables": 188,
+          "clauses": 4070,
+          "solve_ms": 1.2459760000638198
+        }
+      ]
+    },
+    {
+      "pattern_lsb_row0": 7,
+      "truth": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.20814000004065747
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 52,
+          "clauses": 413,
+          "solve_ms": 0.27242800001658907
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 2,
+          "variables": 88,
+          "clauses": 1113,
+          "solve_ms": 0.48378799999682087
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 87,
+          "clauses": 1113,
+          "solve_ms": 0.4843319999281448
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 133,
+          "clauses": 2322,
+          "solve_ms": 0.6509710000273117
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 192,
+          "clauses": 4293,
+          "solve_ms": 1.0418809999919176
+        }
+      ],
+      "netlist": "3 AND2 1 2\n4 NOT 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 7,
+      "truth": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.2769290000514957
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 56,
+          "clauses": 443,
+          "solve_ms": 0.37835099999483646
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 3,
+          "variables": 93,
+          "clauses": 1187,
+          "solve_ms": 0.4792029999407532
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 92,
+          "clauses": 1187,
+          "solve_ms": 0.48730499997873267
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 139,
+          "clauses": 2461,
+          "solve_ms": 0.6797350000624647
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 199,
+          "clauses": 4522,
+          "solve_ms": 1.1479830000098445
+        }
+      ],
+      "netlist": "3 AND2 1 2\n4 NOT 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 7,
+      "truth": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.2521259999639369
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 60,
+          "clauses": 473,
+          "solve_ms": 0.31829199997446267
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 4,
+          "variables": 98,
+          "clauses": 1261,
+          "solve_ms": 0.5157790000112072
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 97,
+          "clauses": 1261,
+          "solve_ms": 0.4794320000200969
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 145,
+          "clauses": 2600,
+          "solve_ms": 0.717712999971809
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 206,
+          "clauses": 4751,
+          "solve_ms": 1.3010399999302535
+        }
+      ],
+      "netlist": "3 AND2 1 2\n4 NOT 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 8,
+      "truth": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.20133200007421692
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 1,
+          "variables": 48,
+          "clauses": 383,
+          "solve_ms": 0.2915080000320813
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 47,
+          "clauses": 383,
+          "solve_ms": 0.263754999991761
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 81,
+          "clauses": 1036,
+          "solve_ms": 0.44260399999984656
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 126,
+          "clauses": 2180,
+          "solve_ms": 0.7036680000283013
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 184,
+          "clauses": 4061,
+          "solve_ms": 1.120323999998618
+        }
+      ],
+      "netlist": "3 AND2 1 2\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 8,
+      "truth": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.22959299997182825
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 52,
+          "clauses": 413,
+          "solve_ms": 0.29950199996164883
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 51,
+          "clauses": 413,
+          "solve_ms": 0.2806390000387182
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 86,
+          "clauses": 1110,
+          "solve_ms": 0.4142750000255546
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 132,
+          "clauses": 2319,
+          "solve_ms": 0.6330849998903432
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 191,
+          "clauses": 4290,
+          "solve_ms": 1.0007419999737976
+        }
+      ],
+      "netlist": "3 AND2 1 2\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 8,
+      "truth": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.16301599998769234
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 56,
+          "clauses": 443,
+          "solve_ms": 0.29965599992465286
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 55,
+          "clauses": 443,
+          "solve_ms": 0.34589599999890197
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 91,
+          "clauses": 1184,
+          "solve_ms": 0.46359300006315607
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 138,
+          "clauses": 2458,
+          "solve_ms": 0.6738370000221039
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 198,
+          "clauses": 4519,
+          "solve_ms": 1.0421530000712664
+        }
+      ],
+      "netlist": "3 AND2 1 2\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 8,
+      "truth": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.21305300003859884
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 60,
+          "clauses": 473,
+          "solve_ms": 0.40507799997158145
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 59,
+          "clauses": 473,
+          "solve_ms": 0.3339219999816123
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 96,
+          "clauses": 1258,
+          "solve_ms": 0.4618450000180019
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 144,
+          "clauses": 2597,
+          "solve_ms": 0.6517780000194762
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 205,
+          "clauses": 4748,
+          "solve_ms": 1.2896800000135045
+        }
+      ],
+      "netlist": "3 AND2 1 2\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 9,
+      "truth": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_UNSAT",
+      "metrics": null,
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.1909269999487151
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 1,
+          "variables": 48,
+          "clauses": 383,
+          "solve_ms": 0.26155199998356693
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 1,
+          "variables": 83,
+          "clauses": 1039,
+          "solve_ms": 0.38615100004335545
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 3,
+          "delay_bound": 1,
+          "variables": 129,
+          "clauses": 2186,
+          "solve_ms": 0.6882010000026639
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 4,
+          "delay_bound": 1,
+          "variables": 188,
+          "clauses": 4070,
+          "solve_ms": 1.2151519999861193
+        }
+      ]
+    },
+    {
+      "pattern_lsb_row0": 9,
+      "truth": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_UNSAT",
+      "metrics": null,
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.21619899996494496
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 52,
+          "clauses": 413,
+          "solve_ms": 0.286842999912551
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 2,
+          "variables": 88,
+          "clauses": 1113,
+          "solve_ms": 0.44123199995738105
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 3,
+          "delay_bound": 2,
+          "variables": 135,
+          "clauses": 2325,
+          "solve_ms": 1.6859930000237
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 4,
+          "delay_bound": 2,
+          "variables": 195,
+          "clauses": 4299,
+          "solve_ms": 2.620301999968433
+        }
+      ]
+    },
+    {
+      "pattern_lsb_row0": 9,
+      "truth": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 4,
+        "delay": 3,
+        "gates": 4
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.2004619999524948
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 56,
+          "clauses": 443,
+          "solve_ms": 0.2687000001060369
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 3,
+          "variables": 93,
+          "clauses": 1187,
+          "solve_ms": 0.49924799998279923
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 3,
+          "delay_bound": 3,
+          "variables": 141,
+          "clauses": 2464,
+          "solve_ms": 1.0938960000430598
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 4,
+          "area_bound": 4,
+          "delay_bound": 3,
+          "variables": 202,
+          "clauses": 4528,
+          "solve_ms": 1.3989739999260564
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 3,
+          "delay_bound": 3,
+          "variables": 201,
+          "clauses": 4528,
+          "solve_ms": 0.9674390000782296
+        }
+      ],
+      "netlist": "3 AND2 1 2\n4 OR2 1 2\n5 NOT 4\n6 OR2 3 5\n6\n"
+    },
+    {
+      "pattern_lsb_row0": 9,
+      "truth": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 4,
+        "delay": 3,
+        "gates": 4
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.18929199995909585
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 60,
+          "clauses": 473,
+          "solve_ms": 0.2806659999805561
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 4,
+          "variables": 98,
+          "clauses": 1261,
+          "solve_ms": 0.41425799997796275
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 3,
+          "delay_bound": 4,
+          "variables": 147,
+          "clauses": 2603,
+          "solve_ms": 0.8008500000187269
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 4,
+          "area_bound": 4,
+          "delay_bound": 4,
+          "variables": 209,
+          "clauses": 4757,
+          "solve_ms": 1.2449700000161101
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 3,
+          "delay_bound": 4,
+          "variables": 208,
+          "clauses": 4757,
+          "solve_ms": 1.0536250000541258
+        }
+      ],
+      "netlist": "3 OR2 1 2\n4 AND2 1 2\n5 NOT 3\n6 OR2 4 5\n6\n"
+    },
+    {
+      "pattern_lsb_row0": 10,
+      "truth": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 0,
+        "delay": 0,
+        "gates": 0
+      },
+      "attempts": [
+        {
+          "status": "SAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.15740499998173618
+        }
+      ],
+      "netlist": "2\n"
+    },
+    {
+      "pattern_lsb_row0": 10,
+      "truth": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 0,
+        "delay": 0,
+        "gates": 0
+      },
+      "attempts": [
+        {
+          "status": "SAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.16730000004372414
+        }
+      ],
+      "netlist": "2\n"
+    },
+    {
+      "pattern_lsb_row0": 10,
+      "truth": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 0,
+        "delay": 0,
+        "gates": 0
+      },
+      "attempts": [
+        {
+          "status": "SAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.4694869999184448
+        }
+      ],
+      "netlist": "2\n"
+    },
+    {
+      "pattern_lsb_row0": 10,
+      "truth": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 0,
+        "delay": 0,
+        "gates": 0
+      },
+      "attempts": [
+        {
+          "status": "SAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.21969500005525333
+        }
+      ],
+      "netlist": "2\n"
+    },
+    {
+      "pattern_lsb_row0": 11,
+      "truth": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_UNSAT",
+      "metrics": null,
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.1787150000609472
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 1,
+          "variables": 48,
+          "clauses": 383,
+          "solve_ms": 0.3877289999536515
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 1,
+          "variables": 83,
+          "clauses": 1039,
+          "solve_ms": 0.42912599997180223
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 3,
+          "delay_bound": 1,
+          "variables": 129,
+          "clauses": 2186,
+          "solve_ms": 0.8299160000433403
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 4,
+          "delay_bound": 1,
+          "variables": 188,
+          "clauses": 4070,
+          "solve_ms": 1.100445000020045
+        }
+      ]
+    },
+    {
+      "pattern_lsb_row0": 11,
+      "truth": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.19828799997867463
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 52,
+          "clauses": 413,
+          "solve_ms": 0.4232620000266252
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 2,
+          "variables": 88,
+          "clauses": 1113,
+          "solve_ms": 0.418418000094789
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 87,
+          "clauses": 1113,
+          "solve_ms": 0.38977700000941695
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 133,
+          "clauses": 2322,
+          "solve_ms": 0.5583060000162732
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 192,
+          "clauses": 4293,
+          "solve_ms": 1.2931869999874834
+        }
+      ],
+      "netlist": "3 NOT 1\n4 OR2 2 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 11,
+      "truth": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.15419600003951928
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 56,
+          "clauses": 443,
+          "solve_ms": 0.21851799999694776
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 3,
+          "variables": 93,
+          "clauses": 1187,
+          "solve_ms": 0.35198099999433907
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 92,
+          "clauses": 1187,
+          "solve_ms": 0.4014429999870117
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 139,
+          "clauses": 2461,
+          "solve_ms": 0.6035840000322423
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 199,
+          "clauses": 4522,
+          "solve_ms": 0.981378999995286
+        }
+      ],
+      "netlist": "3 NOT 1\n4 OR2 2 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 11,
+      "truth": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.2124380000623205
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 60,
+          "clauses": 473,
+          "solve_ms": 0.24658599988924834
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 4,
+          "variables": 98,
+          "clauses": 1261,
+          "solve_ms": 0.3749979999838615
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 97,
+          "clauses": 1261,
+          "solve_ms": 0.4055959999504921
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 145,
+          "clauses": 2600,
+          "solve_ms": 0.7018860000016502
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 206,
+          "clauses": 4751,
+          "solve_ms": 0.9783090000610173
+        }
+      ],
+      "netlist": "3 NOT 1\n4 OR2 2 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 12,
+      "truth": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 0,
+        "delay": 0,
+        "gates": 0
+      },
+      "attempts": [
+        {
+          "status": "SAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.1601790000904657
+        }
+      ],
+      "netlist": "1\n"
+    },
+    {
+      "pattern_lsb_row0": 12,
+      "truth": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 0,
+        "delay": 0,
+        "gates": 0
+      },
+      "attempts": [
+        {
+          "status": "SAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.13793499999792402
+        }
+      ],
+      "netlist": "1\n"
+    },
+    {
+      "pattern_lsb_row0": 12,
+      "truth": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 0,
+        "delay": 0,
+        "gates": 0
+      },
+      "attempts": [
+        {
+          "status": "SAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.17299600006026594
+        }
+      ],
+      "netlist": "1\n"
+    },
+    {
+      "pattern_lsb_row0": 12,
+      "truth": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 0,
+        "delay": 0,
+        "gates": 0
+      },
+      "attempts": [
+        {
+          "status": "SAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.20509999990281358
+        }
+      ],
+      "netlist": "1\n"
+    },
+    {
+      "pattern_lsb_row0": 13,
+      "truth": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_UNSAT",
+      "metrics": null,
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.20182900004783733
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 1,
+          "variables": 48,
+          "clauses": 383,
+          "solve_ms": 0.2717600000323728
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 1,
+          "variables": 83,
+          "clauses": 1039,
+          "solve_ms": 0.3634569999348969
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 3,
+          "delay_bound": 1,
+          "variables": 129,
+          "clauses": 2186,
+          "solve_ms": 0.628019999908247
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 4,
+          "delay_bound": 1,
+          "variables": 188,
+          "clauses": 4070,
+          "solve_ms": 0.99544700003662
+        }
+      ]
+    },
+    {
+      "pattern_lsb_row0": 13,
+      "truth": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.21239499994862854
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 52,
+          "clauses": 413,
+          "solve_ms": 0.26651799998944625
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 2,
+          "variables": 88,
+          "clauses": 1113,
+          "solve_ms": 0.3824089999397984
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 87,
+          "clauses": 1113,
+          "solve_ms": 0.36472600004344713
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 133,
+          "clauses": 2322,
+          "solve_ms": 0.5379739999398225
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 192,
+          "clauses": 4293,
+          "solve_ms": 0.9448299999803567
+        }
+      ],
+      "netlist": "3 NOT 2\n4 OR2 1 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 13,
+      "truth": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.1688779999540202
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 56,
+          "clauses": 443,
+          "solve_ms": 0.24122500008161296
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 3,
+          "variables": 93,
+          "clauses": 1187,
+          "solve_ms": 0.40056200009530585
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 92,
+          "clauses": 1187,
+          "solve_ms": 0.3640830000222195
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 139,
+          "clauses": 2461,
+          "solve_ms": 0.5377219999900262
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 199,
+          "clauses": 4522,
+          "solve_ms": 0.9602469999663299
+        }
+      ],
+      "netlist": "3 NOT 2\n4 OR2 1 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 13,
+      "truth": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 2,
+        "delay": 2,
+        "gates": 2
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.1698659999647134
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 60,
+          "clauses": 473,
+          "solve_ms": 0.2587890000995685
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 2,
+          "area_bound": 2,
+          "delay_bound": 4,
+          "variables": 98,
+          "clauses": 1261,
+          "solve_ms": 0.45079500000611006
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 97,
+          "clauses": 1261,
+          "solve_ms": 0.4030090000242126
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 145,
+          "clauses": 2600,
+          "solve_ms": 0.6285690000140676
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 206,
+          "clauses": 4751,
+          "solve_ms": 1.078473000006852
+        }
+      ],
+      "netlist": "3 NOT 2\n4 OR2 1 3\n4\n"
+    },
+    {
+      "pattern_lsb_row0": 14,
+      "truth": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.21013299999594892
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 1,
+          "variables": 48,
+          "clauses": 383,
+          "solve_ms": 0.27176200001122197
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 47,
+          "clauses": 383,
+          "solve_ms": 0.2542629999879864
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 81,
+          "clauses": 1036,
+          "solve_ms": 0.3481719999172128
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 126,
+          "clauses": 2180,
+          "solve_ms": 0.5224510000516602
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 184,
+          "clauses": 4061,
+          "solve_ms": 0.8293040000353358
+        }
+      ],
+      "netlist": "3 OR2 1 2\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 14,
+      "truth": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.18962900003316463
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 52,
+          "clauses": 413,
+          "solve_ms": 0.2394100000628896
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 51,
+          "clauses": 413,
+          "solve_ms": 0.24246399993899104
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 86,
+          "clauses": 1110,
+          "solve_ms": 0.35094999998364074
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 132,
+          "clauses": 2319,
+          "solve_ms": 0.5520920000208207
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 191,
+          "clauses": 4290,
+          "solve_ms": 0.8850839999468008
+        }
+      ],
+      "netlist": "3 OR2 1 2\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 14,
+      "truth": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.18711299992446584
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 56,
+          "clauses": 443,
+          "solve_ms": 0.29743999994025216
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 55,
+          "clauses": 443,
+          "solve_ms": 0.49469299995053007
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 91,
+          "clauses": 1184,
+          "solve_ms": 0.3592260000004899
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 138,
+          "clauses": 2458,
+          "solve_ms": 0.5352829999765163
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 198,
+          "clauses": 4519,
+          "solve_ms": 0.9205909999536743
+        }
+      ],
+      "netlist": "3 OR2 1 2\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 14,
+      "truth": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.1708700000335739
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 60,
+          "clauses": 473,
+          "solve_ms": 0.2323850000038874
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 59,
+          "clauses": 473,
+          "solve_ms": 0.21729399998093868
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 96,
+          "clauses": 1258,
+          "solve_ms": 0.33468199990238645
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 144,
+          "clauses": 2597,
+          "solve_ms": 0.574291999896559
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 205,
+          "clauses": 4748,
+          "solve_ms": 0.9120429999711632
+        }
+      ],
+      "netlist": "3 OR2 1 2\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 15,
+      "truth": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "delay_bound": 1,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 22,
+          "clauses": 38,
+          "solve_ms": 0.15667099989968847
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 1,
+          "variables": 48,
+          "clauses": 383,
+          "solve_ms": 0.25240800005121855
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 47,
+          "clauses": 383,
+          "solve_ms": 0.21161400002256414
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 81,
+          "clauses": 1036,
+          "solve_ms": 0.35115700006826955
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 126,
+          "clauses": 2180,
+          "solve_ms": 0.5915739999409197
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 1,
+          "variables": 184,
+          "clauses": 4061,
+          "solve_ms": 0.8056579999902169
+        }
+      ],
+      "netlist": "3 NOT 0\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 15,
+      "truth": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "delay_bound": 2,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 25,
+          "clauses": 41,
+          "solve_ms": 0.15541300001586933
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 2,
+          "variables": 52,
+          "clauses": 413,
+          "solve_ms": 0.21074100004625507
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 51,
+          "clauses": 413,
+          "solve_ms": 0.2349549999962619
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 86,
+          "clauses": 1110,
+          "solve_ms": 0.38298200001918303
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 132,
+          "clauses": 2319,
+          "solve_ms": 0.5198189999191527
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 2,
+          "variables": 191,
+          "clauses": 4290,
+          "solve_ms": 0.9441040000410794
+        }
+      ],
+      "netlist": "3 NOT 0\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 15,
+      "truth": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "delay_bound": 3,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 28,
+          "clauses": 44,
+          "solve_ms": 0.20220099997914076
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 3,
+          "variables": 56,
+          "clauses": 443,
+          "solve_ms": 0.32894399998895096
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 55,
+          "clauses": 443,
+          "solve_ms": 0.23191399998268025
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 91,
+          "clauses": 1184,
+          "solve_ms": 0.3570169999420614
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 138,
+          "clauses": 2458,
+          "solve_ms": 1.0401849999652768
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 3,
+          "variables": 198,
+          "clauses": 4519,
+          "solve_ms": 0.8673919999182544
+        }
+      ],
+      "netlist": "3 NOT 0\n3\n"
+    },
+    {
+      "pattern_lsb_row0": 15,
+      "truth": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "delay_bound": 4,
+      "status": "BOUNDED_OPTIMAL",
+      "metrics": {
+        "area": 1,
+        "delay": 1,
+        "gates": 1
+      },
+      "attempts": [
+        {
+          "status": "UNSAT",
+          "gates_bound": 0,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 31,
+          "clauses": 47,
+          "solve_ms": 0.15366900004210038
+        },
+        {
+          "status": "SAT",
+          "gates_bound": 1,
+          "area_bound": 1,
+          "delay_bound": 4,
+          "variables": 60,
+          "clauses": 473,
+          "solve_ms": 0.24450900002648268
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 1,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 59,
+          "clauses": 473,
+          "solve_ms": 0.2130179999539905
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 2,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 96,
+          "clauses": 1258,
+          "solve_ms": 0.40902299997469527
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 3,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 144,
+          "clauses": 2597,
+          "solve_ms": 0.5871139999271691
+        },
+        {
+          "status": "UNSAT",
+          "gates_bound": 4,
+          "area_bound": 0,
+          "delay_bound": 4,
+          "variables": 205,
+          "clauses": 4748,
+          "solve_ms": 0.9236070000042673
+        }
+      ],
+      "netlist": "3 NOT 0\n3\n"
+    }
+  ]
+}

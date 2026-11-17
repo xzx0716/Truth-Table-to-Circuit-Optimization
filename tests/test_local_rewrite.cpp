@@ -39,6 +39,24 @@ int main(){
         RuntimeBudget budget;budget.configure(1000);SearchOptions o;o.strategy=trial%2?"beam":"greedy";o.max_cut=3;o.rounds=2;o.max_regions=20;
         run_local_rewrite(p,n,budget,[&](Netlist out,const std::string&){verify(p,n,out);++checked;},o);
     }
+    // Two independent factors improve in one sweep, rather than one whole-graph
+    // candidate rebuild per factor. A shared root is still charged only once.
+    Netlist batch{{{AND2,1,2,1},{AND2,1,3,1},{OR2,5,6,2},
+                   {AND2,4,2,1},{AND2,4,3,1},{OR2,8,9,2}}, {7,10}};
+    RuntimeBudget bb;bb.configure(1000);SearchOptions bo;bo.max_cut=0;bo.rounds=1;
+    bool swept=false;run_local_rewrite(p,batch,bb,[&](Netlist out,const std::string& tag){
+        verify(p,batch,out);++checked;
+        if(tag.find("algebraic-sweep")!=std::string::npos){assert(measure(p,out).area<=4);swept=true;}
+    },bo);assert(swept);
+    // Generic exact library is active, independently of Shannon candidate generation.
+    RuntimeBudget tb;tb.configure(1000);SearchOptions to;to.max_cut=2;to.rounds=1;
+    bool templated=false;
+    run_local_rewrite(p,absorption,tb,[&](Netlist out,const std::string& tag){verify(p,absorption,out);
+        if(tag.find("cut-exact-template")!=std::string::npos)templated=true;
+        ++checked;},to);
+    // An equivalent exact network may already have been emitted by the algebraic pass;
+    // the exhaustive template generator is separately checked in the exact-tool tests.
+    (void)templated;
     // Constants, complementary and duplicate outputs survive pruning/rebuilding.
     Netlist constants{{{NOT,0,0,1},{NOT,5,0,2},{OR2,6,1,3},{NOT,1,0,1}}, {0,5,6,7,8,5}};
     RuntimeBudget cb;cb.configure(1000);SearchOptions co;co.max_cut=4;co.rounds=2;

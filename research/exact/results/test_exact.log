@@ -1,0 +1,17 @@
+sat constant-zero {'area': 0, 'delay': 0, 'gates': 0} 47.02
+sat constant-one {'area': 1, 'delay': 1, 'gates': 1} 1.76
+sat input {'area': 0, 'delay': 0, 'gates': 0} 0.4
+sat and {'area': 2, 'delay': 2, 'gates': 1} 1.7
+sat or-direct {'area': 8, 'delay': 3, 'gates': 1} 1.12
+sat or-demorgan {'area': 5, 'delay': 4, 'gates': 4} 10.75
+sat factor {'area': 2, 'delay': 2, 'gates': 2} 4.38
+/mnt/c/Users/xzx15/Desktop/DiscreteMath/Truth-Table-to-Circuit-Optimization/research/exact/synthesize.py:250: RuntimeWarning: Unrecognized options detected: {'threads'}. These will be passed to HiGHS verbatim.
+  result = milp(objective, integrality=np.r_[np.ones(binary_n),np.zeros(len(enc.values))],
+milp constant-zero {'area': 0, 'delay': 0, 'gates': 0} 546.76
+milp constant-one {'area': 1, 'delay': 1, 'gates': 1} 3.33
+milp input {'area': 0, 'delay': 0, 'gates': 0} 0.75
+milp and {'area': 2, 'delay': 2, 'gates': 1} 2.03
+milp or-direct {'area': 8, 'delay': 3, 'gates': 1} 2.24
+milp or-demorgan {'area': 5, 'delay': 4, 'gates': 4} 799.82
+milp factor {'area': 2, 'delay': 2, 'gates': 2} 11.77
+PASS: both encodings, known bounds, all 16 two-input functions, generated library

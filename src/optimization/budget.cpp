@@ -29,7 +29,9 @@ bool RuntimeBudget::can_start(const std::string& operation,double units) const {
     return !should_stop() && predict(operation,units)<remaining_ms();
 }
 void RuntimeBudget::observe(const std::string& operation,double units,double predicted,double actual) {
-    records_[operation].push_back({predicted,actual,units,actual>predicted});
+    // Keep an online diagnostic sample bounded; calibration below uses every observation.
+    auto& sample=records_[operation];
+    if(sample.size()<4096)sample.push_back({predicted,actual,units,actual>predicted});
     const double rate=actual/std::max(1.0,units);
     auto it=rates_.find(operation);
     if(it==rates_.end()) rates_[operation]=rate;

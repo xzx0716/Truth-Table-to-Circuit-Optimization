@@ -542,13 +542,18 @@ inline void remap_area(const Problem& p, const Netlist& best, Frontier& frontier
     circuit.consider(outputs, frontier);
 }
 
-inline Netlist synthesize(const Problem& p, const std::function<bool()>& stop = {}) {
+inline Netlist synthesize(const Problem& p, const std::function<bool()>& stop = {},
+    const std::function<void(Netlist,const std::string&)>& collect = {}) {
     Frontier frontier(p.target);
     BDD bdd(p, false);
     std::vector<Id> roots;
     for (int j = 0; j < p.m; ++j) roots.push_back(bdd.build(j, 0, 0));
 
     bool has_seed=false;
+    auto record=[&](const Circuit& circuit,const std::vector<Id>& outputs,const std::string& label){
+        if(collect){Frontier temporary(std::numeric_limits<Score>::max());
+            circuit.consider(outputs,temporary);collect(temporary.take_compromise(),label);}
+    };
     auto consider_widths = [&](Mapping mapping, const std::vector<int>& widths) {
         Circuit circuit(p, mapping);
         std::vector<Id> memo(bdd.nodes.size(), -1);
@@ -558,11 +563,13 @@ inline Netlist synthesize(const Problem& p, const std::function<bool()>& stop = 
             if (has_seed && stop && stop()) break;
             std::vector<Id> outputs;
             for (Id root : roots) outputs.push_back(bdd.map_top_block(root, circuit, memo, width, selector_cache));
+            record(circuit,outputs,"base-raw");
             circuit.consider(outputs, frontier);
             has_seed=true;
             if (stop && stop()) break;
             Circuit balanced(p, Direct);
             auto balanced_outputs = circuit.balance(balanced, outputs);
+            record(balanced,balanced_outputs,"base-balanced");
             balanced.consider(balanced_outputs, frontier);
         }
     };

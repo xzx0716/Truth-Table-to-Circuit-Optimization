@@ -1,0 +1,72 @@
+[
+  {
+    "strategy": "algebraic",
+    "cases": 25,
+    "all_pass_cases": 25,
+    "all_target_met_cases": 25,
+    "ad_frontier_cases": 23,
+    "adr_median_frontier_cases": 5,
+    "area_sum_descriptive": 728926.0,
+    "runtime_case_median_ms": 70.971
+  },
+  {
+    "strategy": "anneal",
+    "cases": 25,
+    "all_pass_cases": 25,
+    "all_target_met_cases": 25,
+    "ad_frontier_cases": 22,
+    "adr_median_frontier_cases": 3,
+    "area_sum_descriptive": 728926.0,
+    "runtime_case_median_ms": 63.838
+  },
+  {
+    "strategy": "baseline",
+    "cases": 25,
+    "all_pass_cases": 25,
+    "all_target_met_cases": 25,
+    "ad_frontier_cases": 19,
+    "adr_median_frontier_cases": 10,
+    "area_sum_descriptive": 728930.0,
+    "runtime_case_median_ms": 24.384
+  },
+  {
+    "strategy": "beam",
+    "cases": 25,
+    "all_pass_cases": 25,
+    "all_target_met_cases": 25,
+    "ad_frontier_cases": 20,
+    "adr_median_frontier_cases": 0,
+    "area_sum_descriptive": 728932.0,
+    "runtime_case_median_ms": 56.975
+  },
+  {
+    "strategy": "frozen",
+    "cases": 25,
+    "all_pass_cases": 25,
+    "all_target_met_cases": 25,
+    "ad_frontier_cases": 19,
+    "adr_median_frontier_cases": 14,
+    "area_sum_descriptive": 728930.0,
+    "runtime_case_median_ms": 25.615
+  },
+  {
+    "strategy": "greedy",
+    "cases": 25,
+    "all_pass_cases": 25,
+    "all_target_met_cases": 25,
+    "ad_frontier_cases": 20,
+    "adr_median_frontier_cases": 1,
+    "area_sum_descriptive": 728932.0,
+    "runtime_case_median_ms": 58.785
+  },
+  {
+    "strategy": "multistart",
+    "cases": 25,
+    "all_pass_cases": 25,
+    "all_target_met_cases": 25,
+    "ad_frontier_cases": 22,
+    "adr_median_frontier_cases": 1,
+    "area_sum_descriptive": 728921.0,
+    "runtime_case_median_ms": 68.536
+  }
+]
