@@ -20,3 +20,16 @@ For each case, the area/delay frontier contains distinct points that no other co
 `retained.json` contains the reference plus profiles adding at least one new area/delay point or meeting the timing-dependent retention rule. `summary.csv` gives counts by profile. Refer to `manifest.json` for tested sources, binary, input hashes and platform.
 
 The first native screening run, `results/seed-study-20261117`, used ten profiles. The expanded comparison also includes `historical-adaptive`, which ports the variable-order selection from the earlier solver. The official Linux screen uses five timed rounds and supplies an additional `deployed` measurement outside the controlled set. To summarize an official combined log, execute `python3 research/seed_study/summarize_official.py /path/to/official-results`. When the official evaluator omits output hashes, a pair is admitted only if every round passes and its A/D pair repeats. A/D equality then establishes metric stability only.
+
+For a course Linux x86-64 machine with GCC and the original evaluator, run the official measurements from the repository root. Use a fresh directory for each result. The `deployed` reference runs the unmodified default pipeline. Total runtime comes from the official CSV. The runner copies the materials to a temporary directory, compiles C++ once, runs all cases for each profile, and hashes the netlists saved by the official checker.
+
+```sh
+python3 research/seed_study/run_official.py --evaluator /path/to/evaluator --cases /path/to/stage1 --out results/my-seeds --base "$(git rev-parse HEAD)"
+python3 research/seed_study/summarize_official.py results/my-seeds
+python3 research/seed_study/run_official.py --evaluator /path/to/evaluator --cases /path/to/stage1 --out results/my-portfolio --base "$(git rev-parse HEAD)" --portfolio results/my-seeds/retained.json
+python3 research/seed_study/compare_portfolio.py results/my-portfolio
+```
+
+One solver invocation can also try several seeds locally. Set `TTC_INITIAL_SEEDS` to their comma-separated names. The solver tries the GitHub seed first, gives each completed construction the same downstream pass, and keeps a feasible incumbent if the shared budget expires. Use `TTC_FRONTIER_LOG` to save the realized area/delay frontier. Compare that invocation's total cost against the independently timed strategies in the controlled study.
+
+[构造与历史版本说明](provenance.md)
