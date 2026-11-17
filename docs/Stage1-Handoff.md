@@ -4,7 +4,7 @@
 
 仓库：https://github.com/xzx0716/Truth-Table-to-Circuit-Optimization
 
-当前交付tag：`person-a-stage1-v1`，源码变更冻结提交`4413d4d`；随后文档/验证提交不改算法。最终tag对应完整可交接树。GitHub Release包含提交包和研究证据归档。
+当前推荐交付tag：`person-a-stage1-v2`（仅修订打包README，算法与v1一致）；初始完整交付tag为`person-a-stage1-v1`。源码变更冻结提交`4413d4d`；随后文档/验证提交不改算法。最终tag对应完整可交接树。GitHub Release包含提交包和研究证据归档。
 
 `stage1-pareto-v1`：队友交接源码原样冻结，SHA256为a26bba783aaacc1617683a48705e22db59fdb38765d54466ffbf3037533b5bd5。
 `dev-base-v1`：模块拆分和公共API。
