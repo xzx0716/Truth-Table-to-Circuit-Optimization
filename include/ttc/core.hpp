@@ -1,3 +1,4 @@
+#pragma once
 // UFUG2106 Stage 1: reduced BDD synthesis with several gate mappings.
 // Build: c++ -std=c++17 -O2 solver.cpp -o solver
 // Run:   ./solver input_path output_path
@@ -16,7 +17,9 @@
 #include <utility>
 #include <vector>
 
-namespace {
+
+namespace ttc {
+
 using Id = int;
 using Score = long long;
 enum GateType { AND2, OR2, NOT };
@@ -29,7 +32,7 @@ struct Problem {
     int target;
 };
 
-Problem read_problem(std::istream& in) {
+inline Problem read_problem(std::istream& in) {
     Problem p{};
     if (!(in >> p.n >> p.m) || p.n < 1 || p.m < 1 ||
         p.n >= std::numeric_limits<std::size_t>::digits) {
@@ -446,7 +449,7 @@ private:
 
 // Try implementing each wire in either polarity. De Morgan's law lets a gate
 // switch type when both inputs and its output are complemented.
-void remap_area(const Problem& p, const Netlist& best, Frontier& frontier, Score timing_budget) {
+inline void remap_area(const Problem& p, const Netlist& best, Frontier& frontier, Score timing_budget) {
     const Id first = p.n + 1;
     const Id size = first + static_cast<Id>(best.gates.size());
     if (size == first) return;
@@ -537,7 +540,7 @@ void remap_area(const Problem& p, const Netlist& best, Frontier& frontier, Score
     circuit.consider(outputs, frontier);
 }
 
-Netlist synthesize(const Problem& p) {
+inline Netlist synthesize(const Problem& p) {
     Frontier frontier(p.target);
     BDD bdd(p, false);
     std::vector<Id> roots;
@@ -592,7 +595,7 @@ Netlist synthesize(const Problem& p) {
     return frontier.take_compromise();
 }
 
-void write_netlist(std::ostream& out, int n, const Netlist& netlist) {
+inline void write_netlist(std::ostream& out, int n, const Netlist& netlist) {
     const char* names[]{"AND2", "OR2", "NOT"};
     Id id = n + 1;
     for (const auto& g : netlist.gates) {
@@ -606,26 +609,5 @@ void write_netlist(std::ostream& out, int n, const Netlist& netlist) {
     }
     out << '\n';
 }
-}  // namespace
 
-int main(int argc, char** argv) {
-    if (argc != 3) {
-        std::cerr << "usage: solver INPUT_PATH OUTPUT_PATH\n";
-        return 2;
-    }
-    try {
-        std::ifstream input(argv[1]);
-        if (!input) throw std::runtime_error("could not open input");
-        Problem p = read_problem(input);
-        Netlist result = synthesize(p);
-        std::ofstream output(argv[2]);
-        if (!output) throw std::runtime_error("could not open output");
-        write_netlist(output, p.n, result);
-        output.close();
-        if (!output) throw std::runtime_error("could not write output");
-    } catch (const std::exception& error) {
-        std::cerr << "solver: " << error.what() << '\n';
-        return 1;
-    }
-    return 0;
 }
