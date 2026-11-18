@@ -1,0 +1,14 @@
+[
+  {
+    "strategy": "standalone",
+    "cases": 25,
+    "all_pass_cases": 24,
+    "all_target_met_cases": 24,
+    "ad_frontier_cases": 24,
+    "adr_median_frontier_cases": 24,
+    "stable_metric_cases": 24,
+    "area_sum_descriptive": null,
+    "area_sum_stable_subset": 671508.0,
+    "runtime_case_median_ms": 148.76749999999998
+  }
+]

@@ -1,0 +1,26 @@
+case,a,b,a_dominates_b_ad,b_dominates_a_ad,a_dominates_b_adr_median,b_dominates_a_adr_median,runtime_ranges_overlap,runtime_interpretation
+case_001.txt,fast,final,False,True,False,False,False,observed ranges separated
+case_002.txt,fast,final,False,True,False,False,False,observed ranges separated
+case_003.txt,fast,final,False,True,False,False,False,observed ranges separated
+case_004.txt,fast,final,False,False,True,False,True,difference unresolved
+case_005.txt,fast,final,False,False,True,False,True,difference unresolved
+case_006.txt,fast,final,False,False,False,False,True,difference unresolved
+case_007.txt,fast,final,False,False,False,False,False,observed ranges separated
+case_008.txt,fast,final,False,False,True,False,True,difference unresolved
+case_009.txt,fast,final,False,False,True,False,True,difference unresolved
+case_010.txt,fast,final,False,False,False,False,False,observed ranges separated
+case_011.txt,fast,final,False,False,False,False,True,difference unresolved
+case_012.txt,fast,final,False,True,False,False,True,difference unresolved
+case_013.txt,fast,final,False,False,False,False,True,difference unresolved
+case_014.txt,fast,final,False,True,False,False,False,observed ranges separated
+case_015.txt,fast,final,False,False,False,False,False,observed ranges separated
+case_016.txt,fast,final,False,False,True,False,True,difference unresolved
+case_017.txt,fast,final,False,False,False,False,True,difference unresolved
+case_018.txt,fast,final,False,False,False,False,True,difference unresolved
+case_019.txt,fast,final,False,False,True,False,False,observed ranges separated
+case_020.txt,fast,final,False,False,True,False,True,difference unresolved
+case_021.txt,fast,final,False,False,False,False,False,observed ranges separated
+case_022.txt,fast,final,False,False,False,False,True,difference unresolved
+case_023.txt,fast,final,False,True,False,False,True,difference unresolved
+case_024.txt,fast,final,False,True,False,False,False,observed ranges separated
+case_025.txt,fast,final,False,True,False,False,False,observed ranges separated

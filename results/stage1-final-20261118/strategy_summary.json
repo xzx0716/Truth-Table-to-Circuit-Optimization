@@ -1,0 +1,26 @@
+[
+  {
+    "strategy": "fast",
+    "cases": 25,
+    "all_pass_cases": 25,
+    "all_target_met_cases": 25,
+    "ad_frontier_cases": 17,
+    "adr_median_frontier_cases": 25,
+    "stable_metric_cases": 25,
+    "area_sum_descriptive": 728872.0,
+    "area_sum_stable_subset": 728872.0,
+    "runtime_case_median_ms": 60.316
+  },
+  {
+    "strategy": "final",
+    "cases": 25,
+    "all_pass_cases": 25,
+    "all_target_met_cases": 25,
+    "ad_frontier_cases": 25,
+    "adr_median_frontier_cases": 18,
+    "stable_metric_cases": 25,
+    "area_sum_descriptive": 672088.0,
+    "area_sum_stable_subset": 672088.0,
+    "runtime_case_median_ms": 130.327
+  }
+]

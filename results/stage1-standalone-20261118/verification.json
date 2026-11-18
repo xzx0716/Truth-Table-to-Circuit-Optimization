@@ -1,0 +1,12 @@
+{
+  "generated_tests": 400,
+  "status": "PASS",
+  "official_first_round_passes": 24,
+  "official_first_round_cases": 25,
+  "failure": {
+    "case": "case_011.txt",
+    "reason": "TIME_LIMIT"
+  },
+  "isolated_diagnostic": "PASS, 33.947 ms",
+  "note": "Retained failure, not replaced by diagnostic. Full independent repeated run recorded separately."
+}

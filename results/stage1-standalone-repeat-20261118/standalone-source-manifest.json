@@ -1,0 +1,15 @@
+{
+  "export_sha256": "530cdcf58c935f976cfd7feb5c57df9e3f0db495342139813c808a7e097dad1c",
+  "sources": {
+    "src/main.cpp": "bb305d7da71a33a6ee2b0cbe6afa0bca64b95ab9a9a7606306355667d11befdf",
+    "include/ttc/optimization_api.hpp": "672d54588469874b74cb2b1a4e56b9f0f7dc5bed0efe109ea18c8afaf26717a7",
+    "include/ttc/core.hpp": "de264c7f254dd3fb3ff8ed68a3a854c3209d63fd81e55a6a82f11c47b6d1d521",
+    "include/ttc/seed_pipeline.hpp": "07b8aa712803b7f252dead2594d0b4389811e86fc506f84101900c1e2471199f",
+    "include/ttc/seed_constructors.hpp": "597e262524c4b7b1d2e003437c0e762027ede124d2afde65cf60300b0f26acac",
+    "include/ttc/historical_order_seed.hpp": "828254464d3d4c3ff478c7af805ca8899e95d7aa7f4a6bd4746c715f4ab84f11",
+    "src/optimization/budget.cpp": "c00ec0eed9a3d9c2688e513b25f09d2d7cb2792b2ea4d571997ffead558eade6",
+    "src/optimization/local_rewrite.cpp": "e33c0e7cb655092b227ca6f6109488873eed612098581db72c691423b5bd60c8",
+    "include/ttc/generated_templates.hpp": "ac4d5ab1cce0af1555ab8dcbb80f991568d30aba92d905309c0cfa681ef94df8"
+  },
+  "compile": "g++ -O2 -std=c++17 solver.cpp -o solver"
+}

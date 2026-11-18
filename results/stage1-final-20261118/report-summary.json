@@ -1,0 +1,14 @@
+{
+  "ad_relations": {
+    "better": 8,
+    "same": 7,
+    "tradeoff": 10
+  },
+  "fast_median_sum_ms": 3750.133,
+  "final_median_sum_ms": 10450.025,
+  "fast_area_sum": 728872,
+  "final_area_sum": 672088,
+  "source_commit": "84061a2adde1b7c0a344b572e875b9c2ce7eb40d",
+  "source_tree_sha256": "384053b77963f1f97d807db69221d033b8cec3dea6c9f07f6e1ba49329604d5a",
+  "max_runtime_limit_fraction": 0.78861
+}

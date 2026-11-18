@@ -1,0 +1,8 @@
+{
+  "official_checks": 125,
+  "passes": 125,
+  "targets_met": 125,
+  "area_delay_match_modular_report": true,
+  "source_changed": false,
+  "binary_changed": false
+}

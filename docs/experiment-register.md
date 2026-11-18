@@ -34,3 +34,7 @@
 |---|---|
 | [同一步优化的 11 种种子](../results/seed-study-linux-20261117/report.md) | 官方五轮共 1,375 次通过，19 例新增 33 个面积／延迟点 |
 | [单进程运行保留的 9 种构造](seed-study.md) | 组合在 25 例上五轮全部达标，逐例耗时中位数之和是默认版的 2.56 倍 |
+
+## Stage 1 final integration (2026-11-18)
+
+The nine-seed portfolio is now the course default; explicit TTC_STRATEGY=sweep is the fast control. Final same-machine five-round results: `results/stage1-final-20261118/`. The final group report supersedes the earlier A-only report, preserved under `docs/history/`. Exported standalone validation is recorded separately.
