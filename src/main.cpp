@@ -6,6 +6,9 @@ using namespace ttc;
 #ifndef TTC_DEFAULT_STRATEGY
 #define TTC_DEFAULT_STRATEGY "sweep"
 #endif
+#ifndef TTC_DEFAULT_INITIAL_SEEDS
+#define TTC_DEFAULT_INITIAL_SEEDS "github,influence-sop,forward-pos,forward-demorgan,forward-top3,reverse-top3,forward-rec3,forward-adaptive3,historical-adaptive"
+#endif
 namespace {
 std::string envs(const char* key,const std::string& def){const char* v=std::getenv(key);return v?v:def;}
 int envi(const char* key,int def){const char* v=std::getenv(key);return v?std::stoi(v):def;}
@@ -55,7 +58,12 @@ int main(int argc,char** argv){
         Problem p=read_problem(input);
         budget.configure(p.runtime_ms,p.ram_kb,envi("TTC_RESEARCH_MS",0));
         const std::string seed_profile = envs("TTC_INITIAL_SEED", "");
-        const std::string seed_profiles=envs("TTC_INITIAL_SEEDS","");
+        // The course invocation needs only two paths. Explicit research settings
+        // retain their old meaning, including TTC_STRATEGY=sweep as the control.
+        const bool use_default_portfolio = !std::getenv("TTC_INITIAL_SEED") &&
+            !std::getenv("TTC_INITIAL_SEEDS") && !std::getenv("TTC_STRATEGY");
+        const std::string seed_profiles=envs("TTC_INITIAL_SEEDS",
+            use_default_portfolio ? TTC_DEFAULT_INITIAL_SEEDS : "");
         if (!seed_profiles.empty()) {
             if (!seed_profile.empty())
                 throw std::invalid_argument("specify either TTC_INITIAL_SEEDS or TTC_INITIAL_SEED");
